@@ -1,3 +1,5 @@
+import tkinter as tk
+
 class SearchManager:
     def __init__(self, hotkey_loader, ui_manager, event_manager, window_manager, hotkey_executor):
         self.hotkey_loader = hotkey_loader
@@ -29,9 +31,25 @@ class SearchManager:
             print("[DEBUG] No application was detected when window was shown")
             self.current_results = []
             if search_text:  # Only show message if user has typed something
+                # Hide main window before showing dialog
+                self.window_manager.hide()
+                
+                # Create and show dialog
                 dialog = self.ui_manager.create_dialog(
                     "No hotkeys found for this application"
                 )
+                
+                # Focus OK button after dialog is shown
+                def on_dialog_shown():
+                    ok_button = None
+                    for widget in dialog.winfo_children():
+                        if isinstance(widget, tk.Button) and widget['text'] == 'OK':
+                            ok_button = widget
+                            break
+                    if ok_button:
+                        ok_button.focus_set()
+                
+                dialog.after(100, on_dialog_shown)  # Schedule focus after dialog is shown
                 self.ui_manager.show_dialog(dialog)
                 
         # Update UI with results
@@ -53,9 +71,25 @@ class SearchManager:
         self.current_results = self.hotkey_loader.get_hotkeys_for_app(current_app)
         
         if not self.current_results:
+            # Hide main window before showing dialog
+            self.window_manager.hide()
+            
+            # Create and show dialog
             dialog = self.ui_manager.create_dialog(
                 f'No hotkeys found for "{current_app}"'
             )
+            
+            # Focus OK button after dialog is shown
+            def on_dialog_shown():
+                ok_button = None
+                for widget in dialog.winfo_children():
+                    if isinstance(widget, tk.Button) and widget['text'] == 'OK':
+                        ok_button = widget
+                        break
+                if ok_button:
+                    ok_button.focus_set()
+            
+            dialog.after(100, on_dialog_shown)  # Schedule focus after dialog is shown
             self.ui_manager.show_dialog(dialog)
             return False
             

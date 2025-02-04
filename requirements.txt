@@ -3,3 +3,4 @@ httpx>=0.26.0
 openai>=1.0.0
 selenium>=4.16.0
 webdriver_manager>=4.0.1
+mouse>=0.7.1

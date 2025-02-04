@@ -8,7 +8,7 @@ from typing import List, Dict, Any
 class JsonWriter:
     """Class for writing hotkey data to JSON files."""
 
-    def __init__(self, output_dir: str = "data"):
+    def __init__(self, output_dir: str = "data/hotkeys"):
         """Initialize the JsonWriter.
 
         Args:

@@ -2,7 +2,7 @@ import os
 import json
 
 class HotkeyLoader:
-    def __init__(self, data_dir='data'):
+    def __init__(self, data_dir='data/hotkeys'):
         """Initialize the hotkey loader."""
         self.data_dir = data_dir
         self.hotkey_cache = {}  # Cache loaded hotkeys
