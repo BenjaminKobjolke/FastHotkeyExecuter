@@ -29,8 +29,13 @@ class HotkeyManager:
                 # Normal case
                 keys = [k.strip().lower() for k in hotkey.split('+')]
             
-            # Filter out empty strings
-            keys = [k for k in keys if k]
+            # Filter out empty strings and map special keys
+            keys = [
+                'ctrl' if k in ('command', 'control')
+                else '+' if k == 'numpad+'
+                else '-' if k == 'numpad-'
+                else k for k in keys if k
+            ]
             print(f"[DEBUG] Registering hotkey: {hotkey}")
             
             # For single key (like F1)

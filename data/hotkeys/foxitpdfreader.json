@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Open File",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "Close File",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Save As",
+    "hotkey": "ctrl+shift+s"
+  },
+  {
+    "name": "Close All",
+    "hotkey": "ctrl+shift+w"
+  },
+  {
+    "name": "Print Document",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Quit Foxit Reader",
+    "hotkey": "ctrl+q"
+  },
+  {
+    "name": "Bookmark",
+    "hotkey": "alt+1"
+  },
+  {
+    "name": "Full Screen",
+    "hotkey": "alt+2"
+  },
+  {
+    "name": "Zoom in",
+    "hotkey": "ctrl+numpad+"
+  },
+  {
+    "name": "Zoom Out",
+    "hotkey": "ctrl+numpad-"
+  },
+  {
+    "name": "Zoom To",
+    "hotkey": "ctrl+m"
+  },
+  {
+    "name": "Actual Size",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Fit to Page",
+    "hotkey": "ctrl+2"
+  },
+  {
+    "name": "Fit Width",
+    "hotkey": "ctrl+3"
+  },
+  {
+    "name": "Rotate Clockwise",
+    "hotkey": "ctrl+shift++"
+  },
+  {
+    "name": "Rotate CounterClockwise",
+    "hotkey": "ctrl+shift+-"
+  },
+  {
+    "name": "Reset Toolbars",
+    "hotkey": "alt+f8"
+  },
+  {
+    "name": "Hide Toolbars",
+    "hotkey": "f8"
+  },
+  {
+    "name": "First Page",
+    "hotkey": "home"
+  },
+  {
+    "name": "Previous Page",
+    "hotkey": "left"
+  },
+  {
+    "name": "Next Page",
+    "hotkey": "right"
+  },
+  {
+    "name": "Last Page",
+    "hotkey": "end"
+  },
+  {
+    "name": "Go to Page",
+    "hotkey": "shift+ctrl+n"
+  },
+  {
+    "name": "Select All",
+    "hotkey": "ctrl+a"
+  },
+  {
+    "name": "Page Down",
+    "hotkey": "space"
+  },
+  {
+    "name": "Page Up",
+    "hotkey": "shift+space"
+  },
+  {
+    "name": "Copy",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Find Text",
+    "hotkey": "ctrl+f"
+  },
+  {
+    "name": "Find Next",
+    "hotkey": "f3"
+  },
+  {
+    "name": "Preferences",
+    "hotkey": "ctrl+k"
+  }
+]

@@ -18,7 +18,8 @@ class HotkeyExecutor:
         valid_keys = keyboard.all_modifiers.union({
             'esc', 'enter', 'tab', 'space', 'backspace', 'delete',
             'up', 'down', 'left', 'right', 'home', 'end', 'pageup', 'pagedown',
-            'insert', '+', '-', '*', '/', '=', 'win'
+            'insert', '+', '-', '*', '/', '=', 'win', 'command', 'control',
+            'numpad+', 'numpad-'
         })
         
         # Add letters
@@ -57,6 +58,14 @@ class HotkeyExecutor:
             
             # Clean up keys and filter out empty strings
             keys = [key.strip() for key in keys if key.strip()]
+            
+            # Map 'command' and 'control' to 'ctrl', and numpad keys to regular keys
+            keys = [
+                'ctrl' if k in ('command', 'control')
+                else '+' if k == 'numpad+'
+                else '-' if k == 'numpad-'
+                else k for k in keys
+            ]
             
             # Validate keys before execution
             try:
