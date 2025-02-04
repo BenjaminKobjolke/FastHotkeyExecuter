@@ -4,8 +4,10 @@
 import argparse
 import sys
 from pathlib import Path
+from bs4 import BeautifulSoup
 
-from import_hotkeys.web.webpage_fetcher import WebpageFetcher
+from import_hotkeys.web.ChromeWebCrawler import ChromeWebCrawler
+from utils.StringUtils import StringUtils
 from import_hotkeys.web.content_cleaner import ContentCleaner
 from import_hotkeys.openai.api_client import OpenAIClient
 from import_hotkeys.openai.prompt_builder import PromptBuilder
@@ -50,7 +52,9 @@ def main() -> None:
             print("api_key = your_key_here")
             sys.exit(1)
 
-        fetcher = WebpageFetcher()
+        # Get Chrome driver path from settings if available
+        driver_path = config_loader.get_chromium_driver_path()
+        fetcher = ChromeWebCrawler(driver_path)  # driver_path is optional
         cleaner = ContentCleaner()
         prompt_builder = PromptBuilder()
         openai_client = OpenAIClient(api_key)
@@ -58,16 +62,25 @@ def main() -> None:
 
         # Fetch and process webpage
         print(f"Fetching webpage: {args.url}")
-        html_content, soup = fetcher.fetch(args.url, args.name)
-        if not soup:
-            print("Warning: Failed to parse HTML, using raw content")
-            cleaned_content = cleaner.clean(soup)
-        else:
-            print("Extracting relevant sections")
-            cleaned_content = cleaner.extract_hotkey_sections(soup)
-            if not cleaned_content:
-                print("Warning: No relevant sections found, using cleaned content")
-                cleaned_content = cleaner.clean(soup)
+        result = fetcher.execute(args.url)
+        if not result['success']:
+            print("Warning: Failed to fetch webpage content")
+            sys.exit(1)
+        
+        # Save raw HTML content
+        cleaner.save_html(result['text'], args.name)
+        
+        # Create BeautifulSoup object from the HTML text
+        soup = BeautifulSoup(result['text'], 'html.parser')
+        
+        # Clean the HTML content
+        print("Cleaning content")
+        cleaned_content = cleaner.clean(soup, args.name)
+        
+        # If cleaning failed, use raw text
+        if not cleaned_content:
+            print("Warning: Cleaning failed, using raw content")
+            cleaned_content = StringUtils.strip_html_tags(result['text'])
 
         # Extract hotkeys using OpenAI
         print("Extracting hotkeys using OpenAI")

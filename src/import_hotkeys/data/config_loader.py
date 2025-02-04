@@ -29,22 +29,40 @@ class ConfigLoader:
             self.config['OpenAI'] = {'api_key': ''}
             self._save_config()
 
+    def get_setting(self, section: str, key: str, default: any = None) -> any:
+        """Get a setting value from any section in the configuration.
+
+        Args:
+            section (str): The section name
+            key (str): The setting key
+            default (any, optional): Default value if not found. Defaults to None.
+
+        Returns:
+            any: The setting value or default if not found
+        """
+        try:
+            if section not in self.config:
+                return default
+            return self.config.get(section, key, fallback=default)
+        except configparser.Error as e:
+            print(f"Warning: Failed to read {key} from {section}: {e}")
+            return default
+
     def get_openai_key(self) -> Optional[str]:
         """Get the OpenAI API key from the configuration.
 
         Returns:
             Optional[str]: The API key if set, None otherwise.
-
-        Raises:
-            Exception: If the OpenAI section is missing from the config.
         """
-        try:
-            api_key = self.config.get('OpenAI', 'api_key', fallback=None)
-            if not api_key:
-                print("Warning: OpenAI API key not found in settings.ini")
-            return api_key
-        except configparser.Error as e:
-            raise Exception(f"Failed to read OpenAI API key from config: {e}")
+        return self.get_setting('OpenAI', 'api_key')
+
+    def get_chromium_driver_path(self) -> Optional[str]:
+        """Get the Chrome driver path from configuration.
+
+        Returns:
+            Optional[str]: The driver path if set, None otherwise.
+        """
+        return self.get_setting('chromium', 'driver_path')
 
     def set_openai_key(self, api_key: str) -> None:
         """Set the OpenAI API key in the configuration.

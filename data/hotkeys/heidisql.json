@@ -1,0 +1,274 @@
+[
+  {
+    "name": "New window",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "New query tab",
+    "hotkey": "ctrl+t"
+  },
+  {
+    "name": "Close query tab",
+    "hotkey": "ctrl+f4"
+  },
+  {
+    "name": "Copy",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Paste from clipboard",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Cut",
+    "hotkey": "ctrl+x"
+  },
+  {
+    "name": "Undo",
+    "hotkey": "alt+backspace"
+  },
+  {
+    "name": "Print",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Refresh",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Full status refresh",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Select all items or text",
+    "hotkey": "ctrl+a"
+  },
+  {
+    "name": "Invert selection",
+    "hotkey": "ctrl+i"
+  },
+  {
+    "name": "Activate filter panel",
+    "hotkey": "ctrl+alt+f"
+  },
+  {
+    "name": "Cancel running operation",
+    "hotkey": "esc"
+  },
+  {
+    "name": "Save as text file",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Database tree",
+    "hotkey": "ctrl+d"
+  },
+  {
+    "name": "Table filter",
+    "hotkey": "ctrl+e"
+  },
+  {
+    "name": "Go to tab 1",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Go to tab 2",
+    "hotkey": "ctrl+2"
+  },
+  {
+    "name": "Go to tab 3",
+    "hotkey": "ctrl+3"
+  },
+  {
+    "name": "Go to tab 4",
+    "hotkey": "ctrl+4"
+  },
+  {
+    "name": "Go to tab 5",
+    "hotkey": "ctrl+5"
+  },
+  {
+    "name": "Copy selected rows in custom format",
+    "hotkey": "ctrl+shift+c"
+  },
+  {
+    "name": "Search selected tables for text occurrences",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "SQL help browser",
+    "hotkey": "f1"
+  },
+  {
+    "name": "Go back to previous tab",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Go to next tab",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Delete all rows in selected table(s)",
+    "hotkey": "del"
+  },
+  {
+    "name": "Execute SQL query",
+    "hotkey": "f9"
+  },
+  {
+    "name": "Execute selected SQL",
+    "hotkey": "ctrl+f9"
+  },
+  {
+    "name": "Run currently focused SQL query",
+    "hotkey": "ctrl+shift+f9"
+  },
+  {
+    "name": "Load SQL file",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "Save SQL to a text file",
+    "hotkey": "f12"
+  },
+  {
+    "name": "Save selected text to a file",
+    "hotkey": "ctrl+shift+s"
+  },
+  {
+    "name": "Clear query editor",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Find text",
+    "hotkey": "ctrl+f"
+  },
+  {
+    "name": "Replace text",
+    "hotkey": "ctrl+r"
+  },
+  {
+    "name": "Find or replace again",
+    "hotkey": "f3"
+  },
+  {
+    "name": "Save SQL to file",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Automatically reformat disordered SQL",
+    "hotkey": "ctrl+f8"
+  },
+  {
+    "name": "Insert row",
+    "hotkey": "insert"
+  },
+  {
+    "name": "Duplicate row",
+    "hotkey": "ctrl+insert"
+  },
+  {
+    "name": "Delete selected row(s)",
+    "hotkey": "ctrl+del"
+  },
+  {
+    "name": "Post",
+    "hotkey": "ctrl+enter"
+  },
+  {
+    "name": "Cancel editing",
+    "hotkey": "esc"
+  },
+  {
+    "name": "Clear filter editor",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Apply filter",
+    "hotkey": "f9"
+  },
+  {
+    "name": "Reset sorting",
+    "hotkey": "alt+s"
+  },
+  {
+    "name": "Show next 1.000 rows",
+    "hotkey": "ctrl+alt+page down"
+  },
+  {
+    "name": "Show all rows",
+    "hotkey": "ctrl+alt+end"
+  },
+  {
+    "name": "Set focused cell to NULL",
+    "hotkey": "ctrl+shift+n"
+  },
+  {
+    "name": "Insert SQL function call in grid cell",
+    "hotkey": "ctrl+f2"
+  },
+  {
+    "name": "Previous result tab",
+    "hotkey": "alt+left"
+  },
+  {
+    "name": "Next result tab",
+    "hotkey": "alt+right"
+  },
+  {
+    "name": "Insert line",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Delete word",
+    "hotkey": "ctrl+t"
+  },
+  {
+    "name": "Delete line",
+    "hotkey": "ctrl+y"
+  },
+  {
+    "name": "Delete EOL",
+    "hotkey": "ctrl+shift+y"
+  },
+  {
+    "name": "Undo",
+    "hotkey": "ctrl+z"
+  },
+  {
+    "name": "Redo",
+    "hotkey": "ctrl+shift+z"
+  },
+  {
+    "name": "Goto marker",
+    "hotkey": "ctrl+0"
+  },
+  {
+    "name": "Set marker",
+    "hotkey": "ctrl+shift+0"
+  },
+  {
+    "name": "Normal select",
+    "hotkey": "ctrl+shift+n"
+  },
+  {
+    "name": "Column select",
+    "hotkey": "ctrl+shift+c"
+  },
+  {
+    "name": "Line select",
+    "hotkey": "ctrl+shift+l"
+  },
+  {
+    "name": "Match bracket",
+    "hotkey": "ctrl+shift+b"
+  },
+  {
+    "name": "Uppercase block",
+    "hotkey": "ctrl+u"
+  },
+  {
+    "name": "Lowercase block",
+    "hotkey": "ctrl+l"
+  }
+]

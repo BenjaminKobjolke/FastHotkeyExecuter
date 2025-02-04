@@ -18,7 +18,7 @@ class HotkeyExecutor:
         valid_keys = keyboard.all_modifiers.union({
             'esc', 'enter', 'tab', 'space', 'backspace', 'delete',
             'up', 'down', 'left', 'right', 'home', 'end', 'pageup', 'pagedown',
-            'insert', '+', '-', '*', '/', '='
+            'insert', '+', '-', '*', '/', '=', 'win'
         })
         
         # Add letters
@@ -74,7 +74,11 @@ class HotkeyExecutor:
                 # Press all modifier keys
                 modifiers = []
                 for key in keys[:-1]:  # All except last key
-                    keyboard.press(key)
+                    # Handle Windows key specifically
+                    if key == 'win':
+                        keyboard.press('windows')  # Use 'windows' instead of 'win'
+                    else:
+                        keyboard.press(key)
                     modifiers.append(key)
                     time.sleep(0.05)  # Small delay between key presses
 
@@ -84,24 +88,41 @@ class HotkeyExecutor:
 
                 # Release modifiers in reverse order
                 for key in reversed(modifiers):
-                    keyboard.release(key)
+                    # Handle Windows key specifically
+                    if key == 'win':
+                        keyboard.release('windows')  # Use 'windows' instead of 'win'
+                    else:
+                        keyboard.release(key)
                     time.sleep(0.05)
             else:
                 # Handle regular keyboard shortcuts
                 modifiers = []
                 for key in keys[:-1]:  # All except last key
-                    keyboard.press(key)
+                    # Handle Windows key specifically
+                    if key == 'win':
+                        keyboard.press('windows')  # Use 'windows' instead of 'win'
+                    else:
+                        keyboard.press(key)
                     modifiers.append(key)
                     time.sleep(0.05)  # Small delay between key presses
                 
                 # Press and release the final key
-                keyboard.press(keys[-1])
-                time.sleep(0.05)
-                keyboard.release(keys[-1])
+                if keys[-1] == 'win':
+                    keyboard.press('windows')
+                    time.sleep(0.05)
+                    keyboard.release('windows')
+                else:
+                    keyboard.press(keys[-1])
+                    time.sleep(0.05)
+                    keyboard.release(keys[-1])
                 
                 # Release modifiers in reverse order
                 for key in reversed(modifiers):
-                    keyboard.release(key)
+                    # Handle Windows key specifically
+                    if key == 'win':
+                        keyboard.release('windows')  # Use 'windows' instead of 'win'
+                    else:
+                        keyboard.release(key)
                     time.sleep(0.05)
             
             # Restore our window as foreground
