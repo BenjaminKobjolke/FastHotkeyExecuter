@@ -1,3 +1,5 @@
-keyboard>=0.13.5
-psutil>=5.9.0
-pywin32>=305
+beautifulsoup4>=4.12.0
+httpx>=0.26.0
+openai>=1.0.0
+selenium>=4.16.0
+webdriver_manager>=4.0.1

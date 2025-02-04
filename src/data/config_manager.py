@@ -2,28 +2,36 @@ import configparser
 import os
 
 class ConfigManager:
-    def __init__(self, config_file='config/settings.ini'):
+    def __init__(self, config_file='config/settings.ini', window_config_file='config/window_settings.ini'):
         """Initialize the config manager."""
         self.config_file = config_file
+        self.window_config_file = window_config_file
         self.config = configparser.ConfigParser()
+        self.window_config = configparser.ConfigParser()
         self.load_config()
         
     def load_config(self):
-        """Load configuration from file."""
+        """Load configuration from files."""
         try:
-            # Check if config file exists
-            if not os.path.exists(self.config_file):
-                print("[DEBUG] Config file not found, creating default")
+            # Check if config files exist
+            if not os.path.exists(self.config_file) or not os.path.exists(self.window_config_file):
+                print("[DEBUG] Config files not found, creating defaults")
                 self.create_default_config()
                 return
                 
-            # Load config file
+            # Load config files
             self.config.read(self.config_file)
+            self.window_config.read(self.window_config_file)
             print("[DEBUG] Configuration loaded successfully")
             print("[DEBUG] Current configuration:")
             for section in self.config.sections():
                 print(f"[DEBUG] [{section}]")
                 for key, value in self.config[section].items():
+                    print(f"[DEBUG]   {key} = {value}")
+            print("[DEBUG] Current window configuration:")
+            for section in self.window_config.sections():
+                print(f"[DEBUG] [{section}]")
+                for key, value in self.window_config[section].items():
                     print(f"[DEBUG]   {key} = {value}")
                     
         except Exception as e:
@@ -32,17 +40,18 @@ class ConfigManager:
             self.create_default_config()
             
     def create_default_config(self):
-        """Create default configuration file."""
+        """Create default configuration files."""
         try:
             # Create config directory if it doesn't exist
             os.makedirs(os.path.dirname(self.config_file), exist_ok=True)
             
-            # Set default values
+            # Set default values for main config
             self.config['Hotkeys'] = {
                 'toggle_search': 'ctrl+shift+p'
             }
             
-            self.config['Window'] = {
+            # Set default values for window config
+            self.window_config['Window'] = {
                 'width': '400',
                 'height': '40',
                 'background_color': '#2E2E2E',
@@ -54,11 +63,14 @@ class ConfigManager:
                 'input_select_foreground': '#FFFFFF'
             }
             
-            # Save to file
+            # Save to files
             with open(self.config_file, 'w') as f:
                 self.config.write(f)
                 
-            print("[DEBUG] Default configuration created")
+            with open(self.window_config_file, 'w') as f:
+                self.window_config.write(f)
+                
+            print("[DEBUG] Default configurations created")
             
         except Exception as e:
             print(f"[DEBUG] Error creating default config: {e}")
@@ -73,7 +85,7 @@ class ConfigManager:
     def get_window_settings(self):
         """Get all window-related settings."""
         try:
-            settings = dict(self.config['Window'])
+            settings = dict(self.window_config['Window'])
             # Convert numeric values
             settings['width'] = int(settings['width'])
             settings['height'] = int(settings['height'])

@@ -1,42 +1,190 @@
 [
   {
-    "name": "New Note",
+    "name": "New note window",
+    "hotkey": "alt+ctrl+n"
+  },
+  {
+    "name": "Paste to Evernote",
+    "hotkey": "alt+ctrl+v"
+  },
+  {
+    "name": "Search in Evernote",
+    "hotkey": "windows+shift+f"
+  },
+  {
+    "name": "Open Evernote Helper",
+    "hotkey": "ctrl+alt+h"
+  },
+  {
+    "name": "Capture screen",
+    "hotkey": "ctrl+alt+s"
+  },
+  {
+    "name": "New note",
     "hotkey": "ctrl+n"
   },
   {
-    "name": "Search Notes",
-    "hotkey": "ctrl+q"
+    "name": "New notebook",
+    "hotkey": "alt+shift+n"
   },
   {
-    "name": "Switch to List View",
-    "hotkey": "ctrl+alt+1"
+    "name": "New task",
+    "hotkey": "alt+t"
   },
   {
-    "name": "Switch to Card View",
-    "hotkey": "ctrl+alt+2"
+    "name": "New tag",
+    "hotkey": "ctrl+shift+t"
   },
   {
-    "name": "Switch to Snippet View",
-    "hotkey": "ctrl+alt+3"
+    "name": "New event",
+    "hotkey": "ctrl+e"
   },
   {
-    "name": "Show Shortcuts",
+    "name": "Search",
+    "hotkey": "alt+ctrl+f"
+  },
+  {
+    "name": "AI-Powered Search",
+    "hotkey": "alt+shift+ctrl+f"
+  },
+  {
+    "name": "Convert Scratch Pad to Note",
+    "hotkey": "ctrl+shift+n"
+  },
+  {
+    "name": "Delete / Move to Trash",
+    "hotkey": "delete"
+  },
+  {
+    "name": "Select all (note list)",
+    "hotkey": "ctrl+a"
+  },
+  {
+    "name": "Select single",
+    "hotkey": "ctrl+click"
+  },
+  {
+    "name": "Select group",
+    "hotkey": "shift+click"
+  },
+  {
+    "name": "Minimize window",
+    "hotkey": "ctrl+m"
+  },
+  {
+    "name": "Close window",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Keyboard shortcuts",
     "hotkey": "ctrl+/"
   },
   {
-    "name": "New Chat",
-    "hotkey": "ctrl+shift+h"
+    "name": "Settings",
+    "hotkey": "ctrl+,"
   },
   {
-    "name": "Focus Note List",
-    "hotkey": "alt+1"
+    "name": "Switch to...",
+    "hotkey": "ctrl+q"
   },
   {
-    "name": "Focus Note Editor",
-    "hotkey": "alt+2"
+    "name": "Open shortcut 1 - 9",
+    "hotkey": "ctrl+number"
   },
   {
-    "name": "Toggle Sidebar",
-    "hotkey": "f10"
+    "name": "Open Home",
+    "hotkey": "ctrl+alt+1"
+  },
+  {
+    "name": "Open Notes",
+    "hotkey": "ctrl+alt+2"
+  },
+  {
+    "name": "Open Tasks",
+    "hotkey": "ctrl+alt+3"
+  },
+  {
+    "name": "Open Files",
+    "hotkey": "ctrl+alt+4"
+  },
+  {
+    "name": "Open Calendar",
+    "hotkey": "ctrl+alt+5"
+  },
+  {
+    "name": "Open Notebooks",
+    "hotkey": "ctrl+alt+6"
+  },
+  {
+    "name": "Open Tags",
+    "hotkey": "ctrl+alt+7"
+  },
+  {
+    "name": "Open Shared with Me",
+    "hotkey": "ctrl+alt+8"
+  },
+  {
+    "name": "Switch to snippet view",
+    "hotkey": "ctrl+f5"
+  },
+  {
+    "name": "Switch to card view",
+    "hotkey": "ctrl+f6"
+  },
+  {
+    "name": "Switch to side list view",
+    "hotkey": "ctrl+f8"
+  },
+  {
+    "name": "Switch to top list view",
+    "hotkey": "ctrl+f7"
+  },
+  {
+    "name": "Switch note list view",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Open Tag filter",
+    "hotkey": "alt+f2"
+  },
+  {
+    "name": "Move back",
+    "hotkey": "alt+←"
+  },
+  {
+    "name": "Move forward",
+    "hotkey": "alt+→"
+  },
+  {
+    "name": "Focus on note list",
+    "hotkey": "alt+ctrl+\\"
+  },
+  {
+    "name": "Focus on formatting bar",
+    "hotkey": "alt+ctrl+f10"
+  },
+  {
+    "name": "Move up a note (note list)",
+    "hotkey": "↑"
+  },
+  {
+    "name": "Move down a note (note list)",
+    "hotkey": "↓"
+  },
+  {
+    "name": "Top of note list",
+    "hotkey": "home"
+  },
+  {
+    "name": "Bottom of note list",
+    "hotkey": "end"
+  },
+  {
+    "name": "Page up (note list)",
+    "hotkey": "shift+space"
+  },
+  {
+    "name": "Page down (note list)",
+    "hotkey": "space"
   }
 ]

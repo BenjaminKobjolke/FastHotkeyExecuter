@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Displays ConEmu About dialog",
+    "hotkey": "win+alt+a"
+  },
+  {
+    "name": "Displays ConEmu Settings dialog",
+    "hotkey": "win+alt+p"
+  },
+  {
+    "name": "Pops up ConEmu system menu",
+    "hotkey": "win+alt+space"
+  },
+  {
+    "name": "Reveals or hides the real console window",
+    "hotkey": "ctrl+win+alt+space"
+  },
+  {
+    "name": "Maximize ConEmu window and hide window caption",
+    "hotkey": "ctrl+win+enter"
+  },
+  {
+    "name": "Tabs switching (next tab)",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Tabs switching (previous tab)",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Switch tab to left",
+    "hotkey": "ctrl+left"
+  },
+  {
+    "name": "Switch tab to right",
+    "hotkey": "ctrl+right"
+  },
+  {
+    "name": "When ‘Win+Arrows - resize window’ checked - resize ConEmu window",
+    "hotkey": "win+left"
+  },
+  {
+    "name": "When ‘Win+Arrows - resize window’ checked - resize ConEmu window",
+    "hotkey": "win+right"
+  },
+  {
+    "name": "When ‘Win+Arrows - resize window’ checked - resize ConEmu window",
+    "hotkey": "win+up"
+  },
+  {
+    "name": "When ‘Win+Arrows - resize window’ checked - resize ConEmu window",
+    "hotkey": "win+down"
+  },
+  {
+    "name": "Activate consoles by numbers (1 to 0)",
+    "hotkey": "win+1"
+  },
+  {
+    "name": "Create new console tab",
+    "hotkey": "win+w"
+  },
+  {
+    "name": "Create new console tab with confirmation dialog",
+    "hotkey": "win+shift+w"
+  },
+  {
+    "name": "Restart current console",
+    "hotkey": "win+`"
+  },
+  {
+    "name": "Activate next console tab",
+    "hotkey": "win+q"
+  },
+  {
+    "name": "Activate previous console tab",
+    "hotkey": "win+shift+q"
+  },
+  {
+    "name": "Terminate current console",
+    "hotkey": "win+del"
+  },
+  {
+    "name": "Show alternative console buffer",
+    "hotkey": "win+a"
+  },
+  {
+    "name": "Duplicate tab with current state of root process",
+    "hotkey": "win+s"
+  },
+  {
+    "name": "Minimize or Restore ConEmu window",
+    "hotkey": "ctrl+`"
+  },
+  {
+    "name": "Create new console tab with cmd.exe or selected task",
+    "hotkey": "win+x"
+  },
+  {
+    "name": "Buffer scrolling up",
+    "hotkey": "ctrl+up"
+  },
+  {
+    "name": "Buffer scrolling down",
+    "hotkey": "ctrl+down"
+  },
+  {
+    "name": "Move active tab leftward",
+    "hotkey": "win+alt+left"
+  },
+  {
+    "name": "Move active tab rightward",
+    "hotkey": "win+alt+right"
+  },
+  {
+    "name": "Rename current tab",
+    "hotkey": "apps+r"
+  },
+  {
+    "name": "Search text in the console",
+    "hotkey": "apps+f"
+  },
+  {
+    "name": "Pause current console",
+    "hotkey": "pause"
+  },
+  {
+    "name": "Close active console",
+    "hotkey": "win+delete"
+  },
+  {
+    "name": "Close current tab",
+    "hotkey": "win+alt+delete"
+  },
+  {
+    "name": "Switch focus between ConEmu and child GUI application",
+    "hotkey": "win+z"
+  },
+  {
+    "name": "Close all tabs",
+    "hotkey": "win+f4"
+  },
+  {
+    "name": "Highlighting: Switch ‘Highlight row under mouse cursor’",
+    "hotkey": "apps+l"
+  },
+  {
+    "name": "Paste clipboard contents",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Make main font larger",
+    "hotkey": "ctrl+wheelup"
+  },
+  {
+    "name": "Make main font smaller",
+    "hotkey": "ctrl+wheeldown"
+  },
+  {
+    "name": "Activate previous tab",
+    "hotkey": "ctrl+shift+tab"
+  }
+]

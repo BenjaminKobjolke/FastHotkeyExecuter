@@ -1,7 +1,14 @@
+OS
+You are working on windows.
+
+Shell
+You have a windows powershell to exectute commands.
+
 Entry Point
 Use main.py for argument parsing and overall flow.
-Coding Conventions
 
+Coding Conventions
+You split large code blocks into managble files and classes.
 Follow PEP 8 style guidelines.
 Use docstrings, type hints, and linters (e.g., flake8).
 Auto-format code with tools like black.
