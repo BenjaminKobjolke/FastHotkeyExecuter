@@ -9,6 +9,7 @@ class UIManager:
         self.search_entry = None
         self.search_var = None
         self.results_listbox = None
+        self.base_height = self.theme_manager.settings['height']
         self._create_ui()
 
     def _create_ui(self):
@@ -59,13 +60,17 @@ class UIManager:
         if results:
             for result in results:
                 self.results_listbox.insert(tk.END, f"{result['name']} ({result['hotkey']})")
-            self.results_listbox.configure(height=min(5, len(results)))
-            self.window.geometry(f"{self.theme_manager.settings['width']}x{200}")
+            list_height = min(5, len(results))
+            self.results_listbox.configure(height=list_height)
+            # Calculate total height based on base height plus additional space for results
+            total_height = self.base_height + (list_height * 20)  # Approximate 20 pixels per list item
+            self.window.geometry(f"{self.theme_manager.settings['width']}x{total_height}")
         else:
             self.results_listbox.insert(tk.END, placeholder_message)
             self.results_listbox.itemconfig(0, fg='#666666')  # Gray out message
             self.results_listbox.configure(height=1)
-            self.window.geometry(f"{self.theme_manager.settings['width']}x{80}")
+            # Use base height for empty results
+            self.window.geometry(f"{self.theme_manager.settings['width']}x{self.base_height}")
 
     def create_dialog(self, message, on_ok=None):
         """Create and return a styled dialog window."""
@@ -91,7 +96,7 @@ class UIManager:
         )
         msg.pack(padx=10, pady=10)
         
-        # Create OK button with hover effects
+        # Create OK button with hover effects and default focus
         ok_button = tk.Button(
             dialog,
             text="OK",
@@ -105,8 +110,12 @@ class UIManager:
             bd=1,
             padx=10,
             pady=5,
-            cursor='hand2'
+            cursor='hand2',
+            default='active'  # Make it the default button
         )
+        
+        # Schedule focus to OK button after dialog appears
+        dialog.after(1, lambda: ok_button.focus_set())
         
         # Add hover effects
         def on_enter(e):
@@ -142,9 +151,11 @@ class UIManager:
         y = (dialog.winfo_screenheight() // 2) - (height // 2)
         dialog.geometry(f'+{x}+{y}')
         
-        # Show dialog
+        # Show dialog and focus it
         dialog.deiconify()
         dialog.grab_set()
+        dialog.focus_force()  # Force focus to dialog window
+        dialog.lift()         # Ensure dialog is on top
         dialog.wait_window()
 
     def clear_search(self):

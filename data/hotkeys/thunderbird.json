@@ -1,0 +1,214 @@
+[
+  {
+    "name": "New message",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "New message alternative",
+    "hotkey": "ctrl+m"
+  },
+  {
+    "name": "Reply to Message (sender only)",
+    "hotkey": "ctrl+r"
+  },
+  {
+    "name": "Reply to All in Message (sender and all recipients)",
+    "hotkey": "ctrl+shift+r"
+  },
+  {
+    "name": "Reply to List",
+    "hotkey": "ctrl+shift+l"
+  },
+  {
+    "name": "Forward Message",
+    "hotkey": "ctrl+l"
+  },
+  {
+    "name": "Edit Message as New",
+    "hotkey": "ctrl+e"
+  },
+  {
+    "name": "Get New Messages for Current Account",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Get New Messages for All Accounts",
+    "hotkey": "shift+f5"
+  },
+  {
+    "name": "Open message (in new window or tab)",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "Open message in conversation",
+    "hotkey": "ctrl+shift+o"
+  },
+  {
+    "name": "Zoom In",
+    "hotkey": "ctrl++"
+  },
+  {
+    "name": "Zoom Out",
+    "hotkey": "ctrl+-"
+  },
+  {
+    "name": "Reset Zoom",
+    "hotkey": "ctrl+0"
+  },
+  {
+    "name": "Print message or selected message text",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Save Message as File",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "View Message Source",
+    "hotkey": "ctrl+u"
+  },
+  {
+    "name": "Select All (messages, text, or attachments)",
+    "hotkey": "ctrl+a"
+  },
+  {
+    "name": "Select Thread",
+    "hotkey": "ctrl+shift+a"
+  },
+  {
+    "name": "Copy selected text",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Cut selected search text",
+    "hotkey": "ctrl+x"
+  },
+  {
+    "name": "Paste text into search or filter fields",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Move/Copy message to previous target folder Again",
+    "hotkey": "ctrl+shift+m"
+  },
+  {
+    "name": "Undo",
+    "hotkey": "ctrl+z"
+  },
+  {
+    "name": "Redo",
+    "hotkey": "ctrl+y"
+  },
+  {
+    "name": "Rename Folder",
+    "hotkey": "f2"
+  },
+  {
+    "name": "Search All Messages",
+    "hotkey": "ctrl+k"
+  },
+  {
+    "name": "Quick Filter",
+    "hotkey": "ctrl+shift+k"
+  },
+  {
+    "name": "Search Messages (advanced search in folder)",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "Find Text in Current Message",
+    "hotkey": "ctrl+f"
+  },
+  {
+    "name": "Find Again in Current Message",
+    "hotkey": "ctrl+g"
+  },
+  {
+    "name": "Find Previous in Current Message",
+    "hotkey": "ctrl+shift+g"
+  },
+  {
+    "name": "Go to Mail Start Page",
+    "hotkey": "alt+home"
+  },
+  {
+    "name": "Scroll Down Current Message, then Go to Next Unread Message",
+    "hotkey": "space"
+  },
+  {
+    "name": "Next Tab",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Previous Tab",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Mail & Newsgroups Home Tab (Tab 1)",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Address Book",
+    "hotkey": "ctrl+shift+b"
+  },
+  {
+    "name": "Saved Files",
+    "hotkey": "ctrl+j"
+  },
+  {
+    "name": "Help",
+    "hotkey": "f1"
+  },
+  {
+    "name": "Developer Tools",
+    "hotkey": "ctrl+shift+i"
+  },
+  {
+    "name": "Toggle Message Pane",
+    "hotkey": "f8"
+  },
+  {
+    "name": "Minimize current window",
+    "hotkey": "win+↓"
+  },
+  {
+    "name": "Close window or tab",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Undo close tab",
+    "hotkey": "ctrl+shift+t"
+  },
+  {
+    "name": "Quit Thunderbird (Exit Application)",
+    "hotkey": "ctrl+q"
+  },
+  {
+    "name": "Save Draft",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Print Draft",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Send Message Now",
+    "hotkey": "ctrl+enter"
+  },
+  {
+    "name": "Send Message Later",
+    "hotkey": "ctrl+shift+enter"
+  },
+  {
+    "name": "Show or hide Today Pane",
+    "hotkey": "f11"
+  },
+  {
+    "name": "Calendar tab",
+    "hotkey": "ctrl+shift+c"
+  },
+  {
+    "name": "Tasks tab",
+    "hotkey": "ctrl+shift+d"
+  }
+]

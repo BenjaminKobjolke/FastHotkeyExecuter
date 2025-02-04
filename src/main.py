@@ -1,9 +1,9 @@
-import keyboard
 import sys
 import os
 from data.config_manager import ConfigManager
 from data.hotkey_loader import HotkeyLoader
 from hotkeys.hotkey_executor import HotkeyExecutor
+from hotkeys.hotkey_manager import HotkeyManager
 from process.process_manager import ProcessManager
 from gui.search_window import SearchWindow
 
@@ -31,9 +31,10 @@ def main():
             print("[ERROR] No toggle hotkey configured")
             sys.exit(1)
             
-        # Register toggle hotkey
+        # Initialize hotkey manager and register toggle hotkey
         print(f"[DEBUG] Registering toggle hotkey: {toggle_hotkey}")
-        keyboard.add_hotkey(toggle_hotkey, search_window.show)
+        hotkey_manager = HotkeyManager()
+        hotkey_manager.register_hotkey(toggle_hotkey, search_window.show)
         
         # Start main loop
         print("[DEBUG] Starting main loop")

@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Copy",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Cut",
+    "hotkey": "ctrl+x"
+  },
+  {
+    "name": "Paste",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Undo",
+    "hotkey": "ctrl+z"
+  },
+  {
+    "name": "Redo",
+    "hotkey": "ctrl+y"
+  },
+  {
+    "name": "Select All",
+    "hotkey": "ctrl+a"
+  },
+  {
+    "name": "Launch Find Dialog",
+    "hotkey": "ctrl+f"
+  },
+  {
+    "name": "Launch Find / Replace Dialog",
+    "hotkey": "ctrl+h"
+  },
+  {
+    "name": "Duplicate Current Line",
+    "hotkey": "ctrl+d"
+  },
+  {
+    "name": "Delete Current Line",
+    "hotkey": "ctrl+l"
+  },
+  {
+    "name": "Switch the current line position with the previous line position",
+    "hotkey": "ctrl+t"
+  },
+  {
+    "name": "Find Next",
+    "hotkey": "f3"
+  },
+  {
+    "name": "Find Previous",
+    "hotkey": "shift+f3"
+  },
+  {
+    "name": "Find in Files",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "Find (volatil) Next",
+    "hotkey": "ctrl+f3"
+  },
+  {
+    "name": "Find (volatil) Previous",
+    "hotkey": "ctrl+shift+f3"
+  },
+  {
+    "name": "Incremental Search",
+    "hotkey": "ctrl+shift+i"
+  },
+  {
+    "name": "Save File",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Save As",
+    "hotkey": "ctrl+alt+s"
+  },
+  {
+    "name": "Save All",
+    "hotkey": "ctrl+shift+s"
+  },
+  {
+    "name": "Open File",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "New File",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Toggle Bookmark",
+    "hotkey": "ctrl+f2"
+  },
+  {
+    "name": "Go To Next Bookmark",
+    "hotkey": "f2"
+  },
+  {
+    "name": "Go To Previous Bookmark",
+    "hotkey": "shift+f2"
+  },
+  {
+    "name": "Launch GoToLine Dialog",
+    "hotkey": "ctrl+g"
+  },
+  {
+    "name": "Close Current Document",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Column Mode Select",
+    "hotkey": "alt+shift+arrow keys or alt+left mouse click"
+  },
+  {
+    "name": "Launch Run Dialog",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Launch CallTip ListBox",
+    "hotkey": "ctrl+space"
+  },
+  {
+    "name": "Launch Word Completion ListBox",
+    "hotkey": "alt+space"
+  },
+  {
+    "name": "Insert Tabulation or Space (indent)",
+    "hotkey": "tab"
+  },
+  {
+    "name": "Remove Tabulation or Space (outdent)",
+    "hotkey": "shift+tab"
+  },
+  {
+    "name": "Zoom in/out",
+    "hotkey": "ctrl+(keypad+/keypad+) or ctrl+mouse wheel"
+  },
+  {
+    "name": "Restore the original size from zoom",
+    "hotkey": "ctrl+keypad/"
+  },
+  {
+    "name": "Toggle Full Screen Mode",
+    "hotkey": "f11"
+  },
+  {
+    "name": "Next Document",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Previous Document",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Move Current Line Up",
+    "hotkey": "ctrl+shift+up"
+  },
+  {
+    "name": "Move Current Line Down",
+    "hotkey": "ctrl+shift+down"
+  },
+  {
+    "name": "Collapse the Current Level",
+    "hotkey": "ctrl+alt+f"
+  },
+  {
+    "name": "Uncollapse the Current Level",
+    "hotkey": "ctrl+alt+shift+f"
+  },
+  {
+    "name": "Fold All",
+    "hotkey": "alt+0"
+  },
+  {
+    "name": "Collapse the Level (1~8)",
+    "hotkey": "alt+(1~8)"
+  },
+  {
+    "name": "Unfold All",
+    "hotkey": "alt+shift+0"
+  },
+  {
+    "name": "Uncollapse the Level (1~8)",
+    "hotkey": "alt+shift+(1~8)"
+  },
+  {
+    "name": "Delete to start of word",
+    "hotkey": "ctrl+backspace"
+  },
+  {
+    "name": "Delete to end of word",
+    "hotkey": "ctrl+delete"
+  },
+  {
+    "name": "Delete to start of line",
+    "hotkey": "ctrl+shift+backspace"
+  },
+  {
+    "name": "Delete to end of line",
+    "hotkey": "ctrl+shift+delete"
+  },
+  {
+    "name": "Convert to lower case",
+    "hotkey": "ctrl+u"
+  },
+  {
+    "name": "Convert to UPPER CASE",
+    "hotkey": "ctrl+shift+u"
+  },
+  {
+    "name": "Go to matching brace",
+    "hotkey": "ctrl+b"
+  },
+  {
+    "name": "Start to record /Stop recording the macro",
+    "hotkey": "ctrl+shift+r"
+  },
+  {
+    "name": "Play recorded macro",
+    "hotkey": "ctrl+shift+p"
+  },
+  {
+    "name": "Block comment/uncomment",
+    "hotkey": "ctrl+q"
+  },
+  {
+    "name": "Stream comment",
+    "hotkey": "ctrl+shift+q"
+  },
+  {
+    "name": "Copy current line to clipboard",
+    "hotkey": "ctrl+shift+t"
+  },
+  {
+    "name": "Print",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Exit",
+    "hotkey": "alt+f4"
+  },
+  {
+    "name": "Split Lines",
+    "hotkey": "ctrl+i"
+  },
+  {
+    "name": "Join Lines",
+    "hotkey": "ctrl+j"
+  },
+  {
+    "name": "Text Direction RTL",
+    "hotkey": "ctrl+alt+r"
+  },
+  {
+    "name": "Text Direction LTR",
+    "hotkey": "ctrl+alt+l"
+  },
+  {
+    "name": "About",
+    "hotkey": "f1"
+  }
+]

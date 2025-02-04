@@ -1,6 +1,8 @@
 import keyboard
 import mouse
 import time
+import win32gui
+import win32con
 
 class HotkeyExecutor:
     def __init__(self):
@@ -10,16 +12,61 @@ class HotkeyExecutor:
             'wheeldown': -1   # Negative for scroll down
         }
         
+    def _validate_keys(self, keys):
+        """Validate that all keys in the combination are valid keyboard keys."""
+        # Create set of valid keys
+        valid_keys = keyboard.all_modifiers.union({
+            'esc', 'enter', 'tab', 'space', 'backspace', 'delete',
+            'up', 'down', 'left', 'right', 'home', 'end', 'pageup', 'pagedown',
+            'insert', '+', '-', '*', '/', '='
+        })
+        
+        # Add letters
+        valid_keys.update(chr(i) for i in range(ord('a'), ord('z') + 1))
+        
+        # Add numbers
+        valid_keys.update(str(i) for i in range(10))
+        
+        # Add function keys
+        valid_keys.update(f'f{i}' for i in range(1, 13))
+
+        for key in keys:
+            key = key.lower()
+            if key not in valid_keys:
+                raise ValueError(f"Invalid key: {key}")
+        return True
+
     def execute_hotkey(self, hotkey_data):
         """Execute a hotkey by simulating key presses."""
         try:
+            if not isinstance(hotkey_data, dict) or 'hotkey' not in hotkey_data:
+                raise ValueError("Invalid hotkey data format")
+
             # Get the hotkey combination
             hotkey = hotkey_data['hotkey'].lower()
             print(f"[DEBUG] Executing hotkey: {hotkey}")
             
-            # Split into individual keys
-            keys = hotkey.split('+')
-            keys = [key.strip() for key in keys]
+            # Split and handle special case for '+' key
+            if '++' in hotkey:
+                # Handle ctrl++ case
+                parts = hotkey.split('++')
+                keys = parts[0].split('+') + ['+']  # Add '+' as the final key
+            else:
+                # Normal case
+                keys = hotkey.split('+')
+            
+            # Clean up keys and filter out empty strings
+            keys = [key.strip() for key in keys if key.strip()]
+            
+            # Validate keys before execution
+            try:
+                self._validate_keys(keys)
+            except ValueError as e:
+                print(f"[DEBUG] Invalid hotkey combination: {e}")
+                return
+            
+            # Get the foreground window
+            foreground_window = win32gui.GetForegroundWindow()
             
             # Check if last key is a mouse wheel action
             last_key = keys[-1]
@@ -56,6 +103,9 @@ class HotkeyExecutor:
                 for key in reversed(modifiers):
                     keyboard.release(key)
                     time.sleep(0.05)
+            
+            # Restore our window as foreground
+            win32gui.SetForegroundWindow(foreground_window)
                 
             print("[DEBUG] Hotkey executed successfully")
             

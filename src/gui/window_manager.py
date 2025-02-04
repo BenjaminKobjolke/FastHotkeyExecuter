@@ -88,4 +88,8 @@ class WindowManager:
     def update_size(self, height):
         """Update window height while maintaining width."""
         settings = self.config_manager.get_window_settings()
-        self.window.geometry(f"{settings['width']}x{height}")
+        # Only update if the new height is larger than the configured base height
+        if height > settings['height']:
+            self.window.geometry(f"{settings['width']}x{height}")
+        else:
+            self.window.geometry(f"{settings['width']}x{settings['height']}")

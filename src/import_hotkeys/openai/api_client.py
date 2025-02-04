@@ -45,6 +45,9 @@ class OpenAIClient:
                             "shortcut) properties. Format hotkeys using lowercase with '+' "
                             "between keys (e.g., 'ctrl+shift+p'). Include only Windows "
                             "shortcuts."
+                            "Split infos about hotkeys into separate hotkeys in the json."
+                            "Example 'Jump to a specific tab	Ctrl + 1 through Ctrl + 8'."
+                            "Should be split into 8 separate hotkeys."
                         )
                     },
                     {

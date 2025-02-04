@@ -20,12 +20,16 @@
     "hotkey": "ctrl+tab"
   },
   {
+    "name": "Jump to the next open tab",
+    "hotkey": "ctrl+pgdn"
+  },
+  {
     "name": "Jump to the previous open tab",
     "hotkey": "ctrl+shift+tab"
   },
   {
-    "name": "Jump to a specific tab",
-    "hotkey": "ctrl+1 through ctrl+8"
+    "name": "Jump to the previous open tab",
+    "hotkey": "ctrl+pgup"
   },
   {
     "name": "Jump to the rightmost tab",
@@ -48,28 +52,52 @@
     "hotkey": "ctrl+w"
   },
   {
+    "name": "Close the current tab",
+    "hotkey": "ctrl+f4"
+  },
+  {
     "name": "Close the current window",
     "hotkey": "ctrl+shift+w"
   },
   {
+    "name": "Close the current window",
+    "hotkey": "alt+f4"
+  },
+  {
     "name": "Minimize the current window",
-    "hotkey": "alt+space, then n"
+    "hotkey": "alt+space+n"
   },
   {
     "name": "Maximize the current window",
-    "hotkey": "alt+space, then x"
+    "hotkey": "alt+space+x"
   },
   {
     "name": "Quit Google Chrome",
-    "hotkey": "alt+f, then x"
+    "hotkey": "alt+f+x"
+  },
+  {
+    "name": "Move tabs right",
+    "hotkey": "ctrl+shift+pgup"
+  },
+  {
+    "name": "Move tabs left",
+    "hotkey": "ctrl+shift+pgdn"
   },
   {
     "name": "Turn on full-screen mode",
     "hotkey": "f11"
   },
   {
+    "name": "Turn off full-screen mode",
+    "hotkey": "f11"
+  },
+  {
     "name": "Open the Chrome menu",
     "hotkey": "alt+f"
+  },
+  {
+    "name": "Open the Chrome menu",
+    "hotkey": "alt+e"
   },
   {
     "name": "Show or hide the Bookmarks bar",
@@ -92,8 +120,24 @@
     "hotkey": "shift+esc"
   },
   {
+    "name": "Set focus on the first item in the Chrome toolbar",
+    "hotkey": "shift+alt+t"
+  },
+  {
+    "name": "Set focus on the rightmost item in the Chrome toolbar",
+    "hotkey": "f10"
+  },
+  {
+    "name": "Switch focus to unfocused dialog (if showing) and all toolbars",
+    "hotkey": "f6"
+  },
+  {
     "name": "Open the Find Bar to search the current page",
     "hotkey": "ctrl+f"
+  },
+  {
+    "name": "Open the Find Bar to search the current page",
+    "hotkey": "f3"
   },
   {
     "name": "Jump to the next match to your Find Bar search",
@@ -108,6 +152,66 @@
     "hotkey": "ctrl+shift+j"
   },
   {
+    "name": "Open Developer Tools",
+    "hotkey": "f12"
+  },
+  {
+    "name": "Open the Delete Browsing Data options",
+    "hotkey": "ctrl+shift+delete"
+  },
+  {
+    "name": "Open the Chrome Help Center in a new tab",
+    "hotkey": "f1"
+  },
+  {
+    "name": "Log in a different user or browse as a Guest",
+    "hotkey": "ctrl+shift+m"
+  },
+  {
+    "name": "Open a feedback form",
+    "hotkey": "alt+shift+i"
+  },
+  {
+    "name": "Turn on caret browsing",
+    "hotkey": "f7"
+  },
+  {
+    "name": "Skip to web contents",
+    "hotkey": "ctrl+f6"
+  },
+  {
+    "name": "Focus on inactive dialogs",
+    "hotkey": "alt+shift+a"
+  },
+  {
+    "name": "Jump to the address bar",
+    "hotkey": "ctrl+l"
+  },
+  {
+    "name": "Jump to the address bar",
+    "hotkey": "alt+d"
+  },
+  {
+    "name": "Jump to the address bar",
+    "hotkey": "f6"
+  },
+  {
+    "name": "Search from anywhere on the page",
+    "hotkey": "ctrl+k"
+  },
+  {
+    "name": "Search from anywhere on the page",
+    "hotkey": "ctrl+e"
+  },
+  {
+    "name": "Remove predictions from your address bar",
+    "hotkey": "down arrow+shift+delete"
+  },
+  {
+    "name": "Move cursor to the address bar",
+    "hotkey": "ctrl+f5"
+  },
+  {
     "name": "Open options to print the current page",
     "hotkey": "ctrl+p"
   },
@@ -117,7 +221,15 @@
   },
   {
     "name": "Reload the current page",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Reload the current page",
     "hotkey": "ctrl+r"
+  },
+  {
+    "name": "Reload the current page, ignoring cached content",
+    "hotkey": "shift+f5"
   },
   {
     "name": "Reload the current page, ignoring cached content",
@@ -128,8 +240,20 @@
     "hotkey": "esc"
   },
   {
+    "name": "Browse clickable items moving forward",
+    "hotkey": "tab"
+  },
+  {
+    "name": "Browse clickable items moving backward",
+    "hotkey": "shift+tab"
+  },
+  {
     "name": "Open a file from your computer in Chrome",
-    "hotkey": "ctrl+o"
+    "hotkey": "ctrl+o+select a file"
+  },
+  {
+    "name": "Display non-editable HTML source code for the current page",
+    "hotkey": "ctrl+u"
   },
   {
     "name": "Save your current webpage as a bookmark",
@@ -156,19 +280,75 @@
     "hotkey": "space"
   },
   {
+    "name": "Scroll down a webpage, a screen at a time",
+    "hotkey": "pgdn"
+  },
+  {
     "name": "Scroll up a webpage, a screen at a time",
     "hotkey": "shift+space"
   },
   {
-    "name": "Jump to the address bar",
-    "hotkey": "ctrl+l"
+    "name": "Scroll up a webpage, a screen at a time",
+    "hotkey": "pgup"
   },
   {
-    "name": "Switch focus to unfocused dialog (if showing) and all toolbar",
-    "hotkey": "f6"
+    "name": "Go to the top of the page",
+    "hotkey": "home"
   },
   {
-    "name": "Open the Delete Browsing Data options",
-    "hotkey": "ctrl+shift+delete"
+    "name": "Go to the bottom of the page",
+    "hotkey": "end"
+  },
+  {
+    "name": "Scroll horizontally on the page",
+    "hotkey": "shift+wheel"
+  },
+  {
+    "name": "Move your cursor to the beginning of the previous word in a text field",
+    "hotkey": "ctrl+left arrow"
+  },
+  {
+    "name": "Move your cursor to the next word",
+    "hotkey": "ctrl+right arrow"
+  },
+  {
+    "name": "Delete the previous word in a text field",
+    "hotkey": "ctrl+backspace"
+  },
+  {
+    "name": "Open the Home page in the current tab",
+    "hotkey": "alt+home"
+  },
+  {
+    "name": "Jump to a specific tab (1 through 8)",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Jump to a specific tab (2)",
+    "hotkey": "ctrl+2"
+  },
+  {
+    "name": "Jump to a specific tab (3)",
+    "hotkey": "ctrl+3"
+  },
+  {
+    "name": "Jump to a specific tab (4)",
+    "hotkey": "ctrl+4"
+  },
+  {
+    "name": "Jump to a specific tab (5)",
+    "hotkey": "ctrl+5"
+  },
+  {
+    "name": "Jump to a specific tab (6)",
+    "hotkey": "ctrl+6"
+  },
+  {
+    "name": "Jump to a specific tab (7)",
+    "hotkey": "ctrl+7"
+  },
+  {
+    "name": "Jump to a specific tab (8)",
+    "hotkey": "ctrl+8"
   }
 ]
