@@ -1,0 +1,42 @@
+[
+  {
+    "name": "New Note",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Search Notes",
+    "hotkey": "ctrl+q"
+  },
+  {
+    "name": "Switch to List View",
+    "hotkey": "ctrl+alt+1"
+  },
+  {
+    "name": "Switch to Card View",
+    "hotkey": "ctrl+alt+2"
+  },
+  {
+    "name": "Switch to Snippet View",
+    "hotkey": "ctrl+alt+3"
+  },
+  {
+    "name": "Show Shortcuts",
+    "hotkey": "ctrl+/"
+  },
+  {
+    "name": "New Chat",
+    "hotkey": "ctrl+shift+h"
+  },
+  {
+    "name": "Focus Note List",
+    "hotkey": "alt+1"
+  },
+  {
+    "name": "Focus Note Editor",
+    "hotkey": "alt+2"
+  },
+  {
+    "name": "Toggle Sidebar",
+    "hotkey": "f10"
+  }
+]
