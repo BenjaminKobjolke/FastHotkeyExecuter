@@ -1,8 +1,9 @@
 """Module for writing hotkey data to JSON files."""
 
 import json
+from datetime import datetime
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 
 class JsonWriter:
@@ -18,7 +19,7 @@ class JsonWriter:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def save_hotkeys(self, name: str, hotkeys: List[Dict[str, str]], filename: str = "default") -> str:
+    def save_hotkeys(self, name: str, hotkeys: List[Dict[str, str]], filename: str = "default", url: Optional[str] = None) -> str:
         """Save hotkeys to a JSON file in the application's directory.
 
         Args:
@@ -26,6 +27,7 @@ class JsonWriter:
             hotkeys (List[Dict[str, str]]): List of hotkey dictionaries to save.
                 Each dictionary should have 'name' and 'hotkey' keys.
             filename (str, optional): Name of the JSON file. Defaults to "default".
+            url (Optional[str], optional): Source URL of the hotkeys. Defaults to None.
 
         Returns:
             str: Path to the saved JSON file.
@@ -46,9 +48,18 @@ class JsonWriter:
             # Ensure the data is properly formatted
             validated_hotkeys = self._validate_hotkeys(hotkeys)
 
+            # Create the JSON structure with metadata
+            data = {
+                "metadata": {
+                    "url": url,
+                    "timestamp": datetime.now().isoformat()
+                },
+                "hotkeys": validated_hotkeys
+            }
+
             # Write the JSON file with proper formatting
             with open(output_path, 'w', encoding='utf-8') as f:
-                json.dump(validated_hotkeys, f, indent=2, ensure_ascii=False)
+                json.dump(data, f, indent=2, ensure_ascii=False)
 
             return str(output_path)
 

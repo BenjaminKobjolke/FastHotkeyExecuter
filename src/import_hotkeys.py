@@ -130,9 +130,9 @@ def main() -> None:
         prompt = prompt_builder.build_extraction_prompt(cleaned_content)
         hotkeys = openai_client.extract_hotkeys(prompt, args.name)
 
-        # Save results
+        # Save results with metadata
         print("Saving hotkeys")
-        output_path = json_writer.save_hotkeys(args.name, hotkeys, filename=filename)
+        output_path = json_writer.save_hotkeys(args.name, hotkeys, filename=filename, url=args.url)
         print(f"Hotkeys saved to: {output_path}")
 
     except KeyboardInterrupt:

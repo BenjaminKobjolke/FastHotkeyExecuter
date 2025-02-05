@@ -32,13 +32,18 @@ class HotkeyLoader:
             for json_file in json_files:
                 try:
                     with open(json_file, 'r', encoding='utf-8') as f:
-                        hotkeys = json.load(f)
+                        data = json.load(f)
+                        # Handle both old format (array) and new format (object with metadata)
+                        hotkeys = data['hotkeys'] if isinstance(data, dict) and 'hotkeys' in data else data
+                        
                         if isinstance(hotkeys, list):
                             for hotkey in hotkeys:
                                 # Only add if this hotkey combination hasn't been seen
                                 if 'hotkey' in hotkey and hotkey['hotkey'] not in seen_hotkeys:
                                     seen_hotkeys.add(hotkey['hotkey'])
                                     all_hotkeys.append(hotkey)
+                        else:
+                            print(f"[DEBUG] Invalid hotkey format in {json_file}")
                 except json.JSONDecodeError as e:
                     print(f"[DEBUG] Error parsing hotkey file {json_file}: {e}")
                     continue
