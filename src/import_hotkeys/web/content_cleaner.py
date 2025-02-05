@@ -14,16 +14,20 @@ class ContentCleaner:
         self.tmp_dir = Path('tmp/html')
         self.tmp_dir.mkdir(parents=True, exist_ok=True)
 
-    def save_html(self, html: str, name: str) -> None:
+    def save_html(self, html: str, name: str, filename: str = None) -> None:
         """Save HTML content to tmp/html directory.
         
         Args:
             html (str): The HTML content to save
-            name (str): The name to use for the file
+            name (str): The name of the application
+            filename (str, optional): Additional identifier for the file name
         """
-        # Clean filename and save HTML
+        # Clean names for filename
         clean_name = name.lower().replace(' ', '_')
-        html_path = self.tmp_dir / f"{clean_name}.html"
+        clean_filename = filename.lower().replace(' ', '_') if filename else ""
+        
+        # Save HTML in tmp directory
+        html_path = self.tmp_dir / f"{clean_name}_{clean_filename}_source.html" if clean_filename else self.tmp_dir / f"{clean_name}_source.html"
         html_path.write_text(html, encoding='utf-8')
         print(f"Saved HTML content to: {html_path}")
 

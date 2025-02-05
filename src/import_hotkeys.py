@@ -26,11 +26,15 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument(
         '--name',
-        help='Name of the application (used for output filename)'
+        help='Name of the application (used for directory name)'
     )
     parser.add_argument(
         '--url',
         help='URL of the webpage containing hotkeys'
+    )
+    parser.add_argument(
+        '--filename',
+        help='Name for the output JSON file (defaults to app name)'
     )
     
     # Parse known args first to handle optional arguments
@@ -50,6 +54,41 @@ def main() -> None:
     try:
         # Parse command line arguments
         args = parse_arguments()
+        
+        # Construct output path and check for file existence early
+        app_dir = Path('data/hotkeys') / args.name
+        app_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Always use app name as the base filename
+        filename = args.name
+        
+        # If filename argument is provided, append it to the app name
+        if args.filename:
+            filename = f"{args.name}-{args.filename}"
+            
+        while True:
+            output_path = app_dir / f"{filename}.json"
+            if output_path.exists():
+                if args.filename:
+                    # If user provided a filename and it exists, ask to override or exit
+                    response = input(f"File {output_path} already exists. Override? (y/n): ").strip()
+                    if not response or response.lower() != 'y':
+                        print("Operation cancelled")
+                        sys.exit(0)
+                    break
+                else:
+                    # If no filename was provided and default exists, ask to override or provide new name
+                    response = input(f"File {output_path} already exists. Override? (y/n): ").strip()
+                    if response.lower() == 'y':
+                        break
+                    new_filename = input("Enter new filename (without .json): ").strip()
+                    if new_filename:
+                        filename = new_filename
+                    else:
+                        print("Operation cancelled")
+                        sys.exit(0)
+            else:
+                break
 
         # Initialize components
         config_loader = ConfigLoader()
@@ -75,8 +114,8 @@ def main() -> None:
             print("Warning: Failed to fetch webpage content")
             sys.exit(1)
         
-        # Save raw HTML content
-        cleaner.save_html(result['text'], args.name)
+        # Save raw HTML content with the same filename identifier
+        cleaner.save_html(result['text'], args.name, filename)
         
         # Create BeautifulSoup object from the HTML text
         soup = BeautifulSoup(result['text'], 'html.parser')
@@ -97,7 +136,7 @@ def main() -> None:
 
         # Save results
         print("Saving hotkeys")
-        output_path = json_writer.save_hotkeys(args.name, hotkeys)
+        output_path = json_writer.save_hotkeys(args.name, hotkeys, filename=filename)
         print(f"Hotkeys saved to: {output_path}")
 
     except KeyboardInterrupt:

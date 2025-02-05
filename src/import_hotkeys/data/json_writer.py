@@ -18,13 +18,14 @@ class JsonWriter:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def save_hotkeys(self, name: str, hotkeys: List[Dict[str, str]]) -> str:
-        """Save hotkeys to a JSON file.
+    def save_hotkeys(self, name: str, hotkeys: List[Dict[str, str]], filename: str = "default") -> str:
+        """Save hotkeys to a JSON file in the application's directory.
 
         Args:
-            name (str): Name of the application (used for filename).
+            name (str): Name of the application (used for directory name).
             hotkeys (List[Dict[str, str]]): List of hotkey dictionaries to save.
                 Each dictionary should have 'name' and 'hotkey' keys.
+            filename (str, optional): Name of the JSON file. Defaults to "default".
 
         Returns:
             str: Path to the saved JSON file.
@@ -33,9 +34,14 @@ class JsonWriter:
             Exception: If failed to write the JSON file.
         """
         try:
-            # Clean the filename
+            # Clean the app name for directory
             clean_name = self._clean_filename(name)
-            output_path = self.output_dir / f"{clean_name}.json"
+            app_dir = self.output_dir / clean_name
+            app_dir.mkdir(parents=True, exist_ok=True)
+
+            # Clean the filename and create full path
+            clean_filename = self._clean_filename(filename)
+            output_path = app_dir / f"{clean_filename}.json"
 
             # Ensure the data is properly formatted
             validated_hotkeys = self._validate_hotkeys(hotkeys)

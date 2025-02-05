@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Switch to the next tab",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Switch to the previous tab",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Switch to tab 1",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Switch to tab 2",
+    "hotkey": "ctrl+2"
+  },
+  {
+    "name": "Switch to tab 3",
+    "hotkey": "ctrl+3"
+  },
+  {
+    "name": "Switch to tab 4",
+    "hotkey": "ctrl+4"
+  },
+  {
+    "name": "Switch to tab 5",
+    "hotkey": "ctrl+5"
+  },
+  {
+    "name": "Switch to tab 6",
+    "hotkey": "ctrl+6"
+  },
+  {
+    "name": "Switch to tab 7",
+    "hotkey": "ctrl+7"
+  },
+  {
+    "name": "Switch to tab 8",
+    "hotkey": "ctrl+8"
+  },
+  {
+    "name": "Open a new tab",
+    "hotkey": "ctrl+t"
+  },
+  {
+    "name": "Open a new window",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Close the current tab",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Reopen a closed tab",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Close the current window",
+    "hotkey": "ctrl+shift+w"
+  },
+  {
+    "name": "Open an incognito window",
+    "hotkey": "ctrl+shift+n"
+  },
+  {
+    "name": "Move the current tab to the left",
+    "hotkey": "ctrl+shift+page up"
+  },
+  {
+    "name": "Move the current tab to the right",
+    "hotkey": "ctrl+shift+page down"
+  },
+  {
+    "name": "Go back to the previous web page",
+    "hotkey": "alt+left"
+  },
+  {
+    "name": "Go forward to the next web page",
+    "hotkey": "alt+right"
+  },
+  {
+    "name": "Scroll down",
+    "hotkey": "page down"
+  },
+  {
+    "name": "Scroll up",
+    "hotkey": "page up"
+  },
+  {
+    "name": "Open a link in a new tab",
+    "hotkey": "ctrl+click"
+  },
+  {
+    "name": "Open a link in a new tab and switch to the new tab",
+    "hotkey": "ctrl+shift+click"
+  },
+  {
+    "name": "Open a link in a new window",
+    "hotkey": "shift+click"
+  }
+]

@@ -1,5 +1,6 @@
 import os
 import json
+from pathlib import Path
 
 class HotkeyLoader:
     def __init__(self, data_dir='data/hotkeys'):
@@ -14,26 +15,32 @@ class HotkeyLoader:
             if app_name in self.hotkey_cache:
                 return self.hotkey_cache[app_name]
                 
-            # Construct json file path
-            json_path = os.path.join(self.data_dir, f"{app_name}.json")
+            # Construct app directory path
+            app_dir = os.path.join(self.data_dir, app_name)
             
-            # Check if file exists
-            if not os.path.exists(json_path):
-                print(f"[DEBUG] No hotkey file found for {app_name}")
+            # Check if directory exists
+            if not os.path.exists(app_dir):
+                print(f"[DEBUG] No hotkey directory found for {app_name}")
                 self.hotkey_cache[app_name] = []  # Cache empty result
                 return []
-                
-            # Load and parse json file
-            try:
-                with open(json_path, 'r', encoding='utf-8') as f:
-                    hotkeys = json.load(f)
-                print(f"[DEBUG] Loaded {len(hotkeys)} hotkeys for {app_name}")
-                self.hotkey_cache[app_name] = hotkeys  # Cache results
-                return hotkeys
-            except json.JSONDecodeError as e:
-                print(f"[DEBUG] Error parsing hotkey file for {app_name}: {e}")
-                self.hotkey_cache[app_name] = []  # Cache empty result
-                return []
+            
+            # Load and combine all JSON files in the app directory
+            all_hotkeys = []
+            json_files = Path(app_dir).glob('*.json')
+            
+            for json_file in json_files:
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        hotkeys = json.load(f)
+                        if isinstance(hotkeys, list):
+                            all_hotkeys.extend(hotkeys)
+                except json.JSONDecodeError as e:
+                    print(f"[DEBUG] Error parsing hotkey file {json_file}: {e}")
+                    continue
+            
+            print(f"[DEBUG] Loaded {len(all_hotkeys)} total hotkeys for {app_name}")
+            self.hotkey_cache[app_name] = all_hotkeys  # Cache results
+            return all_hotkeys
                 
         except Exception as e:
             print(f"[DEBUG] Error loading hotkeys: {e}")
