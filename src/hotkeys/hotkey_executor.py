@@ -12,6 +12,17 @@ class HotkeyExecutor:
             'wheelup': 1,     # Positive for scroll up
             'wheeldown': -1   # Negative for scroll down
         }
+        self.abort_sequence = False
+        self._setup_abort_listeners()
+        
+    def _setup_abort_listeners(self):
+        """Setup keyboard listeners for sequence abort."""
+        keyboard.on_press_key('esc', self._abort_sequence_callback)
+        
+    def _abort_sequence_callback(self, e):
+        """Callback for abort key press."""
+        self.abort_sequence = True
+        print("[DEBUG] Sequence execution aborted")
         
     def _validate_keys(self, keys):
         """Validate that all keys in the combination are valid keyboard keys."""
@@ -26,12 +37,61 @@ class HotkeyExecutor:
     def execute_hotkey(self, hotkey_data):
         """Execute a hotkey by simulating key presses."""
         try:
-            if not isinstance(hotkey_data, dict) or 'hotkey' not in hotkey_data:
+            if not isinstance(hotkey_data, dict):
                 raise ValueError("Invalid hotkey data format")
 
-            # Get the hotkey combination
+            # Handle new format with array of actions
+            if 'hotkeys' in hotkey_data:
+                print(f"[DEBUG] Executing hotkey sequence for: {hotkey_data['name']}")
+                # Reset abort flag at start of sequence
+                self.abort_sequence = False
+                
+                # Setup abort listener for the main hotkey if it exists
+                main_hotkey = hotkey_data['hotkeys'][0].get('hotkey')
+                if main_hotkey:
+                    # Split the hotkey into individual keys
+                    keys = main_hotkey.lower().split('+')
+                    # Create a hotkey combination for abort
+                    keyboard.add_hotkey('+'.join(keys), self._abort_sequence_callback)
+                
+                try:
+                    for action in hotkey_data['hotkeys']:
+                        if self.abort_sequence:
+                            print("[DEBUG] Sequence aborted by user")
+                            break
+                            
+                        if 'sleep' in action:
+                            time.sleep(action['sleep'] / 1000)  # Convert milliseconds to seconds
+                            continue
+                        
+                        if 'hotkey' not in action:
+                            continue
+
+                        # Execute single hotkey
+                        self._execute_single_hotkey(action['hotkey'].lower())
+                finally:
+                    # Remove the main hotkey listener if it was set
+                    if main_hotkey:
+                        keyboard.remove_hotkey('+'.join(keys))
+                    # Reset abort flag after sequence
+                    self.abort_sequence = False
+                return
+
+            # Handle old format with single hotkey
+            if 'hotkey' not in hotkey_data:
+                raise ValueError("Invalid hotkey data format - missing hotkey")
+
+            # Execute single hotkey
             hotkey = hotkey_data['hotkey'].lower()
             print(f"[DEBUG] Executing hotkey: {hotkey}")
+            self._execute_single_hotkey(hotkey)
+
+        except Exception as e:
+            print(f"[DEBUG] Error executing hotkey: {e}")
+
+    def _execute_single_hotkey(self, hotkey):
+        """Execute a single hotkey combination."""
+        try:
             
             # Split and handle special case for '+' key
             if '++' in hotkey:

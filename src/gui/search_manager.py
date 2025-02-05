@@ -124,7 +124,8 @@ class SearchManager:
                     self.exit_callback()
             else:
                 selected_hotkey = self.current_results[index]
-                print(f"[DEBUG] Executing hotkey: {selected_hotkey['name']} ({selected_hotkey['hotkey']})")
+                hotkey_desc = selected_hotkey['hotkey'] if 'hotkey' in selected_hotkey else 'sequence'
+                print(f"[DEBUG] Executing hotkey: {selected_hotkey['name']} ({hotkey_desc})")
                 self.window_manager.hide()
                 self.hotkey_executor.execute_hotkey(selected_hotkey)
 

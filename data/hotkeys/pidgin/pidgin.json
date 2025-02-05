@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "url": "",
+    "timestamp": "2025-02-05T08:36:16.444057"
+  },
+  "hotkeys": [
+    {
+      "name": "Activate / deactivate account",
+      "hotkeys": [
+		{
+			"hotkey": "alt+e"
+		},
+		{
+			"sleep": 100
+		},
+		{
+			"hotkey": "left"
+		},
+		{
+			"sleep": 100
+		},
+		{
+			"hotkey": "down"
+		},
+		{
+			"sleep": 100
+		},		
+		{
+			"sleep": 100
+		},
+		{
+			"hotkey": "right"
+		},
+		{
+			"sleep": 100
+		},
+		{
+			"hotkey": "up"
+		},
+		{
+			"sleep": 100
+		},
+		{
+			"hotkey": "enter"
+		}
+	  ]
+    }
+  ]
+}

@@ -60,8 +60,10 @@ class UIManager:
         
         if results:
             for result in results:
-                # Check if it's a hotkey (has 'hotkey' field) or a command
-                if 'hotkey' in result:
+                # Check if it's a hotkey sequence, single hotkey, or command
+                if 'hotkeys' in result:
+                    self.results_listbox.insert(tk.END, f"{result['name']} (sequence)")
+                elif 'hotkey' in result:
                     self.results_listbox.insert(tk.END, f"{result['name']} ({result['hotkey']})")
                 else:
                     self.results_listbox.insert(tk.END, result['name'])

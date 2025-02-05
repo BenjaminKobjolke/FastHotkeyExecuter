@@ -38,8 +38,11 @@ class HotkeyLoader:
                         
                         if isinstance(hotkeys, list):
                             for hotkey in hotkeys:
-                                # Only add if this hotkey combination hasn't been seen
-                                if 'hotkey' in hotkey and hotkey['hotkey'] not in seen_hotkeys:
+                                # Handle new format with array of actions
+                                if 'hotkeys' in hotkey:
+                                    all_hotkeys.append(hotkey)
+                                # Handle old format with single hotkey
+                                elif 'hotkey' in hotkey and hotkey['hotkey'] not in seen_hotkeys:
                                     seen_hotkeys.add(hotkey['hotkey'])
                                     all_hotkeys.append(hotkey)
                         else:
