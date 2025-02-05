@@ -68,16 +68,13 @@ class WindowManager:
 
     def hide(self):
         """Hide the search window."""
-        print("[DEBUG] Hiding search window")
         self.window.withdraw()
         self.window.update()
         time.sleep(0.1)
-        print("[DEBUG] Search window hidden")
         self.current_app = None
 
     def handle_focus_loss(self):
         """Handle window focus loss by hiding the window."""
-        print("[DEBUG] Window lost focus, hiding window")
         self.hide()
         return 'break'
 

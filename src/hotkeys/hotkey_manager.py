@@ -41,7 +41,6 @@ class HotkeyManager:
             # For single key (like F1)
             if len(keys) == 1:
                 try:
-                    print(f"[DEBUG] Binding single key: {keys[0]}")
                     handler = lambda e: self._handle_callback(callback)
                     keyboard.on_press_key(keys[0], handler, suppress=True)
                     self.registered_handlers[hotkey] = handler

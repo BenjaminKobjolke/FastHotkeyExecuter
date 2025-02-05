@@ -30,7 +30,6 @@ class ProcessManager:
                 process_name = process.name().lower()
                 # Remove extension
                 process_name = os.path.splitext(process_name)[0]
-                print(f"[DEBUG] Active window process: {process_name}")
                 return process_name
             except (psutil.NoSuchProcess, psutil.AccessDenied):
                 print("[DEBUG] Could not access process")
@@ -55,7 +54,6 @@ class ProcessManager:
                 width = right - left
                 height = bottom - top
                 
-                print(f"[DEBUG] Window position: x={left}, y={top}, width={width}, height={height}")
                 return {
                     'x': left,
                     'y': top,

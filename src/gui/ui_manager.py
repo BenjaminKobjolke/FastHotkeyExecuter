@@ -60,7 +60,11 @@ class UIManager:
         
         if results:
             for result in results:
-                self.results_listbox.insert(tk.END, f"{result['name']} ({result['hotkey']})")
+                # Check if it's a hotkey (has 'hotkey' field) or a command
+                if 'hotkey' in result:
+                    self.results_listbox.insert(tk.END, f"{result['name']} ({result['hotkey']})")
+                else:
+                    self.results_listbox.insert(tk.END, result['name'])
             list_height = min(5, len(results))
             self.results_listbox.configure(height=list_height)
             # Calculate total height based on base height plus additional space for results

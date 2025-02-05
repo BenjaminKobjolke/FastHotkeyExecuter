@@ -1,12 +1,15 @@
 import tkinter as tk
+import sys
 from .window_manager import WindowManager
 from .theme_manager import ThemeManager
 from .event_manager import EventManager
 from .ui_manager import UIManager
 from .search_manager import SearchManager
+from .internal_command_manager import InternalCommandManager
 
 class SearchWindow:
     def __init__(self, config_manager, process_manager, hotkey_loader, hotkey_executor):
+        self.internal_command_manager = InternalCommandManager()
         # Configure global theme settings before creating root window
         root = tk.Tk()
         root.withdraw()
@@ -34,7 +37,9 @@ class SearchWindow:
             self.ui_manager,
             self.event_manager,
             self.window_manager,
-            hotkey_executor
+            hotkey_executor,
+            self.internal_command_manager,
+            self.exit_application
         )
         
         # Bind focus loss to window manager
@@ -53,6 +58,11 @@ class SearchWindow:
     def _on_hotkey_selected(self, index):
         """Handle hotkey selection."""
         self.search_manager.execute_selected_hotkey(index)
+
+    def exit_application(self):
+        """Exit the application."""
+        self.window_manager.window.quit()
+        sys.exit(0)
 
     def run(self):
         """Start the window's main loop."""

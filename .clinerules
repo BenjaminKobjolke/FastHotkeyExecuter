@@ -5,7 +5,6 @@ Shell
 You have a windows powershell to exectute commands.
 Powershell does not support && to combine commands.
 
-
 Entry Point
 Use main.py for argument parsing and overall flow.
 
@@ -30,15 +29,17 @@ Use the latest stable versions for new features and fixes.
 Execution
 
 In main.py, parse arguments (if needed) and invoke core functions.
-Use if __name__ == "__main__": for direct script execution.
+Use if **name** == "**main**": for direct script execution.
 Use Virtual Environments
 
 Create a venv (python -m venv venv) to isolate dependencies.
 Activate it and install requirements (venv\Scripts\activate && pip install -r requirements.txt).
-Implement Logging
 
+Implement Logging
 Employ Python’s logging module with various log levels (e.g., INFO, WARNING, ERROR).
 Adopt Exception Handling
+
+Always use a logging class, do not use print statements directly.
 
 Handle errors gracefully, with clear messages or fallback procedures.
 Document & Automate

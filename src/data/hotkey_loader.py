@@ -48,7 +48,6 @@ class HotkeyLoader:
                     print(f"[DEBUG] Error parsing hotkey file {json_file}: {e}")
                     continue
             
-            print(f"[DEBUG] Loaded {len(all_hotkeys)} total hotkeys for {app_name}")
             self.hotkey_cache[app_name] = all_hotkeys  # Cache results
             return all_hotkeys
                 

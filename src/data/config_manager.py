@@ -22,6 +22,7 @@ class ConfigManager:
             # Load config files
             self.config.read(self.config_file)
             self.window_config.read(self.window_config_file)
+            """
             print("[DEBUG] Configuration loaded successfully")
             print("[DEBUG] Current configuration:")
             for section in self.config.sections():
@@ -33,6 +34,7 @@ class ConfigManager:
                 print(f"[DEBUG] [{section}]")
                 for key, value in self.window_config[section].items():
                     print(f"[DEBUG]   {key} = {value}")
+            """
                     
         except Exception as e:
             print(f"[DEBUG] Error loading config: {e}")

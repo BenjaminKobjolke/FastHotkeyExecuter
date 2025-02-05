@@ -150,7 +150,6 @@ class ChromeWebCrawler(WebCrawler):
             if length_page_text_string < self.min_string_length and length_body_text_string > length_page_text_string:
                 page_text = body_text
         elif self.soup.find(name="body"):
-            print("Found body")
             page_text = str(self.soup.find(name="body"))
 
         print("Page text length: " + str(len(page_text)))
