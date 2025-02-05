@@ -24,8 +24,9 @@ class HotkeyLoader:
                 self.hotkey_cache[app_name] = []  # Cache empty result
                 return []
             
-            # Load and combine all JSON files in the app directory
+            # Load and combine all JSON files in the app directory, ignoring duplicates
             all_hotkeys = []
+            seen_hotkeys = set()  # Track seen hotkey combinations
             json_files = Path(app_dir).glob('*.json')
             
             for json_file in json_files:
@@ -33,7 +34,11 @@ class HotkeyLoader:
                     with open(json_file, 'r', encoding='utf-8') as f:
                         hotkeys = json.load(f)
                         if isinstance(hotkeys, list):
-                            all_hotkeys.extend(hotkeys)
+                            for hotkey in hotkeys:
+                                # Only add if this hotkey combination hasn't been seen
+                                if 'hotkey' in hotkey and hotkey['hotkey'] not in seen_hotkeys:
+                                    seen_hotkeys.add(hotkey['hotkey'])
+                                    all_hotkeys.append(hotkey)
                 except json.JSONDecodeError as e:
                     print(f"[DEBUG] Error parsing hotkey file {json_file}: {e}")
                     continue

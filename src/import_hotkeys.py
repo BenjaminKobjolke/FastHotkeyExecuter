@@ -59,12 +59,8 @@ def main() -> None:
         app_dir = Path('data/hotkeys') / args.name
         app_dir.mkdir(parents=True, exist_ok=True)
         
-        # Always use app name as the base filename
-        filename = args.name
-        
-        # If filename argument is provided, append it to the app name
-        if args.filename:
-            filename = f"{args.name}-{args.filename}"
+        # Use provided filename or app name as default
+        filename = args.filename if args.filename else args.name
             
         while True:
             output_path = app_dir / f"{filename}.json"
