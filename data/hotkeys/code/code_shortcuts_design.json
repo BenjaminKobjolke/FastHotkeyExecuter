@@ -1,0 +1,482 @@
+[
+  {
+    "name": "Cut line",
+    "hotkey": "ctrl+x"
+  },
+  {
+    "name": "Insert line below",
+    "hotkey": "ctrl+enter"
+  },
+  {
+    "name": "Insert line above",
+    "hotkey": "ctrl+shift+enter"
+  },
+  {
+    "name": "Move line/selection up",
+    "hotkey": "alt+up"
+  },
+  {
+    "name": "Move line/selection down",
+    "hotkey": "alt+down"
+  },
+  {
+    "name": "Select word - Repeat select others occurrences",
+    "hotkey": "ctrl+d"
+  },
+  {
+    "name": "Delete Line",
+    "hotkey": "ctrl+shift+k"
+  },
+  {
+    "name": "Indent current line(s)",
+    "hotkey": "ctrl+]"
+  },
+  {
+    "name": "Un-indent current line(s)",
+    "hotkey": "ctrl+["
+  },
+  {
+    "name": "Duplicate line(s) up",
+    "hotkey": "alt+shift+up"
+  },
+  {
+    "name": "Duplicate line(s) down",
+    "hotkey": "alt+shift+down"
+  },
+  {
+    "name": "Go to the begining of line",
+    "hotkey": "home"
+  },
+  {
+    "name": "Go to the end of line",
+    "hotkey": "end"
+  },
+  {
+    "name": "Scroll line up",
+    "hotkey": "ctrl+up"
+  },
+  {
+    "name": "Scroll line down",
+    "hotkey": "ctrl+down"
+  },
+  {
+    "name": "Go to the beginning of file",
+    "hotkey": "ctrl+home"
+  },
+  {
+    "name": "Go to the end of file",
+    "hotkey": "ctrl+end"
+  },
+  {
+    "name": "Collapse region",
+    "hotkey": "ctrl+shift+["
+  },
+  {
+    "name": "Expand region",
+    "hotkey": "ctrl+shift+]"
+  },
+  {
+    "name": "Collapse all regions",
+    "hotkey": "ctrl+k ctrl+0"
+  },
+  {
+    "name": "Expand all regions",
+    "hotkey": "ctrl+k ctrl+j"
+  },
+  {
+    "name": "Toggle line comment",
+    "hotkey": "ctrl+/"
+  },
+  {
+    "name": "Toggle word wrap",
+    "hotkey": "alt+z"
+  },
+  {
+    "name": "Go to Line...",
+    "hotkey": "ctrl+g"
+  },
+  {
+    "name": "Quick open files by name",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Go to Symbol...",
+    "hotkey": "ctrl+shift+o"
+  },
+  {
+    "name": "Show Problems panel",
+    "hotkey": "ctrl+shift+m"
+  },
+  {
+    "name": "Go to next error warning",
+    "hotkey": "f8"
+  },
+  {
+    "name": "Go to previous error warning",
+    "hotkey": "shift+f8"
+  },
+  {
+    "name": "Navigate editor group history",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Go back",
+    "hotkey": "alt+left"
+  },
+  {
+    "name": "Go forward",
+    "hotkey": "alt+right"
+  },
+  {
+    "name": "Command prompt",
+    "hotkey": "ctrl+shift+p"
+  },
+  {
+    "name": "Toggle side bar",
+    "hotkey": "ctrl+kb"
+  },
+  {
+    "name": "Show scope in status bar",
+    "hotkey": "ctrl+shift+alt+p"
+  },
+  {
+    "name": "Find",
+    "hotkey": "ctrl+f"
+  },
+  {
+    "name": "Replace",
+    "hotkey": "ctrl+h"
+  },
+  {
+    "name": "Find next",
+    "hotkey": "f3"
+  },
+  {
+    "name": "Find previous",
+    "hotkey": "shift+f3"
+  },
+  {
+    "name": "Select all occurrences of Find match",
+    "hotkey": "alt+enter"
+  },
+  {
+    "name": "Find in files",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "Add selection to the next Find match",
+    "hotkey": "ctrl+d"
+  },
+  {
+    "name": "Insert cursor",
+    "hotkey": "alt+click"
+  },
+  {
+    "name": "Undo last cursor operation",
+    "hotkey": "ctrl+u"
+  },
+  {
+    "name": "Insert cursor at end of each line selected",
+    "hotkey": "shift+alt+i"
+  },
+  {
+    "name": "Select current line",
+    "hotkey": "ctrl+i"
+  },
+  {
+    "name": "Select all occurrences of current selection",
+    "hotkey": "ctrl+shift+l"
+  },
+  {
+    "name": "Select all occurrences of current word",
+    "hotkey": "ctrl+f2"
+  },
+  {
+    "name": "Expand selection",
+    "hotkey": "shift+alt+right"
+  },
+  {
+    "name": "Shrink selection",
+    "hotkey": "shift+alt+left"
+  },
+  {
+    "name": "Trigger suggestion",
+    "hotkey": "ctrl+space"
+  },
+  {
+    "name": "Trigger parameter hints",
+    "hotkey": "ctrl+shift+space"
+  },
+  {
+    "name": "Format document",
+    "hotkey": "shift+alt+f"
+  },
+  {
+    "name": "Format selection",
+    "hotkey": "ctrl+k ctrl+f"
+  },
+  {
+    "name": "Go to definition",
+    "hotkey": "f12"
+  },
+  {
+    "name": "Peek definition",
+    "hotkey": "alt+f12"
+  },
+  {
+    "name": "Open Definition to the side",
+    "hotkey": "ctrl+k f12"
+  },
+  {
+    "name": "Trim trailing whitespace",
+    "hotkey": "ctrl+k ctrl+x"
+  },
+  {
+    "name": "Change file language",
+    "hotkey": "ctrl+k m"
+  },
+  {
+    "name": "Close editor",
+    "hotkey": "ctrl+f4"
+  },
+  {
+    "name": "Close folder",
+    "hotkey": "ctrl+k f"
+  },
+  {
+    "name": "Split editor in 1 part",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Split editor in 2 parts",
+    "hotkey": "ctrl+2"
+  },
+  {
+    "name": "Split editor in 3 parts",
+    "hotkey": "ctrl+3"
+  },
+  {
+    "name": "Split view into two columns",
+    "hotkey": "alt+shift+2"
+  },
+  {
+    "name": "Revert view to single column",
+    "hotkey": "alt+shift+1"
+  },
+  {
+    "name": "Move editor left",
+    "hotkey": "ctrl+shift+pgup"
+  },
+  {
+    "name": "Move editor right",
+    "hotkey": "ctrl+shift+pgdn"
+  },
+  {
+    "name": "Toggle editor layout (horizontal/vertical)",
+    "hotkey": "shift+alt+0"
+  },
+  {
+    "name": "New file",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Open file...",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "Close current tab",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Save",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Save as...",
+    "hotkey": "ctrl+shift+s"
+  },
+  {
+    "name": "Save all",
+    "hotkey": "ctrl+k s"
+  },
+  {
+    "name": "Reopen closed editor",
+    "hotkey": "ctrl+shift+t"
+  },
+  {
+    "name": "Toggle tabs",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Switch to tab number 1",
+    "hotkey": "alt+1"
+  },
+  {
+    "name": "Switch to tab number 2",
+    "hotkey": "alt+2"
+  },
+  {
+    "name": "Switch to tab number 3",
+    "hotkey": "alt+3"
+  },
+  {
+    "name": "Switch to tab number 4",
+    "hotkey": "alt+4"
+  },
+  {
+    "name": "Switch to tab number 5",
+    "hotkey": "alt+5"
+  },
+  {
+    "name": "Switch to tab number 6",
+    "hotkey": "alt+6"
+  },
+  {
+    "name": "Switch to tab number 7",
+    "hotkey": "alt+7"
+  },
+  {
+    "name": "Switch to tab number 8",
+    "hotkey": "alt+8"
+  },
+  {
+    "name": "Switch to tab number 9",
+    "hotkey": "alt+9"
+  },
+  {
+    "name": "Reveal active file in Explorer",
+    "hotkey": "ctrl+k r"
+  },
+  {
+    "name": "Show active file in new window/instance",
+    "hotkey": "ctrl+k o"
+  },
+  {
+    "name": "Toggle full screen",
+    "hotkey": "f11"
+  },
+  {
+    "name": "Zoom in",
+    "hotkey": "ctrl+="
+  },
+  {
+    "name": "Zoom out",
+    "hotkey": "ctrl+-"
+  },
+  {
+    "name": "Toggle Sidebar visibility",
+    "hotkey": "ctrl+b"
+  },
+  {
+    "name": "Show Explorer / Toggle focus",
+    "hotkey": "ctrl+shift+e"
+  },
+  {
+    "name": "Show Search",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "Show Source Control",
+    "hotkey": "ctrl+shift+g"
+  },
+  {
+    "name": "Show Debug",
+    "hotkey": "ctrl+shift+d"
+  },
+  {
+    "name": "Show Extensions",
+    "hotkey": "ctrl+shift+e"
+  },
+  {
+    "name": "Replace in files",
+    "hotkey": "ctrl+shift+h"
+  },
+  {
+    "name": "Toggle Search details",
+    "hotkey": "ctrl+shift+j"
+  },
+  {
+    "name": "Toggle Output panel",
+    "hotkey": "ctrl+shift+u"
+  },
+  {
+    "name": "Open Markdown preview",
+    "hotkey": "ctrl+shift+v"
+  },
+  {
+    "name": "Open Markdown preview to the side",
+    "hotkey": "ctrl+k v"
+  },
+  {
+    "name": "Zen Mode (Esc Esc to exit)",
+    "hotkey": "ctrl+k z"
+  },
+  {
+    "name": "Toggle breakpoint",
+    "hotkey": "f9"
+  },
+  {
+    "name": "Start/Continue",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Stop",
+    "hotkey": "shift+f5"
+  },
+  {
+    "name": "Step into",
+    "hotkey": "f11"
+  },
+  {
+    "name": "Step out",
+    "hotkey": "shift+f11"
+  },
+  {
+    "name": "Step over",
+    "hotkey": "f10"
+  },
+  {
+    "name": "Show hover",
+    "hotkey": "ctrl+k ctrl+i"
+  },
+  {
+    "name": "Show integrated terminal",
+    "hotkey": "ctrl+`"
+  },
+  {
+    "name": "Create new terminal",
+    "hotkey": "ctrl+shift+`"
+  },
+  {
+    "name": "Copy selection",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Paste into active terminal",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Scroll up",
+    "hotkey": "ctrl+up"
+  },
+  {
+    "name": "Scroll down",
+    "hotkey": "ctrl+down"
+  },
+  {
+    "name": "Scroll page up",
+    "hotkey": "shift+pgup"
+  },
+  {
+    "name": "Scroll page down",
+    "hotkey": "shift+pgdn"
+  },
+  {
+    "name": "Scroll to top",
+    "hotkey": "ctrl+home"
+  },
+  {
+    "name": "Scroll to bottom",
+    "hotkey": "ctrl+end"
+  }
+]

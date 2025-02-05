@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Quick Navigation",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Access Settings",
+    "hotkey": "ctrl+,"
+  },
+  {
+    "name": "Efficient Editing",
+    "hotkey": "ctrl+shift+l"
+  },
+  {
+    "name": "Duplicate Lines",
+    "hotkey": "shift+alt+↓"
+  },
+  {
+    "name": "Integrated Terminal",
+    "hotkey": "ctrl+j"
+  },
+  {
+    "name": "Command Palette",
+    "hotkey": "ctrl+shift+p"
+  },
+  {
+    "name": "Go to Definition",
+    "hotkey": "f12"
+  },
+  {
+    "name": "Custom Shortcuts",
+    "hotkey": "ctrl+k, ctrl+s"
+  },
+  {
+    "name": "Format Code",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "Rename Symbols",
+    "hotkey": "f2"
+  },
+  {
+    "name": "Open a File",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Quick Switch Between Files",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Open Settings",
+    "hotkey": "ctrl+,"
+  },
+  {
+    "name": "Toggle Sidebar",
+    "hotkey": "ctrl+b"
+  },
+  {
+    "name": "Navigate Tabs",
+    "hotkey": "ctrl+shift+tab"
+  },
+  {
+    "name": "Navigate Tab Group 1",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Navigate Tab Group 2",
+    "hotkey": "ctrl+2"
+  },
+  {
+    "name": "Navigate Tab Group 3",
+    "hotkey": "ctrl+3"
+  },
+  {
+    "name": "Open the Terminal",
+    "hotkey": "ctrl+j"
+  },
+  {
+    "name": "Split Terminal",
+    "hotkey": "ctrl+shift+5"
+  },
+  {
+    "name": "Open the Command Palette",
+    "hotkey": "ctrl+shift+p"
+  },
+  {
+    "name": "Select Current Line",
+    "hotkey": "ctrl+l"
+  },
+  {
+    "name": "Select All Occurrences of Current Selection",
+    "hotkey": "ctrl+shift+l"
+  },
+  {
+    "name": "Select All Occurrences of Current Word",
+    "hotkey": "ctrl+f2"
+  },
+  {
+    "name": "Select Until the End of the Word",
+    "hotkey": "shift+alt+→"
+  },
+  {
+    "name": "Select Until the Start of the Word",
+    "hotkey": "shift+alt+←"
+  },
+  {
+    "name": "Duplicate Code",
+    "hotkey": "shift+alt+↓"
+  },
+  {
+    "name": "Select a Column or Box with Arrow Keys",
+    "hotkey": "ctrl+shift+alt+→"
+  },
+  {
+    "name": "Select a Column or Box with Arrow Keys",
+    "hotkey": "ctrl+shift+alt+←"
+  },
+  {
+    "name": "Select a Column or Box with Arrow Keys",
+    "hotkey": "ctrl+shift+alt+↓"
+  },
+  {
+    "name": "Select a Column or Box with Arrow Keys",
+    "hotkey": "ctrl+shift+alt+↑"
+  },
+  {
+    "name": "Select All Results",
+    "hotkey": "alt+enter"
+  },
+  {
+    "name": "Go to Line",
+    "hotkey": "ctrl+g"
+  },
+  {
+    "name": "Go to Matching Bracket",
+    "hotkey": "ctrl+shift+\\"
+  },
+  {
+    "name": "Fold Block",
+    "hotkey": "ctrl+shift+["
+  },
+  {
+    "name": "Unfold Block",
+    "hotkey": "ctrl+shift+]"
+  },
+  {
+    "name": "Fold/Unfold Blocks and Sub-Blocks",
+    "hotkey": "ctrl+k ["
+  },
+  {
+    "name": "Fold/Unfold Blocks and Sub-Blocks",
+    "hotkey": "ctrl+k ]"
+  },
+  {
+    "name": "Move Lines and Blocks Down",
+    "hotkey": "alt+↓"
+  },
+  {
+    "name": "Move Lines and Blocks Up",
+    "hotkey": "alt+↑"
+  },
+  {
+    "name": "Indent Line",
+    "hotkey": "ctrl+["
+  },
+  {
+    "name": "Outdent Line",
+    "hotkey": "ctrl+]"
+  },
+  {
+    "name": "Toggle Comment",
+    "hotkey": "ctrl+/"
+  },
+  {
+    "name": "Toggle Block Comment",
+    "hotkey": "shift+alt+a"
+  },
+  {
+    "name": "File Formatting",
+    "hotkey": "ctrl+shift+f"
+  },
+  {
+    "name": "Selection Formatting",
+    "hotkey": "ctrl+k ctrl+f"
+  },
+  {
+    "name": "Quick Fix",
+    "hotkey": "ctrl+."
+  },
+  {
+    "name": "Trim White Spaces",
+    "hotkey": "ctrl+k x"
+  },
+  {
+    "name": "Change Programming Language",
+    "hotkey": "ctrl+k m"
+  },
+  {
+    "name": "Zen Mode",
+    "hotkey": "ctrl+k z"
+  },
+  {
+    "name": "Close All Editors",
+    "hotkey": "ctrl+k w"
+  }
+]
