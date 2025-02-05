@@ -26,6 +26,22 @@ class ChromeWebCrawler(WebCrawler):
         # Set base path for FileUtils
         FileUtils.set_base_path(str(Path(__file__).parent.parent.parent.parent))
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
+
+    def close(self):
+        """Close the Chrome driver if it exists."""
+        if self.driver is not None:
+            try:
+                self.driver.quit()
+            except Exception as e:
+                print(f"Error closing driver: {e}")
+            finally:
+                self.driver = None
+
     def get_title(self):
         if self.soup is None:
             raise Exception("You need to call execute() first.")
@@ -89,7 +105,7 @@ class ChromeWebCrawler(WebCrawler):
                 self.driver.get(url, True)
             except Exception as e:
                 print("Failed to load page again: " + str(e))
-                # driver.quit()
+                self.close()
                 return {'title': '', 'text': '', 'tokens': 0, 'success': False}
 
         # time.sleep(5)
@@ -146,5 +162,10 @@ class ChromeWebCrawler(WebCrawler):
                 wait_counter += 1
                 return self.wait_for_html(wait_counter)
             else:
-                return {'title': self.get_title(), 'text': page_text, 'tokens': 100, 'success': False}
-        return {'title': self.get_title(), 'text': page_text, 'tokens': 100, 'success': True}
+                result = {'title': self.get_title(), 'text': page_text, 'tokens': 100, 'success': False}
+                self.close()
+                return result
+                
+        result = {'title': self.get_title(), 'text': page_text, 'tokens': 100, 'success': True}
+        self.close()
+        return result

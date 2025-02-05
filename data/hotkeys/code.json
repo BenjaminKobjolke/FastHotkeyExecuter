@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Open command palette",
+    "hotkey": "ctrl+shift+p"
+  },
+  {
+    "name": "Access settings",
+    "hotkey": "ctrl+,"
+  },
+  {
+    "name": "Toggle terminal",
+    "hotkey": "ctrl+`"
+  },
+  {
+    "name": "Create new terminal",
+    "hotkey": "ctrl+shift+`"
+  },
+  {
+    "name": "Toggle sidebar",
+    "hotkey": "ctrl+b"
+  },
+  {
+    "name": "Open new window/instance",
+    "hotkey": "ctrl+shift+n"
+  },
+  {
+    "name": "Close window",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Sidebar focus",
+    "hotkey": "ctrl+shift+e"
+  },
+  {
+    "name": "Open file/folder from sidebar",
+    "hotkey": "ctrl+down"
+  },
+  {
+    "name": "Change file tabs",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Change file tabs",
+    "hotkey": "ctrl+pageup"
+  },
+  {
+    "name": "Quick file open",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Open file from explorer",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "New file",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Save",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Save as",
+    "hotkey": "ctrl+shift+s"
+  },
+  {
+    "name": "Close file",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Delete file",
+    "hotkey": "ctrl+delete"
+  },
+  {
+    "name": "Reopen files",
+    "hotkey": "ctrl+shift+t"
+  },
+  {
+    "name": "Zoom in",
+    "hotkey": "ctrl+plus"
+  },
+  {
+    "name": "Zoom out",
+    "hotkey": "ctrl+-"
+  },
+  {
+    "name": "Split editor",
+    "hotkey": "ctrl+\\"
+  },
+  {
+    "name": "Go to start of line",
+    "hotkey": "home"
+  },
+  {
+    "name": "Go to end of line",
+    "hotkey": "end"
+  },
+  {
+    "name": "Move by word right",
+    "hotkey": "alt+right"
+  },
+  {
+    "name": "Move by word left",
+    "hotkey": "alt+left"
+  },
+  {
+    "name": "Go to start of file",
+    "hotkey": "ctrl+home"
+  },
+  {
+    "name": "Go to end of file",
+    "hotkey": "ctrl+end"
+  },
+  {
+    "name": "Cut",
+    "hotkey": "ctrl+x"
+  },
+  {
+    "name": "Copy",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Paste",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Move line up",
+    "hotkey": "alt+up"
+  },
+  {
+    "name": "Move line down",
+    "hotkey": "alt+down"
+  },
+  {
+    "name": "Copy line up",
+    "hotkey": "ctrl+alt+up"
+  },
+  {
+    "name": "Copy line down",
+    "hotkey": "ctrl+alt+down"
+  },
+  {
+    "name": "Remove line",
+    "hotkey": "ctrl+shift+k"
+  },
+  {
+    "name": "Insert line below",
+    "hotkey": "ctrl+enter"
+  },
+  {
+    "name": "Insert line above",
+    "hotkey": "ctrl+shift+enter"
+  },
+  {
+    "name": "Jump to matching bracket",
+    "hotkey": "ctrl+shift+\\"
+  },
+  {
+    "name": "Add line comment",
+    "hotkey": "ctrl+/"
+  },
+  {
+    "name": "Add block comment",
+    "hotkey": "shift+alt+a"
+  },
+  {
+    "name": "Highlight code",
+    "hotkey": "shift+any direction"
+  },
+  {
+    "name": "Select next match",
+    "hotkey": "ctrl+d"
+  },
+  {
+    "name": "De-select match",
+    "hotkey": "ctrl+u"
+  },
+  {
+    "name": "Add cursor",
+    "hotkey": "alt+click"
+  },
+  {
+    "name": "Go to entity (functions, vars, etc)",
+    "hotkey": "ctrl+shift+o"
+  },
+  {
+    "name": "Switch between windows",
+    "hotkey": "alt+tab"
+  },
+  {
+    "name": "Minimize all windows",
+    "hotkey": "win+d"
+  },
+  {
+    "name": "Open task manager",
+    "hotkey": "ctrl+shift+esc"
+  },
+  {
+    "name": "Open File Explorer",
+    "hotkey": "win+e"
+  },
+  {
+    "name": "Take a screenshot",
+    "hotkey": "win+print screen"
+  },
+  {
+    "name": "Search for a line",
+    "hotkey": "ctrl+g"
+  },
+  {
+    "name": "Comment out the highlighted section or line",
+    "hotkey": "ctrl+k+c"
+  },
+  {
+    "name": "Uncomment",
+    "hotkey": "ctrl+k+u"
+  }
+]

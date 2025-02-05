@@ -1,0 +1,3 @@
+Extract Windows keyboard shortcuts from this content and return them in JSON format:
+
+{content}

@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Free Transform",
+    "hotkey": "control+t"
+  },
+  {
+    "name": "Toggle between painting and erasing with the same brush",
+    "hotkey": "`"
+  },
+  {
+    "name": "Deselect selections",
+    "hotkey": "control+d"
+  },
+  {
+    "name": "Undo last command",
+    "hotkey": "control+z"
+  },
+  {
+    "name": "Decrease Brush Size",
+    "hotkey": "["
+  },
+  {
+    "name": "Increase Brush Size",
+    "hotkey": "]"
+  },
+  {
+    "name": "Decrease Brush Hardness",
+    "hotkey": "{"
+  },
+  {
+    "name": "Increase Brush Hardness",
+    "hotkey": "}"
+  },
+  {
+    "name": "Rotate the brush tip by 1 degree anti-clockwise",
+    "hotkey": "left arrow"
+  },
+  {
+    "name": "Rotate the brush tip by 1 degree clockwise",
+    "hotkey": "right arrow"
+  },
+  {
+    "name": "Rotate the brush tip by 15 degrees anti-clockwise",
+    "hotkey": "shift+left arrow"
+  },
+  {
+    "name": "Rotate the brush tip by 15 degrees clockwise",
+    "hotkey": "shift+right arrow"
+  },
+  {
+    "name": "Default Foreground/Background colors",
+    "hotkey": "d"
+  },
+  {
+    "name": "Switch Foreground/Background colors",
+    "hotkey": "x"
+  },
+  {
+    "name": "Fit layer(s) to screen",
+    "hotkey": "alt+click layer"
+  },
+  {
+    "name": "New layer via copy",
+    "hotkey": "control+j"
+  },
+  {
+    "name": "New layer via cut",
+    "hotkey": "shift+control+j"
+  },
+  {
+    "name": "Add to a selection",
+    "hotkey": "shift+drag with any selection tool"
+  },
+  {
+    "name": "Delete brush or swatch",
+    "hotkey": "alt+click brush or swatch"
+  },
+  {
+    "name": "Toggle auto-select checkbox in the Options bar with Move tool selected",
+    "hotkey": "control+click"
+  },
+  {
+    "name": "Close all open documents other than the current document",
+    "hotkey": "ctrl+alt+p"
+  },
+  {
+    "name": "Cancel any modal dialog window (including the Start Workspace)",
+    "hotkey": "escape"
+  },
+  {
+    "name": "Selects the first edit field of the toolbar",
+    "hotkey": "enter"
+  },
+  {
+    "name": "Navigate between fields",
+    "hotkey": "tab"
+  },
+  {
+    "name": "Navigate between fields in the opposite direction",
+    "hotkey": "shift+tab"
+  },
+  {
+    "name": "Change Cancel to Reset",
+    "hotkey": "alt"
+  },
+  {
+    "name": "Start Help",
+    "hotkey": "f1"
+  },
+  {
+    "name": "Cut",
+    "hotkey": "f2"
+  },
+  {
+    "name": "Copy",
+    "hotkey": "f3"
+  },
+  {
+    "name": "Paste",
+    "hotkey": "f4"
+  },
+  {
+    "name": "Show/Hide Brush panel",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Show/Hide Color panel",
+    "hotkey": "f6"
+  },
+  {
+    "name": "Show/Hide Layers panel",
+    "hotkey": "f7"
+  },
+  {
+    "name": "Show/Hide Info panel",
+    "hotkey": "f8"
+  },
+  {
+    "name": "Show/Hide Actions panel",
+    "hotkey": "f9"
+  },
+  {
+    "name": "Revert",
+    "hotkey": "f12"
+  },
+  {
+    "name": "Fill",
+    "hotkey": "shift+f5"
+  },
+  {
+    "name": "Feather Selection",
+    "hotkey": "shift+f6"
+  },
+  {
+    "name": "Inverse Selection",
+    "hotkey": "shift+f7"
+  },
+  {
+    "name": "Rectangular Marquee tool",
+    "hotkey": "m"
+  },
+  {
+    "name": "Lasso tool",
+    "hotkey": "l"
+  },
+  {
+    "name": "Quick Selection tool",
+    "hotkey": "w"
+  },
+  {
+    "name": "Crop tool",
+    "hotkey": "c"
+  },
+  {
+    "name": "Eyedropper tool",
+    "hotkey": "i"
+  },
+  {
+    "name": "Spot Healing Brush tool",
+    "hotkey": "j"
+  },
+  {
+    "name": "Brush tool",
+    "hotkey": "b"
+  },
+  {
+    "name": "Clone Stamp tool",
+    "hotkey": "s"
+  },
+  {
+    "name": "History Brush tool",
+    "hotkey": "y"
+  },
+  {
+    "name": "Eraser tool",
+    "hotkey": "e"
+  },
+  {
+    "name": "Gradient tool",
+    "hotkey": "g"
+  },
+  {
+    "name": "Dodge tool",
+    "hotkey": "o"
+  },
+  {
+    "name": "Pen tool",
+    "hotkey": "p"
+  },
+  {
+    "name": "Horizontal Type tool",
+    "hotkey": "t"
+  },
+  {
+    "name": "Path Selection tool",
+    "hotkey": "a"
+  },
+  {
+    "name": "Rectangle tool",
+    "hotkey": "u"
+  },
+  {
+    "name": "Hand tool",
+    "hotkey": "h"
+  },
+  {
+    "name": "Rotate View tool",
+    "hotkey": "r"
+  },
+  {
+    "name": "Zoom tool",
+    "hotkey": "z"
+  },
+  {
+    "name": "Cycle through open documents",
+    "hotkey": "control+tab"
+  },
+  {
+    "name": "Switch to previous document",
+    "hotkey": "shift+control+tab"
+  },
+  {
+    "name": "Close a file in Photoshop and open Bridge",
+    "hotkey": "shift+control+w"
+  },
+  {
+    "name": "Toggle between Standard mode and Quick Mask mode",
+    "hotkey": "q"
+  },
+  {
+    "name": "Toggle (forward) between Standard screen mode, Full screen mode with menu bar, and Full screen mode",
+    "hotkey": "f"
+  },
+  {
+    "name": "Toggle (backward) between Standard screen mode, Full screen mode with menu bar, and Full screen mode",
+    "hotkey": "shift+f"
+  },
+  {
+    "name": "Fit image in window",
+    "hotkey": "double-click hand tool"
+  },
+  {
+    "name": "Magnify 100%",
+    "hotkey": "ctrl+1"
+  },
+  {
+    "name": "Temporarily zoom into an image",
+    "hotkey": "hold h then click and hold mouse"
+  },
+  {
+    "name": "Switch to Zoom In tool",
+    "hotkey": "control+spacebar"
+  },
+  {
+    "name": "Switch to Zoom Out tool",
+    "hotkey": "alt+spacebar"
+  },
+  {
+    "name": "Move Zoom marquee while dragging with the Zoom tool",
+    "hotkey": "spacebar+drag"
+  },
+  {
+    "name": "Rotate image left",
+    "hotkey": "ctrl+]"
+  },
+  {
+    "name": "Rotate image right",
+    "hotkey": "ctrl+["
+  },
+  {
+    "name": "New layer",
+    "hotkey": "control+shift+n"
+  },
+  {
+    "name": "Group layers",
+    "hotkey": "control+g"
+  },
+  {
+    "name": "Ungroup layers",
+    "hotkey": "control+shift+g"
+  },
+  {
+    "name": "Create/release clipping mask",
+    "hotkey": "control+alt+g"
+  },
+  {
+    "name": "Select all layers",
+    "hotkey": "control+alt+a"
+  },
+  {
+    "name": "Merge visible layers",
+    "hotkey": "control+shift+e"
+  }
+]

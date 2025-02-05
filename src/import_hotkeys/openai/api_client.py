@@ -4,6 +4,7 @@ from openai import OpenAI
 from typing import List, Dict, Any
 from pathlib import Path
 import json
+import os
 
 
 class OpenAIClient:
@@ -22,6 +23,7 @@ class OpenAIClient:
 
         Args:
             content (str): The webpage content to analyze.
+            name (str): Name of the application/context for the hotkeys.
 
         Returns:
             List[Dict[str, str]]: List of dictionaries containing hotkey information.
@@ -31,31 +33,32 @@ class OpenAIClient:
             Exception: If API call fails or response is invalid.
         """
         try:
+            # Read prompts from config files
+            config_dir = Path('config')
+            system_prompt_path = config_dir / 'ai_system_prompt.txt'
+            user_prompt_path = config_dir / 'ai_user_prompt.txt'
+
+            if not system_prompt_path.exists() or not user_prompt_path.exists():
+                raise Exception("Prompt configuration files not found")
+
+            system_prompt = system_prompt_path.read_text(encoding='utf-8').strip()
+            user_prompt = user_prompt_path.read_text(encoding='utf-8').strip()
+
+            # Format user prompt with content
+            formatted_user_prompt = user_prompt.format(content=content)
+
             response = self.client.chat.completions.create(
-                model="gpt-4-0125-preview",
+                model="gpt-4o",
                 response_format={"type": "json_object"},
+                max_tokens=16000,  # Maximum tokens for GPT-4-0125-preview
                 messages=[
                     {
                         "role": "system",
-                        "content": (
-                            "You are a hotkey extraction specialist. Extract Windows "
-                            "keyboard shortcuts from the provided content and return them "
-                            "in a JSON format with an array of objects, each containing "
-                            "'name' (description of the action) and 'hotkey' (the keyboard "
-                            "shortcut) properties. Format hotkeys using lowercase with '+' "
-                            "between keys (e.g., 'ctrl+shift+p'). Include only Windows "
-                            "shortcuts."
-                            "Split infos about hotkeys into separate hotkeys in the json."
-                            "Example 'Jump to a specific tab	Ctrl + 1 through Ctrl + 8'."
-                            "Should be split into 8 separate hotkeys."
-                        )
+                        "content": system_prompt
                     },
                     {
                         "role": "user",
-                        "content": (
-                            "Extract Windows keyboard shortcuts from this content and "
-                            f"return them in JSON format:\n\n{content}"
-                        )
+                        "content": formatted_user_prompt
                     }
                 ]
             )
@@ -63,6 +66,7 @@ class OpenAIClient:
             # Extract the JSON content from the response
             result = response.choices[0].message.content
             if not result:
+                print("Empty response from OpenAI API")
                 raise Exception("Empty response from OpenAI API")
 
             # Save raw OpenAI response as both txt and json

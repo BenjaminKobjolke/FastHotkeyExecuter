@@ -12,8 +12,8 @@ class SearchWindow:
         root.withdraw()
         
         # Initialize managers
+        self.theme_manager = ThemeManager(root, config_manager)  # Initialize theme first
         self.window_manager = WindowManager(root, config_manager, process_manager)
-        self.theme_manager = ThemeManager(root, config_manager)
         self.ui_manager = UIManager(root, self.theme_manager)
         
         # Set search entry in window manager for focus management

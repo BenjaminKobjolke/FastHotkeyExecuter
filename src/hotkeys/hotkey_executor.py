@@ -3,6 +3,7 @@ import mouse
 import time
 import win32gui
 import win32con
+from .key_aliases import KEY_ALIASES, VALID_KEYS
 
 class HotkeyExecutor:
     def __init__(self):
@@ -14,23 +15,8 @@ class HotkeyExecutor:
         
     def _validate_keys(self, keys):
         """Validate that all keys in the combination are valid keyboard keys."""
-        # Create set of valid keys
-        valid_keys = keyboard.all_modifiers.union({
-            'esc', 'enter', 'tab', 'space', 'backspace', 'delete',
-            'up', 'down', 'left', 'right', 'home', 'end', 'pageup', 'pagedown',
-            'insert', '+', '-', '*', '/', '=', 'win', 'command', 'control',
-            'numpad+', 'numpad-'
-        })
+        valid_keys = keyboard.all_modifiers.union(VALID_KEYS)
         
-        # Add letters
-        valid_keys.update(chr(i) for i in range(ord('a'), ord('z') + 1))
-        
-        # Add numbers
-        valid_keys.update(str(i) for i in range(10))
-        
-        # Add function keys
-        valid_keys.update(f'f{i}' for i in range(1, 13))
-
         for key in keys:
             key = key.lower()
             if key not in valid_keys:
@@ -59,13 +45,8 @@ class HotkeyExecutor:
             # Clean up keys and filter out empty strings
             keys = [key.strip() for key in keys if key.strip()]
             
-            # Map 'command' and 'control' to 'ctrl', and numpad keys to regular keys
-            keys = [
-                'ctrl' if k in ('command', 'control')
-                else '+' if k == 'numpad+'
-                else '-' if k == 'numpad-'
-                else k for k in keys
-            ]
+            # Map key aliases to standard forms
+            keys = [KEY_ALIASES.get(k, k) for k in keys]
             
             # Validate keys before execution
             try:

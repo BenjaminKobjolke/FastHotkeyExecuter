@@ -50,13 +50,16 @@ class HotkeyLoader:
             # Convert search text to lowercase for case-insensitive search
             search_text = search_text.lower()
             
-            # Filter hotkeys by search text
+            # Split search text into words and filter hotkeys
+            search_words = search_text.split()
             results = []
             for hotkey in hotkeys:
-                if search_text in hotkey['name'].lower():
+                hotkey_name = hotkey['name'].lower()
+                # Check if all search words appear in the hotkey name
+                if all(word.lower() in hotkey_name for word in search_words):
                     results.append(hotkey)
                     
-            print(f"[DEBUG] Found {len(results)} matching hotkeys")
+            print(f"[DEBUG] Found {len(results)} matching hotkeys for search terms: {search_words}")
             return results
             
         except Exception as e:

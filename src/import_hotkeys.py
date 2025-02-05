@@ -16,7 +16,7 @@ from import_hotkeys.data.json_writer import JsonWriter
 
 
 def parse_arguments() -> argparse.Namespace:
-    """Parse command line arguments.
+    """Parse command line arguments and prompt for missing ones.
 
     Returns:
         argparse.Namespace: Parsed command line arguments.
@@ -26,15 +26,23 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument(
         '--name',
-        required=True,
         help='Name of the application (used for output filename)'
     )
     parser.add_argument(
         '--url',
-        required=True,
         help='URL of the webpage containing hotkeys'
     )
-    return parser.parse_args()
+    
+    # Parse known args first to handle optional arguments
+    args, _ = parser.parse_known_args()
+    
+    # Prompt for missing arguments
+    if not args.name:
+        args.name = input("Please enter the application name: ")
+    if not args.url:
+        args.url = input("Please enter the URL containing hotkeys: ")
+    
+    return args
 
 
 def main() -> None:

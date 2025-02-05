@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Change active panel",
+    "hotkey": "tab"
+  },
+  {
+    "name": "Re-read panel",
+    "hotkey": "ctrl+r"
+  },
+  {
+    "name": "Re-read panel",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Open parent directory",
+    "hotkey": "backspace"
+  },
+  {
+    "name": "Open parent directory",
+    "hotkey": "alt+up"
+  },
+  {
+    "name": "Open root directory",
+    "hotkey": "ctrl+\\"
+  },
+  {
+    "name": "Open home directory",
+    "hotkey": "ctrl+h"
+  },
+  {
+    "name": "Go back",
+    "hotkey": "alt+left"
+  },
+  {
+    "name": "Go forward",
+    "hotkey": "alt+right"
+  },
+  {
+    "name": "Open path change menu for left panel",
+    "hotkey": "alt+f1"
+  },
+  {
+    "name": "Open path change menu for right panel",
+    "hotkey": "alt+f2"
+  },
+  {
+    "name": "Bookmark current directory",
+    "hotkey": "ctrl+b"
+  },
+  {
+    "name": "Display bookmark window",
+    "hotkey": "ctrl+o"
+  },
+  {
+    "name": "Display bookmark window",
+    "hotkey": "ctrl+l"
+  },
+  {
+    "name": "Display bookmark window",
+    "hotkey": "alt+d"
+  },
+  {
+    "name": "Toggle tree panel",
+    "hotkey": "ctrl+alt+t"
+  },
+  {
+    "name": "Select/deselect file",
+    "hotkey": "ins"
+  },
+  {
+    "name": "Select group",
+    "hotkey": "num+"
+  },
+  {
+    "name": "Deselect group",
+    "hotkey": "num-"
+  },
+  {
+    "name": "Invert selection",
+    "hotkey": "num*"
+  },
+  {
+    "name": "Select all files",
+    "hotkey": "ctrl+a"
+  },
+  {
+    "name": "Deselect all files",
+    "hotkey": "shift+ctrl+l"
+  },
+  {
+    "name": "Restore selection",
+    "hotkey": "shift+ctrl+s"
+  },
+  {
+    "name": "Rename focused file",
+    "hotkey": "f2"
+  },
+  {
+    "name": "Edit focused file",
+    "hotkey": "f4"
+  },
+  {
+    "name": "Edit (create) new file",
+    "hotkey": "shift+f4"
+  },
+  {
+    "name": "Edit focused file in an internal editor",
+    "hotkey": "ctrl+alt+f4"
+  },
+  {
+    "name": "Download (remote active)/Upload (local active) selected files, Copy (both local)",
+    "hotkey": "f5"
+  },
+  {
+    "name": "Download (remote active)/Upload (local active) selected files, Copy (both local)",
+    "hotkey": "ctrl+k"
+  },
+  {
+    "name": "Duplicate selected files (remote panel only)",
+    "hotkey": "shift+f5"
+  },
+  {
+    "name": "Download (remote active)/Upload (local active) selected files and delete original, Move (both local)",
+    "hotkey": "f6"
+  },
+  {
+    "name": "Move/rename selected files (remote panel only)",
+    "hotkey": "shift+f6"
+  },
+  {
+    "name": "Add/edit link",
+    "hotkey": "alt+f6"
+  },
+  {
+    "name": "Create new folder",
+    "hotkey": "f7"
+  },
+  {
+    "name": "Delete selected files",
+    "hotkey": "f8"
+  },
+  {
+    "name": "Delete selected files",
+    "hotkey": "del"
+  },
+  {
+    "name": "Delete selected files (alternative)",
+    "hotkey": "shift+del"
+  },
+  {
+    "name": "Change properties of selected files",
+    "hotkey": "f9"
+  },
+  {
+    "name": "Change properties of selected files",
+    "hotkey": "alt+enter"
+  },
+  {
+    "name": "Calculate sizes of selected directories",
+    "hotkey": "shift+alt+enter"
+  },
+  {
+    "name": "Copy the selected files to the clipboard",
+    "hotkey": "ctrl+c"
+  },
+  {
+    "name": "Paste files, open path/session URL from clipboard",
+    "hotkey": "ctrl+v"
+  },
+  {
+    "name": "Close active tab",
+    "hotkey": "shift+ctrl+d"
+  },
+  {
+    "name": "Close active tab",
+    "hotkey": "ctrl+w"
+  },
+  {
+    "name": "Open a new tab",
+    "hotkey": "ctrl+t"
+  },
+  {
+    "name": "Open a new remote tab/session",
+    "hotkey": "ctrl+n"
+  },
+  {
+    "name": "Open a new local tab",
+    "hotkey": "shift+ctrl+n"
+  },
+  {
+    "name": "Reconnect session",
+    "hotkey": "shift+ctrl+r"
+  },
+  {
+    "name": "Cycle opened tabs",
+    "hotkey": "ctrl+tab"
+  },
+  {
+    "name": "Cycle opened tabs",
+    "hotkey": "shift+ctrl+tab"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+1"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+2"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+3"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+4"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+5"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+6"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+7"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+8"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+9"
+  },
+  {
+    "name": "Switch to other opened tab",
+    "hotkey": "alt+0"
+  },
+  {
+    "name": "Toggle synchronized browsing",
+    "hotkey": "ctrl+alt+b"
+  },
+  {
+    "name": "Compare files in panels",
+    "hotkey": "shift+f2"
+  },
+  {
+    "name": "Open current session in PuTTY",
+    "hotkey": "ctrl+p"
+  },
+  {
+    "name": "Open Preferences dialog",
+    "hotkey": "ctrl+alt+p"
+  },
+  {
+    "name": "Process queue",
+    "hotkey": "shift+ctrl+q"
+  },
+  {
+    "name": "Toggle automatical refresh of remote directory after operation",
+    "hotkey": "ctrl+alt+r"
+  },
+  {
+    "name": "Synchronize directories",
+    "hotkey": "ctrl+s"
+  },
+  {
+    "name": "Keep remote directory up to date",
+    "hotkey": "ctrl+u"
+  },
+  {
+    "name": "Open terminal window",
+    "hotkey": "shift+ctrl+t"
+  },
+  {
+    "name": "Quit",
+    "hotkey": "f10"
+  },
+  {
+    "name": "Quit",
+    "hotkey": "alt+f4"
+  },
+  {
+    "name": "Find file",
+    "hotkey": "alt+f7"
+  },
+  {
+    "name": "Find file",
+    "hotkey": "f3"
+  },
+  {
+    "name": "Cancels reading of remote directory",
+    "hotkey": "esc"
+  },
+  {
+    "name": "Sort files in the active panel by name",
+    "hotkey": "ctrl+f3"
+  },
+  {
+    "name": "Sort files in the active panel by extension",
+    "hotkey": "ctrl+f4"
+  },
+  {
+    "name": "Sort files in the active panel by modification time",
+    "hotkey": "ctrl+f5"
+  },
+  {
+    "name": "Sort files in the active panel by size",
+    "hotkey": "ctrl+f6"
+  },
+  {
+    "name": "Sort files in the active panel by attributes/permissions",
+    "hotkey": "ctrl+f7"
+  },
+  {
+    "name": "Sort files in the active panel by owner (remote panel only)",
+    "hotkey": "ctrl+f8"
+  },
+  {
+    "name": "Sort files in the active panel by group (remote panel only)",
+    "hotkey": "ctrl+f9"
+  },
+  {
+    "name": "Insert names of selected files to command line",
+    "hotkey": "ctrl+enter"
+  },
+  {
+    "name": "Copy names of selected files to the clipboard",
+    "hotkey": "shift+ctrl+c"
+  },
+  {
+    "name": "Copy names of selected files including paths to the clipboard",
+    "hotkey": "ctrl+alt+c"
+  },
+  {
+    "name": "Copy current local path to the clipboard",
+    "hotkey": "ctrl+["
+  },
+  {
+    "name": "Copy current remote path to the clipboard",
+    "hotkey": "ctrl+]"
+  },
+  {
+    "name": "Toggle hidden and system files displaying",
+    "hotkey": "ctrl+alt+h"
+  },
+  {
+    "name": "Filter files",
+    "hotkey": "ctrl+alt+f"
+  },
+  {
+    "name": "Open current directory in Windows File Explorer (local panel only)",
+    "hotkey": "ctrl+alt+e"
+  },
+  {
+    "name": "Show/focus command line",
+    "hotkey": "shift+ctrl+m"
+  },
+  {
+    "name": "Focus queue view (when visible)",
+    "hotkey": "ctrl+q"
+  },
+  {
+    "name": "Open incremental search panel",
+    "hotkey": "ctrl+f"
+  }
+]

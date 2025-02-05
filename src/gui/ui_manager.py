@@ -15,21 +15,22 @@ class UIManager:
     def _create_ui(self):
         """Create and configure UI components."""
         # Create main search frame
-        self.search_frame = ttk.Frame(
-            self.window, 
-            style=self.theme_manager.get_frame_style()
+        self.search_frame = tk.Frame(
+            self.window,
+            bg=self.theme_manager.settings['background_color']
         )
         self.search_frame.pack(fill=tk.BOTH, expand=True, padx=2, pady=2)
 
         # Create search entry
         self.search_var = tk.StringVar()
-        self.search_entry = ttk.Entry(
+        self.search_entry = tk.Entry(
             self.search_frame,
             textvariable=self.search_var,
             font=('Arial', self.theme_manager.settings['font_size']),
-            style=self.theme_manager.get_entry_style(),
             width=1  # Force single-line
         )
+        # Configure entry appearance
+        self._configure_entry_appearance()
         self.search_entry.pack(fill=tk.X, expand=False, padx=5, pady=5)
 
         # Create results listbox
@@ -161,3 +162,19 @@ class UIManager:
     def clear_search(self):
         """Clear the search entry."""
         self.search_var.set('')
+
+    def _configure_entry_appearance(self):
+        """Configure the appearance of the search entry."""
+        self.search_entry.configure(
+            bg=self.theme_manager.settings['input_background_color'],
+            fg=self.theme_manager.settings['input_text_color'],
+            insertbackground=self.theme_manager.settings['input_text_color'],
+            selectbackground=self.theme_manager.settings['input_select_background'],
+            selectforeground=self.theme_manager.settings['input_select_foreground'],
+            relief='solid',
+            bd=1,
+            highlightthickness=0,
+            disabledbackground=self.theme_manager.settings['input_background_color'],
+            disabledforeground=self.theme_manager.settings['input_text_color'],
+            readonlybackground=self.theme_manager.settings['input_background_color']
+        )

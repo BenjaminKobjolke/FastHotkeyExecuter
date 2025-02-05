@@ -13,15 +13,6 @@ class ThemeManager:
         # Configure global theme settings
         self.window.configure(bg=self.settings['background_color'])
         
-        # Configure Entry widget theme
-        self.window.option_add('*TEntry*Background', self.settings['input_background_color'])
-        self.window.option_add('*TEntry*Foreground', self.settings['input_text_color'])
-        self.window.option_add('*TEntry*selectBackground', self.settings['input_select_background'])
-        self.window.option_add('*TEntry*selectForeground', self.settings['input_select_foreground'])
-        self.window.option_add('*TEntry*highlightBackground', self.settings['background_color'])
-        self.window.option_add('*TEntry*highlightColor', self.settings['background_color'])
-        self.window.option_add('*TEntry*insertBackground', self.settings['input_text_color'])
-
         # Configure dialog styles
         self._configure_dialog_styles()
         
@@ -88,32 +79,6 @@ class ThemeManager:
                 ('active', self.settings['background_color']),
                 ('!active', self.settings['background_color'])
             ]
-        )
-
-        # Entry style
-        style.configure('Dark.TEntry',
-            fieldbackground=self.settings['input_background_color'],
-            foreground=self.settings['input_text_color'],
-            selectbackground=self.settings['input_select_background'],
-            selectforeground=self.settings['input_select_foreground'],
-            padding=[5, 2, 5, 2],
-            borderwidth=1,
-            relief='solid',
-            bordercolor=self.settings['background_color']
-        )
-        style.map('Dark.TEntry',
-            fieldbackground=[
-                ('readonly', self.settings['input_background_color']),
-                ('disabled', self.settings['input_background_color']),
-                ('active', self.settings['input_background_color']),
-                ('focus', self.settings['input_background_color']),
-                ('!focus', self.settings['input_background_color']),
-                ('hover', self.settings['input_background_color']),
-                ('pressed', self.settings['input_background_color']),
-                ('alternate', self.settings['input_background_color'])
-            ],
-            selectbackground=[('focus', self.settings['input_select_background'])],
-            selectforeground=[('focus', self.settings['input_select_foreground'])]
         )
 
     def get_listbox_style(self):
