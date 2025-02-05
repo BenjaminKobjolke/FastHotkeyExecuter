@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "url": "https://www.rememberthemilk.com/help/?ctx=basics.basics.keyboard",
+    "timestamp": "2025-02-05T09:19:59.685033",
+    "prefix": "rtm",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Go to Inbox",
+      "hotkey": "g+i"
+    },
+    {
+      "name": "Go to All Tasks view",
+      "hotkey": "g+a"
+    },
+    {
+      "name": "Go to Today view",
+      "hotkey": "g+t"
+    },
+    {
+      "name": "Go to Tomorrow view",
+      "hotkey": "g+o"
+    },
+    {
+      "name": "Go to This Week view",
+      "hotkey": "g+w"
+    },
+    {
+      "name": "Go to Given to others view",
+      "hotkey": "g+v"
+    },
+    {
+      "name": "Go to Trash",
+      "hotkey": "g+d"
+    },
+    {
+      "name": "Go to a specific list",
+      "hotkey": "g+m"
+    },
+    {
+      "name": "Go to a specific contact",
+      "hotkey": "g+c"
+    },
+    {
+      "name": "Go to a specific tag",
+      "hotkey": "g+s"
+    },
+    {
+      "name": "Go to a specific location",
+      "hotkey": "g+l"
+    },
+    {
+      "name": "Add a new item to the current list",
+      "hotkey": "t"
+    },
+    {
+      "name": "Focus the search box",
+      "hotkey": "/"
+    },
+    {
+      "name": "Show/hide the navigation sidebar",
+      "hotkey": ";"
+    },
+    {
+      "name": "Open the More menu",
+      "hotkey": "."
+    },
+    {
+      "name": "Show the keyboard shortcuts",
+      "hotkey": "?"
+    },
+    {
+      "name": "Select all tasks in the current list",
+      "hotkey": "*+a"
+    },
+    {
+      "name": "Select none of the tasks in the current list",
+      "hotkey": "*+n"
+    },
+    {
+      "name": "Select all tasks due today in the current list",
+      "hotkey": "*+t"
+    },
+    {
+      "name": "Select all tasks due tomorrow in the current list",
+      "hotkey": "*+o"
+    },
+    {
+      "name": "Select all overdue tasks in the current list",
+      "hotkey": "*+v"
+    },
+    {
+      "name": "Move the cursor up",
+      "hotkey": "k"
+    },
+    {
+      "name": "Move the cursor down",
+      "hotkey": "j"
+    },
+    {
+      "name": "Switch between Incomplete and Completed tabs",
+      "hotkey": "h"
+    },
+    {
+      "name": "Complete the selected task/s",
+      "hotkey": "c"
+    },
+    {
+      "name": "Postpone the selected task/s if they have a due date",
+      "hotkey": "p"
+    },
+    {
+      "name": "Postpone the selected task/s by one day if they have a due date",
+      "hotkey": "shift+p"
+    },
+    {
+      "name": "Change the start date of the selected task",
+      "hotkey": "w"
+    },
+    {
+      "name": "Change the due date of the selected task",
+      "hotkey": "d"
+    },
+    {
+      "name": "Change the repeat of the selected task",
+      "hotkey": "f"
+    },
+    {
+      "name": "Change the time estimate of the selected task",
+      "hotkey": "e"
+    },
+    {
+      "name": "Change the priority of the selected task/s",
+      "hotkey": "!"
+    },
+    {
+      "name": "Set the priority of the selected task/s to 1",
+      "hotkey": "1"
+    },
+    {
+      "name": "Set the priority of the selected task/s to 2",
+      "hotkey": "2"
+    },
+    {
+      "name": "Set the priority of the selected task/s to 3",
+      "hotkey": "3"
+    },
+    {
+      "name": "Set the selected task/s to have no priority",
+      "hotkey": "4"
+    },
+    {
+      "name": "Change the list for the selected task/s",
+      "hotkey": "m"
+    },
+    {
+      "name": "Change the tags for the selected task/s",
+      "hotkey": "s"
+    },
+    {
+      "name": "Change the location for the selected task",
+      "hotkey": "l"
+    },
+    {
+      "name": "Change the URL for the selected task",
+      "hotkey": "u"
+    },
+    {
+      "name": "Open the URL for the selected task in your browser",
+      "hotkey": "shift+u"
+    },
+    {
+      "name": "Give the selected task/s to a contact",
+      "hotkey": "v"
+    },
+    {
+      "name": "Set a reminder for the selected task",
+      "hotkey": "b"
+    },
+    {
+      "name": "Rename the selected task",
+      "hotkey": "r"
+    },
+    {
+      "name": "Add a note to the selected task",
+      "hotkey": "y"
+    },
+    {
+      "name": "Save a task's note when editing it",
+      "hotkey": "ctrl+enter"
+    },
+    {
+      "name": "Select a task",
+      "hotkey": "i"
+    },
+    {
+      "name": "Open a task's details in single-pane view",
+      "hotkey": "o"
+    },
+    {
+      "name": "Delete the currently selected task(s)",
+      "hotkey": "del"
+    },
+    {
+      "name": "Undo the last action",
+      "hotkey": "z"
+    }
+  ]
+}

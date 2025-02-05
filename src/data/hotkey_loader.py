@@ -34,16 +34,26 @@ class HotkeyLoader:
                     with open(json_file, 'r', encoding='utf-8') as f:
                         data = json.load(f)
                         # Handle both old format (array) and new format (object with metadata)
-                        hotkeys = data['hotkeys'] if isinstance(data, dict) and 'hotkeys' in data else data
+                        if isinstance(data, dict) and 'hotkeys' in data:
+                            hotkeys = data['hotkeys']
+                            # Get prefix from metadata if it exists
+                            prefix = data.get('metadata', {}).get('prefix', '')
+                        else:
+                            hotkeys = data
+                            prefix = ''
                         
                         if isinstance(hotkeys, list):
                             for hotkey in hotkeys:
                                 # Handle new format with array of actions
                                 if 'hotkeys' in hotkey:
+                                    if prefix:
+                                        hotkey['name'] = f"{prefix} {hotkey['name']}"
                                     all_hotkeys.append(hotkey)
                                 # Handle old format with single hotkey
                                 elif 'hotkey' in hotkey and hotkey['hotkey'] not in seen_hotkeys:
                                     seen_hotkeys.add(hotkey['hotkey'])
+                                    if prefix:
+                                        hotkey['name'] = f"{prefix} {hotkey['name']}"
                                     all_hotkeys.append(hotkey)
                         else:
                             print(f"[DEBUG] Invalid hotkey format in {json_file}")

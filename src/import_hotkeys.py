@@ -36,6 +36,14 @@ def parse_arguments() -> argparse.Namespace:
         '--filename',
         help='Name for the output JSON file (defaults to app name)'
     )
+    parser.add_argument(
+        '--prefix',
+        help='Prefix to add to all hotkey names'
+    )
+    parser.add_argument(
+        '--window-title',
+        help='Window title pattern to match'
+    )
     
     # Parse known args first to handle optional arguments
     args, _ = parser.parse_known_args()
@@ -45,6 +53,10 @@ def parse_arguments() -> argparse.Namespace:
         args.name = input("Please enter the application name: ")
     if not args.url:
         args.url = input("Please enter the URL containing hotkeys: ")
+    if args.prefix is None:  # Note: using None check since empty string is valid
+        args.prefix = input("Enter prefix for hotkey names (optional, press Enter to skip): ").strip()
+    if args.window_title is None:
+        args.window_title = input("Enter window title pattern (optional, press Enter to skip): ").strip()
     
     return args
 
@@ -132,7 +144,14 @@ def main() -> None:
 
         # Save results with metadata
         print("Saving hotkeys")
-        output_path = json_writer.save_hotkeys(args.name, hotkeys, filename=filename, url=args.url)
+        output_path = json_writer.save_hotkeys(
+            args.name, 
+            hotkeys, 
+            filename=filename, 
+            url=args.url,
+            prefix=args.prefix,
+            window_title=args.window_title
+        )
         print(f"Hotkeys saved to: {output_path}")
 
     except KeyboardInterrupt:

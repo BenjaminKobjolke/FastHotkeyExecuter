@@ -19,7 +19,8 @@ class JsonWriter:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def save_hotkeys(self, name: str, hotkeys: List[Dict[str, str]], filename: str = "default", url: Optional[str] = None) -> str:
+    def save_hotkeys(self, name: str, hotkeys: List[Dict[str, str]], filename: str = "default", 
+                    url: Optional[str] = None, prefix: str = "", window_title: str = "") -> str:
         """Save hotkeys to a JSON file in the application's directory.
 
         Args:
@@ -52,7 +53,9 @@ class JsonWriter:
             data = {
                 "metadata": {
                     "url": url,
-                    "timestamp": datetime.now().isoformat()
+                    "timestamp": datetime.now().isoformat(),
+                    "prefix": prefix,
+                    "window_title": window_title
                 },
                 "hotkeys": validated_hotkeys
             }

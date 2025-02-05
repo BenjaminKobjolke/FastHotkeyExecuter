@@ -41,7 +41,7 @@ class HotkeyExecutor:
                 raise ValueError("Invalid hotkey data format")
 
             # Handle new format with array of actions
-            if 'hotkeys' in hotkey_data:
+            if 'hotkeys' in hotkey_data and isinstance(hotkey_data['hotkeys'], list):
                 print(f"[DEBUG] Executing hotkey sequence for: {hotkey_data['name']}")
                 # Reset abort flag at start of sequence
                 self.abort_sequence = False
@@ -105,8 +105,8 @@ class HotkeyExecutor:
             # Clean up keys and filter out empty strings
             keys = [key.strip() for key in keys if key.strip()]
             
-            # Map key aliases to standard forms
-            keys = [KEY_ALIASES.get(k, k) for k in keys]
+            # Map key aliases to standard forms, but preserve '?' key
+            keys = [k if k == '?' else KEY_ALIASES.get(k, k) for k in keys]
             
             # Validate keys before execution
             try:
@@ -162,9 +162,17 @@ class HotkeyExecutor:
                     time.sleep(0.05)
                     keyboard.release('windows')
                 else:
-                    keyboard.press(keys[-1])
-                    time.sleep(0.05)
-                    keyboard.release(keys[-1])
+                    # Handle '?' key specially
+                    if keys[-1] == '?':
+                        keyboard.press('shift')
+                        keyboard.press('ß')
+                        time.sleep(0.05)
+                        keyboard.release('ß')
+                        keyboard.release('shift')
+                    else:
+                        keyboard.press(keys[-1])
+                        time.sleep(0.05)
+                        keyboard.release(keys[-1])
                 
                 # Release modifiers in reverse order
                 for key in reversed(modifiers):
