@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "url": "https://keepass.info/help/kb/keyb_shortcuts.html",
+    "timestamp": "2025-02-05T13:02:18.563213",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "File → New",
+      "hotkey": "ctrl+n"
+    },
+    {
+      "name": "File → Open → Open File",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "File → Open → Open URL",
+      "hotkey": "ctrl+shift+o"
+    },
+    {
+      "name": "File → Close",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "File → Save",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "File → Print → Print",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "File → Synchronize → Synchronize with File",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "File → Synchronize → Synchronize with URL",
+      "hotkey": "ctrl+shift+r"
+    },
+    {
+      "name": "File → (Un)Lock Workspace",
+      "hotkey": "ctrl+l"
+    },
+    {
+      "name": "File → Exit",
+      "hotkey": "ctrl+q"
+    },
+    {
+      "name": "Find → Find",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Find → Find",
+      "hotkey": "f3"
+    },
+    {
+      "name": "Find → Find in Selected Group",
+      "hotkey": "ctrl+shift+f"
+    },
+    {
+      "name": "Find → Selected Entry's Group",
+      "hotkey": "ctrl+g"
+    },
+    {
+      "name": "View → Configure Columns → Toggle Asterisks for User Names",
+      "hotkey": "ctrl+j"
+    },
+    {
+      "name": "View → Configure Columns → Toggle Asterisks for Passwords",
+      "hotkey": "ctrl+h"
+    },
+    {
+      "name": "Help → Help Contents",
+      "hotkey": "f1"
+    },
+    {
+      "name": "Focus Quick Search Box",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Switch to Next Database",
+      "hotkey": "ctrl+tab"
+    },
+    {
+      "name": "Switch to Previous Database",
+      "hotkey": "ctrl+shift+tab"
+    },
+    {
+      "name": "Custom Action (definable in 'Tools' → 'Options' → tab 'Interface')",
+      "hotkey": "esc"
+    },
+    {
+      "name": "Delete Group",
+      "hotkey": "delete"
+    },
+    {
+      "name": "Delete Group Permanently",
+      "hotkey": "shift+delete"
+    },
+    {
+      "name": "Rearrange → Move Group to Top [On Windows]",
+      "hotkey": "alt+home"
+    },
+    {
+      "name": "Rearrange → Move Group One Up [On Windows]",
+      "hotkey": "alt+↑"
+    },
+    {
+      "name": "Rearrange → Move Group One Down [On Windows]",
+      "hotkey": "alt+↓"
+    },
+    {
+      "name": "Rearrange → Move Group to Bottom [On Windows]",
+      "hotkey": "alt+end"
+    },
+    {
+      "name": "Rearrange → Expand Recursively",
+      "hotkey": "ctrl+*"
+    },
+    {
+      "name": "Rearrange → Collapse Recursively",
+      "hotkey": "ctrl+/"
+    },
+    {
+      "name": "Data Exchange → Copy Group",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Data Exchange → Paste Group",
+      "hotkey": "ctrl+shift+v"
+    },
+    {
+      "name": "Data Exchange → Print Group",
+      "hotkey": "ctrl+shift+p"
+    },
+    {
+      "name": "Copy User Name",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Copy Password",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "URL(s) → Open",
+      "hotkey": "ctrl+u"
+    },
+    {
+      "name": "URL(s) → Copy",
+      "hotkey": "ctrl+shift+u"
+    },
+    {
+      "name": "Other Data → Copy Time-Based OTP",
+      "hotkey": "ctrl+t"
+    },
+    {
+      "name": "Other Data → Show Time-Based OTP",
+      "hotkey": "ctrl+shift+t"
+    },
+    {
+      "name": "Perform Auto-Type",
+      "hotkey": "ctrl+v"
+    },
+    {
+      "name": "Add Entry",
+      "hotkey": "ctrl+i"
+    },
+    {
+      "name": "Edit Entry",
+      "hotkey": "enter"
+    },
+    {
+      "name": "Duplicate Entry",
+      "hotkey": "ctrl+k"
+    },
+    {
+      "name": "Delete Entry",
+      "hotkey": "delete"
+    },
+    {
+      "name": "Delete Entry Permanently",
+      "hotkey": "shift+delete"
+    },
+    {
+      "name": "Select All",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Rearrange → Move Entry to Top [On Windows]",
+      "hotkey": "alt+home"
+    },
+    {
+      "name": "Rearrange → Move Entry One Up [On Windows]",
+      "hotkey": "alt+↑"
+    },
+    {
+      "name": "Rearrange → Move Entry One Down [On Windows]",
+      "hotkey": "alt+↓"
+    },
+    {
+      "name": "Rearrange → Move Entry to Bottom [On Windows]",
+      "hotkey": "alt+end"
+    },
+    {
+      "name": "Compare → Compare Entries",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Compare → Mark Entry for Comparison",
+      "hotkey": "ctrl+shift+d"
+    },
+    {
+      "name": "Compare → Compare Entry with Marked Entry",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Data Exchange → Copy Entry",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Data Exchange → Paste Entry",
+      "hotkey": "ctrl+shift+v"
+    },
+    {
+      "name": "Global Auto-Type",
+      "hotkey": "ctrl+alt+a"
+    },
+    {
+      "name": "Global Auto-Type - Password Only",
+      "hotkey": "ctrl+alt+shift+a"
+    },
+    {
+      "name": "Show KeePass Window",
+      "hotkey": "ctrl+alt+k"
+    }
+  ]
+}

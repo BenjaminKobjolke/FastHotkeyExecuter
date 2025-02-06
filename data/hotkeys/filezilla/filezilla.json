@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "url": "https://wiki.filezilla-project.org/Keyboard_shortcuts",
+    "timestamp": "2025-02-05T10:13:23.875839",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Rename selected file",
+      "hotkey": "f2"
+    },
+    {
+      "name": "Search remote files",
+      "hotkey": "f3"
+    },
+    {
+      "name": "Refresh local and remote file and folder views",
+      "hotkey": "f5"
+    },
+    {
+      "name": "Switches to the next view",
+      "hotkey": "tab"
+    },
+    {
+      "name": "Transfer the currently selected item to an item of the same name in the other pane",
+      "hotkey": "alt+down"
+    },
+    {
+      "name": "Navigate up one line in a tree view or to the parent folder in file view",
+      "hotkey": "alt+up"
+    },
+    {
+      "name": "Add bookmark",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Manage bookmarks",
+      "hotkey": "ctrl+shift+b"
+    },
+    {
+      "name": "Stop the current operation",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Disconnect from server",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Show files currently being edited",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Enable Quick Search on either remote or local site",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Directory listing filters",
+      "hotkey": "ctrl+i"
+    },
+    {
+      "name": "Manual transfer",
+      "hotkey": "ctrl+m"
+    },
+    {
+      "name": "Create a new directory",
+      "hotkey": "ctrl+shift+n"
+    },
+    {
+      "name": "Enable directory comparison",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Process queue",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "Exit",
+      "hotkey": "ctrl+q"
+    },
+    {
+      "name": "Reconnect to server",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "Open the Site Manager",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Open a new tab",
+      "hotkey": "ctrl+t"
+    },
+    {
+      "name": "Preserve timestamps of transferred files",
+      "hotkey": "ctrl+u"
+    },
+    {
+      "name": "Toggle synchronized browsing",
+      "hotkey": "ctrl+y"
+    },
+    {
+      "name": "Close tab",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "Transfer the currently selected item if it is a file or expands it if it is a directory",
+      "hotkey": "enter"
+    },
+    {
+      "name": "Switch to the next tab",
+      "hotkey": "ctrl+pgup"
+    },
+    {
+      "name": "Switch to the previous tab",
+      "hotkey": "ctrl+pgdn"
+    },
+    {
+      "name": "Move up one item in the current view",
+      "hotkey": "up arrow"
+    },
+    {
+      "name": "Move down one item in the current view",
+      "hotkey": "down arrow"
+    },
+    {
+      "name": "Navigate up one level in a tree view or nothing in a files view",
+      "hotkey": "left arrow"
+    },
+    {
+      "name": "Navigate down one level in a tree view if there are subfolders, nothing if there are none. Expands a collapsed node, pressing again steps down into it",
+      "hotkey": "right arrow"
+    }
+  ]
+}
