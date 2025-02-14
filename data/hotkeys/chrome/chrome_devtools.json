@@ -1,0 +1,378 @@
+{
+  "metadata": {
+    "url": "https://developer.chrome.com/docs/devtools/shortcuts",
+    "timestamp": "2025-02-14T14:19:29.314381",
+    "prefix": "Dev",
+    "window_title": "DevTools"
+  },
+  "hotkeys": [
+    {
+      "name": "Open last used DevTools panel",
+      "hotkey": "f12"
+    },
+    {
+      "name": "Open last used DevTools panel",
+      "hotkey": "ctrl+shift+i"
+    },
+    {
+      "name": "Open Console panel",
+      "hotkey": "ctrl+shift+j"
+    },
+    {
+      "name": "Open Elements panel",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Show settings",
+      "hotkey": "f1"
+    },
+    {
+      "name": "Focus next panel",
+      "hotkey": "ctrl+]"
+    },
+    {
+      "name": "Focus previous panel",
+      "hotkey": "ctrl+["
+    },
+    {
+      "name": "Toggle last used dock position",
+      "hotkey": "ctrl+shift+d"
+    },
+    {
+      "name": "Toggle device mode",
+      "hotkey": "ctrl+shift+m"
+    },
+    {
+      "name": "Toggle Inspect mode",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Open command menu",
+      "hotkey": "ctrl+shift+p"
+    },
+    {
+      "name": "Toggle drawer",
+      "hotkey": "esc"
+    },
+    {
+      "name": "Perform normal reload",
+      "hotkey": "f5"
+    },
+    {
+      "name": "Perform normal reload",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "Perform full reload",
+      "hotkey": "ctrl+f5"
+    },
+    {
+      "name": "Perform full reload",
+      "hotkey": "ctrl+shift+r"
+    },
+    {
+      "name": "Search for text within current panel",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Search for text across all loaded resources",
+      "hotkey": "ctrl+shift+f"
+    },
+    {
+      "name": "Open file in Sources panel",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Open file in Sources panel",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "Zoom in",
+      "hotkey": "ctrl+shift++"
+    },
+    {
+      "name": "Zoom out",
+      "hotkey": "ctrl+-"
+    },
+    {
+      "name": "Restore to default zoom level",
+      "hotkey": "ctrl+0"
+    },
+    {
+      "name": "Run snippet",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Undo change",
+      "hotkey": "ctrl+z"
+    },
+    {
+      "name": "Redo change",
+      "hotkey": "ctrl+y"
+    },
+    {
+      "name": "Select element above/below current element",
+      "hotkey": "up/down"
+    },
+    {
+      "name": "Expand currently selected node",
+      "hotkey": "right"
+    },
+    {
+      "name": "Collapse currently selected node",
+      "hotkey": "left"
+    },
+    {
+      "name": "Expand/collapse current node and subnodes",
+      "hotkey": "ctrl+alt+click"
+    },
+    {
+      "name": "Toggle attribute edit mode",
+      "hotkey": "enter"
+    },
+    {
+      "name": "Switch to next/previous attribute in edit mode",
+      "hotkey": "tab/shift+tab"
+    },
+    {
+      "name": "Hide currently selected element",
+      "hotkey": "h"
+    },
+    {
+      "name": "Toggle edit HTML mode",
+      "hotkey": "f2"
+    },
+    {
+      "name": "Change property value declaration line",
+      "hotkey": "ctrl+click"
+    },
+    {
+      "name": "Cycle through color formats (RGBA, HSLA, Hex)",
+      "hotkey": "shift+click"
+    },
+    {
+      "name": "Select next/previous property or value",
+      "hotkey": "tab/shift+tab"
+    },
+    {
+      "name": "Increment/decrement property value by 0.1",
+      "hotkey": "alt+up/down"
+    },
+    {
+      "name": "Increment/decrement property value by 1",
+      "hotkey": "up/down"
+    },
+    {
+      "name": "Increment/decrement property value by 10",
+      "hotkey": "shift+up/down"
+    },
+    {
+      "name": "Increment/decrement property value by 100",
+      "hotkey": "ctrl+up/down"
+    },
+    {
+      "name": "Cycle angle formats",
+      "hotkey": "shift+click"
+    },
+    {
+      "name": "Increment/decrement angle value by 1",
+      "hotkey": "up/down"
+    },
+    {
+      "name": "Increment/decrement angle value by 10",
+      "hotkey": "shift+up/down"
+    },
+    {
+      "name": "Increment/decrement angle value by 15",
+      "hotkey": "shift+click"
+    },
+    {
+      "name": "Pause/resume script execution",
+      "hotkey": "f8"
+    },
+    {
+      "name": "Step over next function call",
+      "hotkey": "f10"
+    },
+    {
+      "name": "Step into function call",
+      "hotkey": "f11"
+    },
+    {
+      "name": "Step out of current function",
+      "hotkey": "shift+f11"
+    },
+    {
+      "name": "Select call frame below/above current",
+      "hotkey": "ctrl+./ctrl+,"
+    },
+    {
+      "name": "Save changes to local modifications",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Save all changes",
+      "hotkey": "ctrl+alt+s"
+    },
+    {
+      "name": "Go to line",
+      "hotkey": "ctrl+g"
+    },
+    {
+      "name": "Jump to specific line in open file",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Jump to column in open file",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Jump to function declaration or CSS ruleset",
+      "hotkey": "ctrl+shift+o"
+    },
+    {
+      "name": "Close active tab",
+      "hotkey": "alt+w"
+    },
+    {
+      "name": "Open next/previous tab",
+      "hotkey": "ctrl+pageup/pagedown"
+    },
+    {
+      "name": "Toggle navigation sidebar",
+      "hotkey": "ctrl+shift+y"
+    },
+    {
+      "name": "Toggle debugger sidebar",
+      "hotkey": "ctrl+shift+h"
+    },
+    {
+      "name": "Delete all characters in the last word up to the cursor",
+      "hotkey": "ctrl+delete"
+    },
+    {
+      "name": "Toggle breakpoint at current code line",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Open breakpoint edit dialog",
+      "hotkey": "ctrl+alt+b"
+    },
+    {
+      "name": "Open conditional breakpoint dialog",
+      "hotkey": "ctrl+click"
+    },
+    {
+      "name": "Open logpoint dialog",
+      "hotkey": "ctrl+shift+click"
+    },
+    {
+      "name": "Go to matching brace",
+      "hotkey": "ctrl+m"
+    },
+    {
+      "name": "Toggle comment on/off on selected line(s)",
+      "hotkey": "ctrl+/"
+    },
+    {
+      "name": "Select next occurrence of word under cursor",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Dismiss selection",
+      "hotkey": "ctrl+u"
+    },
+    {
+      "name": "Search headers, payloads, and responses",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Start/stop recording",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Record a reload",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "Replay XHR request",
+      "hotkey": "f"
+    },
+    {
+      "name": "Hide request details",
+      "hotkey": "esc"
+    },
+    {
+      "name": "Save recording",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Load recording",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Autocomplete suggestion accept",
+      "hotkey": "right/tab"
+    },
+    {
+      "name": "Autocomplete suggestion decline",
+      "hotkey": "esc"
+    },
+    {
+      "name": "Navigate autocomplete list",
+      "hotkey": "up/down"
+    },
+    {
+      "name": "Retrieve previous console input",
+      "hotkey": "up"
+    },
+    {
+      "name": "Retrieve next console input",
+      "hotkey": "down"
+    },
+    {
+      "name": "Focus console",
+      "hotkey": "ctrl+`"
+    },
+    {
+      "name": "Clear console",
+      "hotkey": "ctrl+l"
+    },
+    {
+      "name": "Force multiline entry",
+      "hotkey": "shift+enter"
+    },
+    {
+      "name": "Execute console command",
+      "hotkey": "enter"
+    },
+    {
+      "name": "Expand all child properties in logged object",
+      "hotkey": "alt+click"
+    },
+    {
+      "name": "Maximize/minimize all search results",
+      "hotkey": "ctrl+shift+{"
+    },
+    {
+      "name": "Maximize/minimize all search results",
+      "hotkey": "ctrl+shift+}"
+    },
+    {
+      "name": "Start/stop recording",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Replay recording",
+      "hotkey": "ctrl+enter"
+    },
+    {
+      "name": "Copy recording or selected step",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Toggle code view",
+      "hotkey": "ctrl+b"
+    }
+  ]
+}
