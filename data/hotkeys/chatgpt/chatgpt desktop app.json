@@ -28,7 +28,7 @@
     },
     {
       "name": "Delete chat",
-      "hotkey": "ctrl+shift+x"
+      "hotkey": "ctrl+shift+backspace"
     },
     {
       "name": "Copy last response",
