@@ -141,10 +141,12 @@ class UIManager:
         ok_button.bind('<Leave>', on_leave)
         ok_button.pack(pady=(0, 10))
 
-        # Allow closing dialog with any key or clicking outside
-        dialog.bind('<Key>', lambda e: dialog.destroy())
-        dialog.bind('<Button-1>', lambda e: dialog.destroy())
-        dialog.bind('<Button-3>', lambda e: dialog.destroy())
+        # Only close dialog with Enter key or Escape key
+        dialog.bind('<Return>', lambda e: dialog.destroy())
+        dialog.bind('<Escape>', lambda e: dialog.destroy())
+        
+        # Make the OK button the default action when Enter is pressed
+        ok_button.bind('<Return>', lambda e: dialog.destroy())
 
         return dialog
 
