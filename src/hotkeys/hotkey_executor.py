@@ -92,7 +92,17 @@ class HotkeyExecutor:
     def _execute_single_hotkey(self, hotkey):
         """Execute a single hotkey combination."""
         try:
-            
+            # Special case for standalone semicolon
+            if hotkey == ';':
+                # For German keyboard, semicolon is shift+comma
+                keyboard.press('shift')
+                keyboard.press(',')
+                time.sleep(0.05)
+                keyboard.release(',')
+                keyboard.release('shift')
+                print("[DEBUG] Hotkey executed successfully")
+                return
+                
             # Split and handle special case for '+' key
             if '++' in hotkey:
                 # Handle ctrl++ case
