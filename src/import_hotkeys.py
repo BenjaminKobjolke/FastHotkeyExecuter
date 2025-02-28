@@ -50,7 +50,7 @@ def parse_arguments() -> argparse.Namespace:
     
     # Prompt for missing arguments
     if not args.name:
-        args.name = input("Please enter the application name: ")
+        args.name = input("Please enter the application name (task name found in taskmanager, without extension): ")
     if not args.url:
         args.url = input("Please enter the URL containing hotkeys: ")
     if args.prefix is None:  # Note: using None check since empty string is valid
