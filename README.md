@@ -20,7 +20,7 @@ A Python application that provides quick access to application-specific hotkeys 
 ## Usage
 
 1. Run `run.bat` to start the application
-2. Press Ctrl+Shift+P (default) to show the search window
+2. Press F1 (default) to show the search window
 3. Type to search for hotkeys
 4. Use arrow keys to navigate results
 5. Press Enter to execute the selected hotkey
