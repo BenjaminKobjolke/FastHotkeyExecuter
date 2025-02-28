@@ -169,6 +169,13 @@ class HotkeyExecutor:
                         time.sleep(0.05)
                         keyboard.release('ß')
                         keyboard.release('shift')
+                    # Handle ';' key specially for German keyboard layout
+                    elif keys[-1] == ';':
+                        keyboard.press('shift')
+                        keyboard.press(',')  # Comma key
+                        time.sleep(0.05)
+                        keyboard.release(',')
+                        keyboard.release('shift')
                     else:
                         keyboard.press(keys[-1])
                         time.sleep(0.05)

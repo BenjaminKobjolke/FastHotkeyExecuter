@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "url": "https://medium.com/@Onecooltip/how-to-use-the-secret-chatgpt-keyboard-shortcuts-64c7215c37ae",
+    "timestamp": "2025-02-28T09:11:32.760477",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Open new chat",
+      "hotkey": "ctrl+shift+o"
+    },
+    {
+      "name": "Set custom instructions",
+      "hotkey": "ctrl+shift+i"
+    },
+    {
+      "name": "Focus chat input",
+      "hotkey": "shift+esc"
+    },
+    {
+      "name": "Toggle sidebar",
+      "hotkey": "ctrl+shift+s"
+    },
+    {
+      "name": "Copy last code block",
+      "hotkey": "ctrl+shift+;"
+    },
+    {
+      "name": "Delete chat",
+      "hotkey": "ctrl+shift+x"
+    },
+    {
+      "name": "Copy last response",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Show shortcuts",
+      "hotkey": "ctrl+/"
+    }
+  ]
+}
