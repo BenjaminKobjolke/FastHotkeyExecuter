@@ -23,7 +23,7 @@ VALID_KEYS = {
     'esc', 'enter', 'tab', 'space', 'backspace', 'delete',
     'up', 'down', 'left', 'right', 'home', 'end', 'pageup', 'pagedown',
     'insert', '+', '-', '*', '/', '\\', '=', 'win', 'command', 'control',
-    'numpad+', 'numpad-', '?', ';'
+    'numpad+', 'numpad-', '?', ';', ','
 }
 
 # Add letters
