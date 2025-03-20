@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "url": "https://defkey.com/keeweb-shortcuts",
+    "timestamp": "2025-03-20T06:22:34.371760",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Auto-type selected entry (global)",
+      "hotkey": "shift+alt+t"
+    },
+    {
+      "name": "Copy password (global)",
+      "hotkey": "shift+alt+c"
+    },
+    {
+      "name": "Copy user (global)",
+      "hotkey": "shift+alt+b"
+    },
+    {
+      "name": "Copy website (global)",
+      "hotkey": "shift+alt+u"
+    },
+    {
+      "name": "Show all items",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Show all items",
+      "hotkey": "alt+a"
+    },
+    {
+      "name": "Show items with colors",
+      "hotkey": "alt+c"
+    },
+    {
+      "name": "Go to Trash",
+      "hotkey": "alt+d"
+    },
+    {
+      "name": "Search",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Clear search",
+      "hotkey": "esc"
+    },
+    {
+      "name": "Copy password or selected field",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Copy user",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Copy website",
+      "hotkey": "ctrl+u"
+    },
+    {
+      "name": "Auto-type selected entry",
+      "hotkey": "ctrl+t"
+    },
+    {
+      "name": "Go to previous item",
+      "hotkey": "up"
+    },
+    {
+      "name": "Go to next item",
+      "hotkey": "down"
+    },
+    {
+      "name": "Create entry",
+      "hotkey": "alt+n"
+    },
+    {
+      "name": "Open / New",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Save all files",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Generate password",
+      "hotkey": "ctrl+g"
+    },
+    {
+      "name": "Application settings",
+      "hotkey": "ctrl+,"
+    },
+    {
+      "name": "Lock database",
+      "hotkey": "ctrl+l"
+    }
+  ]
+}
