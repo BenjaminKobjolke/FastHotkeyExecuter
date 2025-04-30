@@ -1,122 +1,154 @@
-[
-  {
-    "name": "Open File",
-    "hotkey": "ctrl+o"
+{
+  "metadata": {
+    "url": "http://www.keyxl.com/aaa7cf8/224/foxit-pdf-reader-2-keyboard-shortcuts.htm",
+    "timestamp": "2025-03-21T08:08:17.631506",
+    "prefix": "",
+    "window_title": ""
   },
-  {
-    "name": "Close File",
-    "hotkey": "ctrl+w"
-  },
-  {
-    "name": "Save As",
-    "hotkey": "ctrl+shift+s"
-  },
-  {
-    "name": "Close All",
-    "hotkey": "ctrl+shift+w"
-  },
-  {
-    "name": "Print Document",
-    "hotkey": "ctrl+p"
-  },
-  {
-    "name": "Quit Foxit Reader",
-    "hotkey": "ctrl+q"
-  },
-  {
-    "name": "Bookmark",
-    "hotkey": "alt+1"
-  },
-  {
-    "name": "Full Screen",
-    "hotkey": "alt+2"
-  },
-  {
-    "name": "Zoom in",
-    "hotkey": "ctrl+numpad+"
-  },
-  {
-    "name": "Zoom Out",
-    "hotkey": "ctrl+numpad-"
-  },
-  {
-    "name": "Zoom To",
-    "hotkey": "ctrl+m"
-  },
-  {
-    "name": "Actual Size",
-    "hotkey": "ctrl+1"
-  },
-  {
-    "name": "Fit to Page",
-    "hotkey": "ctrl+2"
-  },
-  {
-    "name": "Fit Width",
-    "hotkey": "ctrl+3"
-  },
-  {
-    "name": "Rotate Clockwise",
-    "hotkey": "ctrl+shift++"
-  },
-  {
-    "name": "Rotate CounterClockwise",
-    "hotkey": "ctrl+shift+-"
-  },
-  {
-    "name": "Reset Toolbars",
-    "hotkey": "alt+f8"
-  },
-  {
-    "name": "Hide Toolbars",
-    "hotkey": "f8"
-  },
-  {
-    "name": "First Page",
-    "hotkey": "home"
-  },
-  {
-    "name": "Previous Page",
-    "hotkey": "left"
-  },
-  {
-    "name": "Next Page",
-    "hotkey": "right"
-  },
-  {
-    "name": "Last Page",
-    "hotkey": "end"
-  },
-  {
-    "name": "Go to Page",
-    "hotkey": "shift+ctrl+n"
-  },
-  {
-    "name": "Select All",
-    "hotkey": "ctrl+a"
-  },
-  {
-    "name": "Page Down",
-    "hotkey": "space"
-  },
-  {
-    "name": "Page Up",
-    "hotkey": "shift+space"
-  },
-  {
-    "name": "Copy",
-    "hotkey": "ctrl+c"
-  },
-  {
-    "name": "Find Text",
-    "hotkey": "ctrl+f"
-  },
-  {
-    "name": "Find Next",
-    "hotkey": "f3"
-  },
-  {
-    "name": "Preferences",
-    "hotkey": "ctrl+k"
-  }
-]
+  "hotkeys": [
+    {
+      "name": "Open File",
+      "hotkey": "ctrl+0"
+    },
+    {
+      "name": "Close File",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "Save As",
+      "hotkey": "ctrl+shift+s"
+    },
+    {
+      "name": "Close All",
+      "hotkey": "ctrl+shift+w"
+    },
+    {
+      "name": "Print Document",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "Exit Foxit Reader",
+      "hotkey": "ctrl+q"
+    },
+    {
+      "name": "Bookmark",
+      "hotkey": "alt+1"
+    },
+    {
+      "name": "Full Screen",
+      "hotkey": "alt+2"
+    },
+    {
+      "name": "Zoom in",
+      "hotkey": "ctrl+num(plus)"
+    },
+    {
+      "name": "Zoom Out",
+      "hotkey": "ctrl+num(minus)"
+    },
+    {
+      "name": "Zoom To",
+      "hotkey": "ctrl+m"
+    },
+    {
+      "name": "Actual Size",
+      "hotkey": "ctrl+1"
+    },
+    {
+      "name": "Fit to Page",
+      "hotkey": "ctrl+2"
+    },
+    {
+      "name": "Fit Width",
+      "hotkey": "ctrl+3"
+    },
+    {
+      "name": "Rotate Clockwise",
+      "hotkey": "ctrl+shift+plus"
+    },
+    {
+      "name": "Rotate CounterClockwise",
+      "hotkey": "ctrl+shift+minus"
+    },
+    {
+      "name": "Reset Toolbars",
+      "hotkey": "alt+f8"
+    },
+    {
+      "name": "Hide Toolbars",
+      "hotkey": "f8"
+    },
+    {
+      "name": "Copy",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Find Text",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Find Next",
+      "hotkey": "f3"
+    },
+    {
+      "name": "Preferences",
+      "hotkey": "ctrl+k"
+    },
+    {
+      "name": "Hand Tool",
+      "hotkey": "alt+3"
+    },
+    {
+      "name": "Zoom Out Tool",
+      "hotkey": "alt+4"
+    },
+    {
+      "name": "Zoom In Tool",
+      "hotkey": "alt+5"
+    },
+    {
+      "name": "Select Text",
+      "hotkey": "alt+6"
+    },
+    {
+      "name": "Snapshot",
+      "hotkey": "alt+7"
+    },
+    {
+      "name": "Typewriter",
+      "hotkey": "alt+8"
+    },
+    {
+      "name": "First Page",
+      "hotkey": "home"
+    },
+    {
+      "name": "Previous Page",
+      "hotkey": "left arrow"
+    },
+    {
+      "name": "Next Page",
+      "hotkey": "right arrow"
+    },
+    {
+      "name": "Last Page",
+      "hotkey": "end"
+    },
+    {
+      "name": "Go to Page",
+      "hotkey": "shift+ctrl+n"
+    },
+    {
+      "name": "Select All",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Page Down",
+      "hotkey": "space"
+    },
+    {
+      "name": "Page Up",
+      "hotkey": "shift+space"
+    }
+  ]
+}

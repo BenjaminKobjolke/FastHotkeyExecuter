@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "url": "https://doublecmd.github.io/doc/en/shortcuts.html",
+    "timestamp": "2025-04-30T15:47:00.507371",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Open the program help",
+      "hotkey": "f1"
+    },
+    {
+      "name": "Rename file under cursor",
+      "hotkey": "f2"
+    },
+    {
+      "name": "Rename file under cursor",
+      "hotkey": "shift+f6"
+    },
+    {
+      "name": "Open file for view in internal viewer",
+      "hotkey": "f3"
+    },
+    {
+      "name": "Open only the file under the cursor in internal viewer",
+      "hotkey": "shift+f3"
+    },
+    {
+      "name": "Open file in editor",
+      "hotkey": "f4"
+    },
+    {
+      "name": "Create a new text file and open in the internal editor",
+      "hotkey": "shift+f4"
+    },
+    {
+      "name": "Copy items from source to target",
+      "hotkey": "f5"
+    },
+    {
+      "name": "Copy items in the same directory (inline)",
+      "hotkey": "shift+f5"
+    },
+    {
+      "name": "Rename or move items",
+      "hotkey": "f6"
+    },
+    {
+      "name": "Create new directory",
+      "hotkey": "f7"
+    },
+    {
+      "name": "Delete selected files/folders to trash",
+      "hotkey": "f8"
+    },
+    {
+      "name": "Delete selected files/folders to trash",
+      "hotkey": "del"
+    },
+    {
+      "name": "Delete selected files/folders permanently",
+      "hotkey": "shift+f8"
+    },
+    {
+      "name": "Delete selected files/folders permanently",
+      "hotkey": "shift+del"
+    },
+    {
+      "name": "Starts a terminal",
+      "hotkey": "f9"
+    },
+    {
+      "name": "Change left drive",
+      "hotkey": "alt+f1"
+    },
+    {
+      "name": "Change right drive",
+      "hotkey": "alt+f2"
+    },
+    {
+      "name": "Exit",
+      "hotkey": "alt+f4"
+    },
+    {
+      "name": "Exit",
+      "hotkey": "alt+x"
+    },
+    {
+      "name": "Pack selected files",
+      "hotkey": "alt+f5"
+    },
+    {
+      "name": "Find files",
+      "hotkey": "alt+f7"
+    },
+    {
+      "name": "Invoke command line history pop up menu",
+      "hotkey": "alt+f8"
+    },
+    {
+      "name": "Unpack all files from archive under cursor",
+      "hotkey": "alt+f9"
+    },
+    {
+      "name": "Activate tab by index 1",
+      "hotkey": "alt+1"
+    },
+    {
+      "name": "Activate tab by index 2",
+      "hotkey": "alt+2"
+    },
+    {
+      "name": "Activate tab by index 3",
+      "hotkey": "alt+3"
+    },
+    {
+      "name": "Activate tab by index 4",
+      "hotkey": "alt+4"
+    },
+    {
+      "name": "Activate tab by index 5",
+      "hotkey": "alt+5"
+    },
+    {
+      "name": "Activate tab by index 6",
+      "hotkey": "alt+6"
+    },
+    {
+      "name": "Activate tab by index 7",
+      "hotkey": "alt+7"
+    },
+    {
+      "name": "Activate tab by index 8",
+      "hotkey": "alt+8"
+    },
+    {
+      "name": "Activate tab by index 9",
+      "hotkey": "alt+9"
+    },
+    {
+      "name": "Activate last tab",
+      "hotkey": "alt+0"
+    },
+    {
+      "name": "Directory history",
+      "hotkey": "alt+down"
+    },
+    {
+      "name": "Go to previous entry in history",
+      "hotkey": "alt+left"
+    },
+    {
+      "name": "Go to next entry in history",
+      "hotkey": "alt+right"
+    },
+    {
+      "name": "Validate the integrity of the content of selected archive file",
+      "hotkey": "alt+shift+f9"
+    },
+    {
+      "name": "File properties",
+      "hotkey": "alt+enter"
+    },
+    {
+      "name": "Calculate size of all directories",
+      "hotkey": "alt+shift+enter"
+    },
+    {
+      "name": "Wipe file/directory",
+      "hotkey": "alt+del"
+    },
+    {
+      "name": "Show file operations process if any",
+      "hotkey": "alt+v"
+    },
+    {
+      "name": "Open the directory of the active panel in the opposite panel",
+      "hotkey": "alt+z"
+    },
+    {
+      "name": "Brief view",
+      "hotkey": "ctrl+f1"
+    },
+    {
+      "name": "Columns view",
+      "hotkey": "ctrl+f2"
+    },
+    {
+      "name": "Thumbnails view",
+      "hotkey": "ctrl+shift+f1"
+    },
+    {
+      "name": "Sort by name",
+      "hotkey": "ctrl+f3"
+    },
+    {
+      "name": "Sort by extension",
+      "hotkey": "ctrl+f4"
+    },
+    {
+      "name": "Sort by date/time",
+      "hotkey": "ctrl+f5"
+    },
+    {
+      "name": "Sort by size",
+      "hotkey": "ctrl+f6"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+1"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+2"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+3"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+4"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+5"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+6"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+7"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+8"
+    },
+    {
+      "name": "Open drive by index",
+      "hotkey": "ctrl+9"
+    },
+    {
+      "name": "Invoke a program for the selected file from the system file associations",
+      "hotkey": "ctrl+alt+enter"
+    },
+    {
+      "name": "Goto next tab in the active panel",
+      "hotkey": "ctrl+tab"
+    },
+    {
+      "name": "Goto previous tab in the active panel",
+      "hotkey": "ctrl+shift+tab"
+    },
+    {
+      "name": "Select all",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Flat view",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Flat view for selected files and folders",
+      "hotkey": "ctrl+shift+b"
+    },
+    {
+      "name": "Copy to clipboard",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Directory hotlist",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Invoke directory history drop-down menu",
+      "hotkey": "ctrl+h"
+    },
+    {
+      "name": "Calculate occupied space",
+      "hotkey": "ctrl+l"
+    },
+    {
+      "name": "Multi-Rename Tool",
+      "hotkey": "ctrl+m"
+    },
+    {
+      "name": "Toggle fullscreen mode console",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Append active panel path to command line",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "Quick view",
+      "hotkey": "ctrl+q"
+    },
+    {
+      "name": "Refresh actual panel",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "Quick search",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "New tab in active panel",
+      "hotkey": "ctrl+t"
+    },
+    {
+      "name": "Swap panels",
+      "hotkey": "ctrl+u"
+    },
+    {
+      "name": "Paste from clipboard",
+      "hotkey": "ctrl+v"
+    },
+    {
+      "name": "Close actual tab",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "Cut to clipboard",
+      "hotkey": "ctrl+x"
+    },
+    {
+      "name": "Create/edit file comment",
+      "hotkey": "ctrl+z"
+    },
+    {
+      "name": "Open selected directory at new tab",
+      "hotkey": "ctrl+up"
+    },
+    {
+      "name": "Invoke command line history pop up menu",
+      "hotkey": "ctrl+down"
+    },
+    {
+      "name": "Cursor in right panel, open same directory in left panel",
+      "hotkey": "ctrl+left"
+    },
+    {
+      "name": "Cursor in left panel, open same directory in right panel",
+      "hotkey": "ctrl+right"
+    },
+    {
+      "name": "Go to root directory",
+      "hotkey": "ctrl+\\"
+    },
+    {
+      "name": "Show/hide hidden and system files",
+      "hotkey": "ctrl+."
+    },
+    {
+      "name": "Append selected item to command line",
+      "hotkey": "ctrl+enter"
+    },
+    {
+      "name": "Append concatenation of active panel path and selected item to command line",
+      "hotkey": "ctrl+shift+enter"
+    },
+    {
+      "name": "New search instance",
+      "hotkey": "ctrl+shift+f7"
+    },
+    {
+      "name": "Tree view panel",
+      "hotkey": "ctrl+shift+f8"
+    },
+    {
+      "name": "Change directory to home",
+      "hotkey": "ctrl+shift+home"
+    },
+    {
+      "name": "Show a menu with a list of all open tabs",
+      "hotkey": "ctrl+shift+a"
+    },
+    {
+      "name": "Copy full names of selected items to clipboard",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Copy names of selected items to clipboard",
+      "hotkey": "ctrl+shift+x"
+    },
+    {
+      "name": "Configuration of Directory Hotlist",
+      "hotkey": "ctrl+shift+d"
+    },
+    {
+      "name": "Set the arrangement of panels between vertical or horizontal",
+      "hotkey": "ctrl+shift+h"
+    },
+    {
+      "name": "Like Enter",
+      "hotkey": "ctrl+pgdn"
+    },
+    {
+      "name": "Like Backspace",
+      "hotkey": "ctrl+pgup"
+    },
+    {
+      "name": "Select all",
+      "hotkey": "ctrl+num +"
+    },
+    {
+      "name": "Unselect all",
+      "hotkey": "ctrl+num -"
+    },
+    {
+      "name": "Expand selection",
+      "hotkey": "num +"
+    },
+    {
+      "name": "Shrink selection",
+      "hotkey": "num -"
+    },
+    {
+      "name": "Invert selection",
+      "hotkey": "num *"
+    },
+    {
+      "name": "Select all files with the same extension",
+      "hotkey": "shift+num +"
+    },
+    {
+      "name": "Unselect all files with the same extension",
+      "hotkey": "shift+num -"
+    },
+    {
+      "name": "Set focus to command line",
+      "hotkey": "shift+f2"
+    },
+    {
+      "name": "Show context menu for files and folders",
+      "hotkey": "shift+f10"
+    },
+    {
+      "name": "Show window with all internal commands",
+      "hotkey": "shift+f12"
+    },
+    {
+      "name": "Switch focus between file list and tree view",
+      "hotkey": "shift+tab"
+    },
+    {
+      "name": "Execute command in terminal",
+      "hotkey": "shift+enter"
+    },
+    {
+      "name": "Switch between panels",
+      "hotkey": "tab"
+    },
+    {
+      "name": "Execute command in command line",
+      "hotkey": "enter"
+    },
+    {
+      "name": "Select file or directory",
+      "hotkey": "insert"
+    },
+    {
+      "name": "Goto upper directory",
+      "hotkey": "backspace"
+    },
+    {
+      "name": "Select/deselect item in directory",
+      "hotkey": "space"
+    },
+    {
+      "name": "Sort a list of commands by command name",
+      "hotkey": "ctrl+f3"
+    },
+    {
+      "name": "Sort a list of commands by hotkeys (grouped)",
+      "hotkey": "ctrl+f4"
+    },
+    {
+      "name": "Sort a list of commands by hotkeys (one per row)",
+      "hotkey": "ctrl+f5"
+    },
+    {
+      "name": "Save the current set of hotkeys",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Rename the current set of hotkeys",
+      "hotkey": "shift+f6"
+    },
+    {
+      "name": "Restore DC default",
+      "hotkey": "shift+ctrl+r"
+    }
+  ]
+}

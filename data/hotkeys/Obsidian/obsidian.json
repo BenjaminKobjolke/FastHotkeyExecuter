@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "url": "https://keycombiner.com/collections/obsidian/",
+    "timestamp": "2025-04-22T11:14:33.093114",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Open help",
+      "hotkey": "f1"
+    },
+    {
+      "name": "Close active pane",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "Toggle edit/preview mode",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Toggle italics for selection",
+      "hotkey": "ctrl+i"
+    },
+    {
+      "name": "Open quick switcher",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Open command palette",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "Editor: save file",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Delete paragraph",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Search current file",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Search in all files",
+      "hotkey": "ctrl+shift+f"
+    },
+    {
+      "name": "Open graph view",
+      "hotkey": "ctrl+g"
+    },
+    {
+      "name": "Search & replace in current file",
+      "hotkey": "ctrl+h"
+    },
+    {
+      "name": "Insert link",
+      "hotkey": "ctrl+k"
+    },
+    {
+      "name": "Toggle bold for selection",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Create new note",
+      "hotkey": "ctrl+n"
+    },
+    {
+      "name": "Open settings",
+      "hotkey": "ctrl+,"
+    },
+    {
+      "name": "Navigate back",
+      "hotkey": "ctrl+alt+left"
+    },
+    {
+      "name": "Navigate forward",
+      "hotkey": "ctrl+alt+right"
+    },
+    {
+      "name": "Follow link under cursor",
+      "hotkey": "alt+enter"
+    },
+    {
+      "name": "Open link under cursor in new pane",
+      "hotkey": "ctrl+alt+enter"
+    }
+  ]
+}

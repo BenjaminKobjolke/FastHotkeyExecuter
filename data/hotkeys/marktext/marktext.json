@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "url": "https://github.com/marktext/marktext/blob/develop/docs/KEYBINDINGS_WINDOWS.md",
+    "timestamp": "2025-04-22T11:04:18.739443",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "New window",
+      "hotkey": "ctrl+n"
+    },
+    {
+      "name": "New tab",
+      "hotkey": "ctrl+t"
+    },
+    {
+      "name": "Open markdown file",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Open folder",
+      "hotkey": "ctrl+shift+o"
+    },
+    {
+      "name": "Save",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Save as",
+      "hotkey": "ctrl+shift+s"
+    },
+    {
+      "name": "Open settings window",
+      "hotkey": "ctrl+,"
+    },
+    {
+      "name": "Close tab",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "Close window",
+      "hotkey": "ctrl+shift+w"
+    },
+    {
+      "name": "Quit MarkText",
+      "hotkey": "ctrl+q"
+    },
+    {
+      "name": "Undo last operation",
+      "hotkey": "ctrl+z"
+    },
+    {
+      "name": "Redo last operation",
+      "hotkey": "ctrl+shift+z"
+    },
+    {
+      "name": "Cut selected text",
+      "hotkey": "ctrl+x"
+    },
+    {
+      "name": "Copy selected text",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Paste text",
+      "hotkey": "ctrl+v"
+    },
+    {
+      "name": "Copy selected text as markdown",
+      "hotkey": "ctrl+shift+c"
+    },
+    {
+      "name": "Copy selected text as plaintext",
+      "hotkey": "ctrl+shift+v"
+    },
+    {
+      "name": "Select all text of the document",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Duplicate the current paragraph",
+      "hotkey": "ctrl+alt+p"
+    },
+    {
+      "name": "Create a new paragraph after the current one",
+      "hotkey": "ctrl+shift+n"
+    },
+    {
+      "name": "Delete current paragraph",
+      "hotkey": "ctrl+shift+d"
+    },
+    {
+      "name": "Find information in the document",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Continue the search and find the next match",
+      "hotkey": "f3"
+    },
+    {
+      "name": "Continue the search and find the previous match",
+      "hotkey": "shift+f3"
+    },
+    {
+      "name": "Replace the information with a replacement",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "Find files contain the keyword in the opened folder",
+      "hotkey": "ctrl+shift+f"
+    },
+    {
+      "name": "Set line as heading 1",
+      "hotkey": "ctrl+shift+1"
+    },
+    {
+      "name": "Set line as heading 2",
+      "hotkey": "ctrl+shift+2"
+    },
+    {
+      "name": "Set line as heading 3",
+      "hotkey": "ctrl+shift+3"
+    },
+    {
+      "name": "Set line as heading 4",
+      "hotkey": "ctrl+shift+4"
+    },
+    {
+      "name": "Set line as heading 5",
+      "hotkey": "ctrl+shift+5"
+    },
+    {
+      "name": "Set line as heading 6",
+      "hotkey": "ctrl+shift+6"
+    },
+    {
+      "name": "Upgrade a heading",
+      "hotkey": "ctrl+plus"
+    },
+    {
+      "name": "Degrade a heading",
+      "hotkey": "ctrl+-"
+    },
+    {
+      "name": "Insert a table",
+      "hotkey": "ctrl+shift+t"
+    },
+    {
+      "name": "Insert a code block",
+      "hotkey": "ctrl+shift+k"
+    },
+    {
+      "name": "Insert a quote block",
+      "hotkey": "ctrl+shift+q"
+    },
+    {
+      "name": "Insert a math block",
+      "hotkey": "ctrl+alt+n"
+    },
+    {
+      "name": "Insert an HTML block",
+      "hotkey": "ctrl+alt+h"
+    },
+    {
+      "name": "Insert an ordered list",
+      "hotkey": "ctrl+g"
+    },
+    {
+      "name": "Insert an unordered list",
+      "hotkey": "ctrl+h"
+    },
+    {
+      "name": "Insert a task list",
+      "hotkey": "ctrl+alt+x"
+    },
+    {
+      "name": "Convert a list item to a loose list item",
+      "hotkey": "ctrl+alt+l"
+    },
+    {
+      "name": "Convert a heading to a paragraph",
+      "hotkey": "ctrl+shift+0"
+    },
+    {
+      "name": "Add a horizontal line",
+      "hotkey": "ctrl+shift+u"
+    },
+    {
+      "name": "Insert a YAML frontmatter block",
+      "hotkey": "ctrl+alt+y"
+    },
+    {
+      "name": "Set the font of the selected text to bold",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Set the font of the selected text to italic",
+      "hotkey": "ctrl+i"
+    },
+    {
+      "name": "Change the selected text to underline",
+      "hotkey": "ctrl+u"
+    },
+    {
+      "name": "Highlight the selected text",
+      "hotkey": "ctrl+shift+h"
+    },
+    {
+      "name": "Change the selected text to inline code",
+      "hotkey": "ctrl+`"
+    },
+    {
+      "name": "Change the selected text to inline math",
+      "hotkey": "ctrl+shift+m"
+    },
+    {
+      "name": "Strike through the selected text",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Insert a hyperlink",
+      "hotkey": "ctrl+l"
+    },
+    {
+      "name": "Insert an image",
+      "hotkey": "ctrl+shift+i"
+    },
+    {
+      "name": "Clear the formatting of the selected text",
+      "hotkey": "ctrl+shift+r"
+    },
+    {
+      "name": "Minimize the window",
+      "hotkey": "ctrl+m"
+    },
+    {
+      "name": "Toggle fullscreen mode",
+      "hotkey": "f11"
+    },
+    {
+      "name": "Toggle command palette",
+      "hotkey": "ctrl+shift+p"
+    },
+    {
+      "name": "Switch to source code mode",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Enable typewriter mode",
+      "hotkey": "ctrl+shift+g"
+    },
+    {
+      "name": "Enable focus mode",
+      "hotkey": "ctrl+shift+j"
+    },
+    {
+      "name": "Toggle sidebar",
+      "hotkey": "ctrl+j"
+    },
+    {
+      "name": "Toggle tabbar",
+      "hotkey": "ctrl+shift+b"
+    },
+    {
+      "name": "Toggle table of contents",
+      "hotkey": "ctrl+k"
+    },
+    {
+      "name": "Toggle developer tools (debug mode only)",
+      "hotkey": "ctrl+alt+i"
+    },
+    {
+      "name": "Reload window (debug mode only)",
+      "hotkey": "ctrl+f5"
+    },
+    {
+      "name": "Reload images",
+      "hotkey": "f5"
+    },
+    {
+      "name": "Cycle through tabs",
+      "hotkey": "ctrl+tab"
+    },
+    {
+      "name": "Cycle backwards through tabs",
+      "hotkey": "ctrl+shift+tab"
+    },
+    {
+      "name": "Switch tab to the left",
+      "hotkey": "ctrl+pageup"
+    },
+    {
+      "name": "Switch tab to the right",
+      "hotkey": "ctrl+pagedown"
+    },
+    {
+      "name": "Switch tab to the 1st",
+      "hotkey": "ctrl+1"
+    },
+    {
+      "name": "Switch tab to the 2nd",
+      "hotkey": "ctrl+2"
+    },
+    {
+      "name": "Switch tab to the 3rd",
+      "hotkey": "ctrl+3"
+    },
+    {
+      "name": "Switch tab to the 4th",
+      "hotkey": "ctrl+4"
+    },
+    {
+      "name": "Switch tab to the 5th",
+      "hotkey": "ctrl+5"
+    },
+    {
+      "name": "Switch tab to the 6th",
+      "hotkey": "ctrl+6"
+    },
+    {
+      "name": "Switch tab to the 7th",
+      "hotkey": "ctrl+7"
+    },
+    {
+      "name": "Switch tab to the 8th",
+      "hotkey": "ctrl+8"
+    },
+    {
+      "name": "Switch tab to the 9th",
+      "hotkey": "ctrl+9"
+    },
+    {
+      "name": "Switch tab to the 10th",
+      "hotkey": "ctrl+0"
+    },
+    {
+      "name": "Open quick open dialog",
+      "hotkey": "ctrl+p"
+    }
+  ]
+}
