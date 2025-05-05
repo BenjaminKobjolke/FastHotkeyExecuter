@@ -1,11 +1,20 @@
 import configparser
 import os
+import sys # Added import for sys
 
 class ConfigManager:
     def __init__(self, config_file='config/settings.ini', window_config_file='config/window_settings.ini'):
         """Initialize the config manager."""
-        self.config_file = config_file
-        self.window_config_file = window_config_file
+        # Determine the base path for accessing bundled files
+        if getattr(sys, 'frozen', False):
+            # Running in a PyInstaller bundle
+            base_path = sys._MEIPASS
+        else:
+            # Running in a normal Python environment
+            base_path = os.path.dirname(os.path.abspath(__file__))
+
+        self.config_file = os.path.join(base_path, config_file)
+        self.window_config_file = os.path.join(base_path, window_config_file)
         self.config = configparser.ConfigParser()
         self.window_config = configparser.ConfigParser()
         self.load_config()

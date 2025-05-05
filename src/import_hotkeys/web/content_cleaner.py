@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Optional
-from utils.FileUtils import FileUtils
+from src.utils.FileUtils import FileUtils
 
 
 class ContentCleaner:

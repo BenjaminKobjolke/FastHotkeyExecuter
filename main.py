@@ -1,13 +1,13 @@
 import sys
 import os
 import argparse
-from data.config_manager import ConfigManager
-import import_hotkeys
-from data.hotkey_loader import HotkeyLoader
-from hotkeys.hotkey_executor import HotkeyExecutor
-from hotkeys.hotkey_manager import HotkeyManager
-from process.process_manager import ProcessManager
-from gui.search_window import SearchWindow
+from src.app_modules.config_manager import ConfigManager
+import src.import_hotkeys
+from src.app_modules.hotkey_loader import HotkeyLoader
+from src.hotkeys.hotkey_executor import HotkeyExecutor
+from src.hotkeys.hotkey_manager import HotkeyManager
+from src.process.process_manager import ProcessManager
+from src.gui.search_window import SearchWindow
 
 def parse_arguments():
     """Parse command line arguments."""

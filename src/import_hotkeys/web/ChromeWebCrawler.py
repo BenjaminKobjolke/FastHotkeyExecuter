@@ -6,10 +6,10 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup, Comment
 import time
 
-from import_hotkeys.data.config_loader import ConfigLoader
-from utils.FileUtils import FileUtils
-from utils.StringUtils import StringUtils
-from import_hotkeys.web.WebCrawler import WebCrawler
+from src.import_hotkeys.data.config_loader import ConfigLoader
+from src.utils.FileUtils import FileUtils
+from src.utils.StringUtils import StringUtils
+from src.import_hotkeys.web.WebCrawler import WebCrawler
 
 
 class ChromeWebCrawler(WebCrawler):

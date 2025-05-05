@@ -6,13 +6,13 @@ import sys
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-from import_hotkeys.web.ChromeWebCrawler import ChromeWebCrawler
+from src.import_hotkeys.web.ChromeWebCrawler import ChromeWebCrawler
 from utils.StringUtils import StringUtils
-from import_hotkeys.web.content_cleaner import ContentCleaner
-from import_hotkeys.openai.api_client import OpenAIClient
-from import_hotkeys.openai.prompt_builder import PromptBuilder
-from import_hotkeys.data.config_loader import ConfigLoader
-from import_hotkeys.data.json_writer import JsonWriter
+from src.import_hotkeys.web.content_cleaner import ContentCleaner
+from src.import_hotkeys.openai.api_client import OpenAIClient
+from src.import_hotkeys.openai.prompt_builder import PromptBuilder
+from src.import_hotkeys.data.config_loader import ConfigLoader
+from src.import_hotkeys.data.json_writer import JsonWriter
 
 
 def parse_arguments() -> argparse.Namespace:
