@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "url": "https://goldwave.com/help/mobile/AppendixKeyboardCommands.html",
+    "timestamp": "2025-05-13T10:59:10.578269",
+    "prefix": "",
+    "window_title": ""
+  },
+  "hotkeys": [
+    {
+      "name": "Selects the entire sound",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Pastes the clipboard into the sound at the beginning",
+      "hotkey": "ctrl+b"
+    },
+    {
+      "name": "Copies the selection into the clipboard",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Displays the Crossfade window. Crossfades the clipboard with the selection",
+      "hotkey": "ctrl+d"
+    },
+    {
+      "name": "Pastes the clipboard into the sound at the end",
+      "hotkey": "ctrl+e"
+    },
+    {
+      "name": "Pastes the clipboard into the sound at the finish marker's position",
+      "hotkey": "ctrl+f"
+    },
+    {
+      "name": "Displays a window to set the playback marker's location to a specific time",
+      "hotkey": "ctrl+g"
+    },
+    {
+      "name": "Starts playback relative to the mouse's horizontal position in the waveform",
+      "hotkey": "h"
+    },
+    {
+      "name": "Rewinds from the current playback marker's position",
+      "hotkey": "j"
+    },
+    {
+      "name": "Plays from the current playback marker's position",
+      "hotkey": "k"
+    },
+    {
+      "name": "Fast forwards from the current playback marker's position",
+      "hotkey": "l"
+    },
+    {
+      "name": "Makes the playback speed slower",
+      "hotkey": "shift+j"
+    },
+    {
+      "name": "Playback at normal speed",
+      "hotkey": "shift+k"
+    },
+    {
+      "name": "Makes the playback speed faster",
+      "hotkey": "shift+l"
+    },
+    {
+      "name": "Jumps the start marker to the next cue point",
+      "hotkey": "ctrl+j"
+    },
+    {
+      "name": "Jumps the start marker to the previous cue point",
+      "hotkey": "ctrl+shift+j"
+    },
+    {
+      "name": "Jumps the finish marker to the next cue point",
+      "hotkey": "alt+j"
+    },
+    {
+      "name": "Jumps the finish marker to the previous cue point",
+      "hotkey": "alt+shift+j"
+    },
+    {
+      "name": "Overwrites the selection with the clipboard",
+      "hotkey": "ctrl+k"
+    },
+    {
+      "name": "Displays the Mix window. Mixes the clipboard with the sound at the start marker's position",
+      "hotkey": "ctrl+m"
+    },
+    {
+      "name": "Displays the Mix window. Mixes the clipboard with the sound at the start marker's position",
+      "hotkey": "shift+ctrl+ins"
+    },
+    {
+      "name": "Creates a new sound",
+      "hotkey": "ctrl+n"
+    },
+    {
+      "name": "Opens a sound",
+      "hotkey": "ctrl+o"
+    },
+    {
+      "name": "Pastes the clipboard into a new Sound window",
+      "hotkey": "ctrl+p"
+    },
+    {
+      "name": "Drops a new cue point at the start marker position",
+      "hotkey": "q"
+    },
+    {
+      "name": "Drops a new cue point at the finish marker position",
+      "hotkey": "shift+q"
+    },
+    {
+      "name": "Drops a new cue point at the current recording, playback, or start marker position",
+      "hotkey": "ctrl+q"
+    },
+    {
+      "name": "Drops a new cue point at the current recording, playback, or start marker position and displays the edit window",
+      "hotkey": "ctrl+shift+q"
+    },
+    {
+      "name": "Replaces the selection with the clipboard contents",
+      "hotkey": "ctrl+r"
+    },
+    {
+      "name": "Saves the file",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Trims the sound. Removes all audio outside the selection",
+      "hotkey": "ctrl+t"
+    },
+    {
+      "name": "Displays the Trim Silence window. Removes leading and trailing silences at the beginning and end of the selection",
+      "hotkey": "ctrl+backspace"
+    },
+    {
+      "name": "Pastes the clipboard into the sound at the start marker's position",
+      "hotkey": "ctrl+v"
+    },
+    {
+      "name": "Sets the select to the view",
+      "hotkey": "ctrl+w"
+    },
+    {
+      "name": "Cuts the selection and copies it into the clipboard",
+      "hotkey": "ctrl+x"
+    },
+    {
+      "name": "Redo. Reverses last undo",
+      "hotkey": "ctrl+y"
+    },
+    {
+      "name": "Undoes last change",
+      "hotkey": "ctrl+z"
+    },
+    {
+      "name": "Selects both channels of a stereo file",
+      "hotkey": "ctrl+shift+b"
+    },
+    {
+      "name": "Toggles the selection to the left channel",
+      "hotkey": "ctrl+shift+l"
+    },
+    {
+      "name": "Toggles the selection to the right channel",
+      "hotkey": "ctrl+shift+r"
+    },
+    {
+      "name": "Zooms 10:1 horizontally",
+      "hotkey": "shift+0"
+    },
+    {
+      "name": "Zooms 1:1 horizontally",
+      "hotkey": "shift+1"
+    },
+    {
+      "name": "Views 1 second horizontally",
+      "hotkey": "shift+2"
+    },
+    {
+      "name": "Views 10 seconds horizontally",
+      "hotkey": "shift+3"
+    },
+    {
+      "name": "Views 1 minute horizontally",
+      "hotkey": "shift+4"
+    },
+    {
+      "name": "Views 1 hour horizontally",
+      "hotkey": "shift+5"
+    },
+    {
+      "name": "Horizontally zooms all the way out",
+      "hotkey": "shift+a"
+    },
+    {
+      "name": "Displays the Set Selection window",
+      "hotkey": "shift+e"
+    },
+    {
+      "name": "Stores the locations of the start and finish markers",
+      "hotkey": "shift+m"
+    },
+    {
+      "name": "Zooms to previous horizontal zoom",
+      "hotkey": "shift+p"
+    },
+    {
+      "name": "Moves the start and finish markers to the stored locations",
+      "hotkey": "shift+r"
+    },
+    {
+      "name": "Horizontally zooms in on the selection",
+      "hotkey": "shift+s"
+    },
+    {
+      "name": "Horizontally zooms to the user defined level",
+      "hotkey": "shift+u"
+    },
+    {
+      "name": "Vertically zooms all the way out",
+      "hotkey": "shift+v"
+    },
+    {
+      "name": "Displays window to specify horizontal zoom",
+      "hotkey": "shift+y"
+    },
+    {
+      "name": "Deletes the selection permanently",
+      "hotkey": "del"
+    },
+    {
+      "name": "Moves the start marker to the current playback position",
+      "hotkey": "["
+    },
+    {
+      "name": "Moves the finish marker to the current playback position",
+      "hotkey": "]"
+    },
+    {
+      "name": "Plays some audio up to the start marker",
+      "hotkey": "shift+["
+    },
+    {
+      "name": "Plays three seconds of audio up to the finish marker",
+      "hotkey": "shift+]"
+    },
+    {
+      "name": "Plays from the start marker to the finish marker",
+      "hotkey": "ctrl+["
+    },
+    {
+      "name": "Plays from the finish marker to the end",
+      "hotkey": "ctrl+]"
+    },
+    {
+      "name": "Moves the selection to its previous range",
+      "hotkey": "shift+\\"
+    },
+    {
+      "name": "Scrolls the Sound window view left",
+      "hotkey": "left"
+    },
+    {
+      "name": "Scrolls the Sound window view right",
+      "hotkey": "right"
+    },
+    {
+      "name": "Scrolls the Sound window view left one page",
+      "hotkey": "page up"
+    },
+    {
+      "name": "Scrolls the Sound window view right one page",
+      "hotkey": "page down"
+    },
+    {
+      "name": "Moves the Sound window view to the start marker's position",
+      "hotkey": "home"
+    },
+    {
+      "name": "Moves the Sound window view to the finish marker's position",
+      "hotkey": "end"
+    },
+    {
+      "name": "Moves the Sound window view to the beginning of the sound",
+      "hotkey": "ctrl+home"
+    },
+    {
+      "name": "Moves the Sound window view to the end of the sound",
+      "hotkey": "ctrl+end"
+    },
+    {
+      "name": "Moves the start marker to the beginning of the sound",
+      "hotkey": "shift+home"
+    },
+    {
+      "name": "Moves the start marker to the finish marker's position",
+      "hotkey": "shift+end"
+    },
+    {
+      "name": "Moves the finish marker to the start marker's position",
+      "hotkey": "ctrl+shift+home"
+    },
+    {
+      "name": "Moves the finish marker to the end of the sound",
+      "hotkey": "ctrl+shift+end"
+    },
+    {
+      "name": "Moves the start marker left",
+      "hotkey": "shift+left"
+    },
+    {
+      "name": "Moves the start marker right",
+      "hotkey": "shift+right"
+    },
+    {
+      "name": "Moves the finish marker left",
+      "hotkey": "ctrl+shift+left"
+    },
+    {
+      "name": "Moves the finish marker right",
+      "hotkey": "ctrl+shift+right"
+    },
+    {
+      "name": "Horizontally zooms in",
+      "hotkey": "shift+up"
+    },
+    {
+      "name": "Horizontally zooms out",
+      "hotkey": "shift+down"
+    },
+    {
+      "name": "Vertically zooms in",
+      "hotkey": "ctrl+up"
+    },
+    {
+      "name": "Vertically zooms out",
+      "hotkey": "ctrl+down"
+    },
+    {
+      "name": "Plays or stops a sound (toggles playback)",
+      "hotkey": "space"
+    },
+    {
+      "name": "Plays 1",
+      "hotkey": "f2"
+    },
+    {
+      "name": "Plays 2",
+      "hotkey": "f3"
+    },
+    {
+      "name": "Plays 3",
+      "hotkey": "f4"
+    },
+    {
+      "name": "Rewinds",
+      "hotkey": "f5"
+    },
+    {
+      "name": "Fast forwards",
+      "hotkey": "f6"
+    },
+    {
+      "name": "Pauses",
+      "hotkey": "f7"
+    },
+    {
+      "name": "Stops",
+      "hotkey": "f8"
+    },
+    {
+      "name": "Starts recording",
+      "hotkey": "ctrl+f9"
+    },
+    {
+      "name": "Stops recording",
+      "hotkey": "ctrl+f8"
+    },
+    {
+      "name": "Pauses recording",
+      "hotkey": "ctrl+f7"
+    },
+    {
+      "name": "Displays Device Controls Properties window",
+      "hotkey": "f11"
+    },
+    {
+      "name": "Starts help",
+      "hotkey": "f1"
+    },
+    {
+      "name": "Closes the Sound window",
+      "hotkey": "ctrl+f4"
+    },
+    {
+      "name": "Switches between Main window and Device Controls window",
+      "hotkey": "alt+f6"
+    },
+    {
+      "name": "Switches between Sound windows",
+      "hotkey": "ctrl+f6"
+    }
+  ]
+}
