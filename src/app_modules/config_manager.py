@@ -11,7 +11,8 @@ class ConfigManager:
             base_path = sys._MEIPASS
         else:
             # Running in a normal Python environment
-            base_path = os.path.dirname(os.path.abspath(__file__))
+            # Go up two levels from src/app_modules to project root
+            base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
         self.config_file = os.path.join(base_path, config_file)
         self.window_config_file = os.path.join(base_path, window_config_file)
