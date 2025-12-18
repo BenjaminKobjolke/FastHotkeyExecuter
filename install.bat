@@ -1,12 +1,12 @@
 @echo off
 echo Creating virtual environment...
-python -m venv venv
+call python -m venv venv
 
 echo Activating virtual environment...
 call venv\Scripts\activate.bat
 
 echo Installing requirements...
-pip install -r requirements.txt
+call pip install -r requirements.txt
 
 echo Checking configuration files...
 if not exist config\settings.ini (
@@ -18,4 +18,4 @@ if not exist config\settings.ini (
 )
 
 echo Installation complete!
-pause
+
