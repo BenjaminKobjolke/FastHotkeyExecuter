@@ -79,7 +79,7 @@ class SearchManager:
         current_app = self.window_manager.get_current_app()
         if not current_app:
             return False
-            
+
         # Get all hotkeys for the current app
         self.current_results = self.hotkey_loader.get_hotkeys_for_app(current_app)
         

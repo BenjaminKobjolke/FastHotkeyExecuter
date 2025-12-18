@@ -9,6 +9,7 @@ class WindowManager:
         self.current_app = None
         self._configure_window()
         self.search_entry = None  # Will be set by set_search_entry
+        self._showing = False  # Flag to prevent focus loss during show
 
     def _configure_window(self):
         """Configure the window appearance and behavior."""
@@ -36,33 +37,38 @@ class WindowManager:
         try:
             self.current_app = self.process_manager.get_active_window_process()
             if not self.current_app:
-                print("[DEBUG] No active window detected, not showing search window")
                 return False
 
             # Get active window position
             active_pos = self.process_manager.get_active_window_position()
             if not active_pos:
-                print("[DEBUG] Could not get active window position")
                 return False
 
             # Calculate center position
             settings = self.config_manager.get_window_settings()
             window_width = settings['width']
             window_height = settings['height']
-            
+
             x = active_pos['x'] + (active_pos['width'] - window_width) // 2
             y = active_pos['y'] + (active_pos['height'] - window_height) // 2
-            
+
             self.window.geometry(f"+{x}+{y}")
+
+            # Set flag to prevent focus loss during show
+            self._showing = True
+
             self.window.deiconify()
             self.window.lift()
             self.window.focus_force()
             if self.search_entry:
                 self.search_entry.focus_set()
+
+            # Clear the showing flag after a short delay
+            self.window.after(100, self._clear_showing_flag)
+
             return True
 
         except Exception as e:
-            print(f"[DEBUG] Error showing search window: {e}")
             self.window.withdraw()
             return False
 
@@ -73,8 +79,14 @@ class WindowManager:
         time.sleep(0.1)
         self.current_app = None
 
+    def _clear_showing_flag(self):
+        """Clear the showing flag after window is fully shown."""
+        self._showing = False
+
     def handle_focus_loss(self):
         """Handle window focus loss by hiding the window."""
+        if self._showing:
+            return 'break'
         self.hide()
         return 'break'
 

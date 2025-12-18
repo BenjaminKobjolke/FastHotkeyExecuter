@@ -46,7 +46,13 @@ class SearchWindow:
         root.bind('<FocusOut>', lambda e: self.window_manager.handle_focus_loss())
 
     def show(self):
-        """Show the search window."""
+        """Show the search window (thread-safe)."""
+        # Schedule the actual show operation on the main thread
+        # This is necessary because winhotkeys callbacks run in a separate thread
+        self.window_manager.window.after(0, self._show_internal)
+
+    def _show_internal(self):
+        """Internal method to show window - must be called from main thread."""
         if self.window_manager.show():
             if self.search_manager.show_initial_results():
                 self.ui_manager.get_search_entry().focus()
