@@ -9,6 +9,7 @@ from .internal_command_manager import InternalCommandManager
 
 class SearchWindow:
     def __init__(self, config_manager, process_manager, hotkey_loader, hotkey_executor):
+        self.hotkey_loader = hotkey_loader
         self.internal_command_manager = InternalCommandManager()
         # Configure global theme settings before creating root window
         root = tk.Tk()
@@ -39,7 +40,8 @@ class SearchWindow:
             self.window_manager,
             hotkey_executor,
             self.internal_command_manager,
-            self.exit_application
+            self.exit_application,
+            self.reload_configuration
         )
         
         # Bind focus loss to window manager
@@ -64,6 +66,12 @@ class SearchWindow:
     def _on_hotkey_selected(self, index):
         """Handle hotkey selection."""
         self.search_manager.execute_selected_hotkey(index)
+
+    def reload_configuration(self):
+        """Reload all hotkey configuration files from disk."""
+        self.hotkey_loader.clear_cache()
+        self.window_manager.hide()
+        print("[DEBUG] Configuration reloaded - hotkey cache cleared")
 
     def exit_application(self):
         """Exit the application."""

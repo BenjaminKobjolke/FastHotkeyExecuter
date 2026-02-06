@@ -4,6 +4,10 @@ class InternalCommandManager:
             {
                 "name": "exit - quit",
                 "command": "exit"
+            },
+            {
+                "name": "reload - reload configuration",
+                "command": "reload"
             }
         ]
 
@@ -22,4 +26,6 @@ class InternalCommandManager:
         """Execute the selected command."""
         if command["command"] == "exit":
             return "exit"
+        if command["command"] == "reload":
+            return "reload"
         return None

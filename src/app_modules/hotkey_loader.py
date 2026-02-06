@@ -83,6 +83,10 @@ class HotkeyLoader:
             print(f"[DEBUG] Error loading hotkeys: {e}")
             return []
             
+    def clear_cache(self):
+        """Clear the hotkey cache to force re-read from disk."""
+        self.hotkey_cache = {}
+
     def search_hotkeys(self, app_name, search_text):
         """Search hotkeys for an application by name."""
         try:

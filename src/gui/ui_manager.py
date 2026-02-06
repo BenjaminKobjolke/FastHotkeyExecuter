@@ -154,6 +154,81 @@ class UIManager:
 
         return dialog
 
+    def create_dialog_with_buttons(self, message, buttons):
+        """Create and return a styled dialog window with multiple buttons.
+
+        Args:
+            message: The message to display
+            buttons: List of (label, callback) tuples. Callback receives the dialog as argument.
+        """
+        dialog = tk.Toplevel(self.window)
+        dialog.withdraw()
+        dialog.title("Message")
+
+        dialog.attributes('-topmost', True)
+        dialog.overrideredirect(True)
+        dialog.configure(bg=self.theme_manager.settings['background_color'])
+
+        msg = tk.Label(
+            dialog,
+            text=message,
+            bg=self.theme_manager.settings['input_background_color'],
+            fg=self.theme_manager.settings['input_text_color'],
+            font=('Arial', self.theme_manager.settings['font_size']),
+            wraplength=300,
+            padx=10,
+            pady=10
+        )
+        msg.pack(padx=10, pady=10)
+
+        button_frame = tk.Frame(dialog, bg=self.theme_manager.settings['background_color'])
+        button_frame.pack(pady=(0, 10))
+
+        first_button = None
+        for label, callback in buttons:
+            btn = tk.Button(
+                button_frame,
+                text=label,
+                command=lambda cb=callback: cb(dialog),
+                bg=self.theme_manager.settings['input_background_color'],
+                fg=self.theme_manager.settings['input_text_color'],
+                activebackground=self.theme_manager.settings['input_select_background'],
+                activeforeground=self.theme_manager.settings['input_select_foreground'],
+                font=('Arial', self.theme_manager.settings['font_size']),
+                relief='solid',
+                bd=1,
+                padx=10,
+                pady=5,
+                cursor='hand2'
+            )
+
+            def on_enter(e, b=btn):
+                b.config(
+                    bg=self.theme_manager.settings['input_select_background'],
+                    fg=self.theme_manager.settings['input_select_foreground']
+                )
+
+            def on_leave(e, b=btn):
+                b.config(
+                    bg=self.theme_manager.settings['input_background_color'],
+                    fg=self.theme_manager.settings['input_text_color']
+                )
+
+            btn.bind('<Enter>', on_enter)
+            btn.bind('<Leave>', on_leave)
+            btn.pack(side=tk.TOP, padx=5, pady=2)
+
+            if first_button is None:
+                first_button = btn
+
+        if first_button:
+            first_button.configure(default='active')
+            dialog.after(1, lambda: first_button.focus_set())
+
+        dialog.bind('<Escape>', lambda e: dialog.destroy())
+
+        return dialog
+
     def show_dialog(self, dialog):
         """Show a dialog window centered on screen."""
         # Center dialog on screen
