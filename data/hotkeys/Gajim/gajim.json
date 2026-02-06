@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Set Offline",
+    "run": "gajim_offline.ahk"
+  },
+  {
+    "name": "Set Online",
+    "run": "gajim_online.ahk"
+  },
+  {
+    "name": "Open chats",
+    "run": "gajim_open_chats.ahk"
+  }  
+]

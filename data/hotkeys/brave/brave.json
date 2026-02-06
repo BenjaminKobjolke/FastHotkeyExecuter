@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "url": "https://support.google.com/calendar/answer/37034#zippy=%2Cim-kalender-navigieren",
+    "timestamp": "2025-06-12T10:09:46.544087",
+    "prefix": "",
+    "window_title": "Google Kalender"
+  },
+  "hotkeys": [
+    {
+      "name": "Change your calendar view to the next date range",
+      "hotkey": "j"
+    },
+    {
+      "name": "Change your calendar view to the next date range",
+      "hotkey": "n"
+    },
+    {
+      "name": "Refresh your calendar",
+      "hotkey": "r"
+    },
+    {
+      "name": "Move to the current day",
+      "hotkey": "t"
+    },
+    {
+      "name": "Move to add a calendar section",
+      "hotkey": "+"
+    },
+    {
+      "name": "Put your cursor in the search box",
+      "hotkey": "/"
+    },
+    {
+      "name": "Go to the Settings page",
+      "hotkey": "s"
+    },
+    {
+      "name": "Go to a specific date",
+      "hotkey": "g"
+    },
+    {
+      "name": "Day view",
+      "hotkey": "1"
+    },
+    {
+      "name": "Day view",
+      "hotkey": "d"
+    },
+    {
+      "name": "Week view",
+      "hotkey": "2"
+    },
+    {
+      "name": "Week view",
+      "hotkey": "w"
+    },
+    {
+      "name": "Month view",
+      "hotkey": "3"
+    },
+    {
+      "name": "Month view",
+      "hotkey": "m"
+    },
+    {
+      "name": "Custom view",
+      "hotkey": "4"
+    },
+    {
+      "name": "Custom view",
+      "hotkey": "x"
+    },
+    {
+      "name": "Agenda view",
+      "hotkey": "5"
+    },
+    {
+      "name": "Agenda view",
+      "hotkey": "a"
+    },
+    {
+      "name": "Create a new event",
+      "hotkey": "c"
+    },
+    {
+      "name": "See an event's details",
+      "hotkey": "e"
+    },
+    {
+      "name": "Delete an event",
+      "hotkey": "backspace"
+    },
+    {
+      "name": "Delete an event",
+      "hotkey": "delete"
+    },
+    {
+      "name": "Undo",
+      "hotkey": "z"
+    },
+    {
+      "name": "Save event (from the event details page)",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Return to calendar grid from an event details page",
+      "hotkey": "esc"
+    },
+    {
+      "name": "View Tasks & Keep (next task)",
+      "hotkey": "ctrl+alt+."
+    },
+    {
+      "name": "View Tasks & Keep (previous task)",
+      "hotkey": "ctrl+alt+,"
+    }
+  ]
+}

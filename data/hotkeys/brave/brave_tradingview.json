@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "url": "https://www.tradingview.com/charting-library-docs/latest/getting_started/Shortcuts/",
+    "timestamp": "2025-08-22T08:00:40.128534",
+    "prefix": "Tradingview",
+    "window_title": "Watchlist"
+  },
+  "hotkeys": [
+    {
+      "name": "Open Quick Search",
+      "hotkey": "ctrl+k"
+    },
+    {
+      "name": "Save chart layout",
+      "hotkey": "ctrl+s"
+    },
+    {
+      "name": "Undo",
+      "hotkey": "ctrl+z"
+    },
+    {
+      "name": "Redo",
+      "hotkey": "ctrl+y"
+    },
+    {
+      "name": "Zoom in",
+      "hotkey": "ctrl+↑"
+    },
+    {
+      "name": "Zoom out",
+      "hotkey": "ctrl+↓"
+    },
+    {
+      "name": "Move further to the left",
+      "hotkey": "ctrl+←"
+    },
+    {
+      "name": "Move further to the right",
+      "hotkey": "ctrl+→"
+    },
+    {
+      "name": "Toggle collapse pane",
+      "hotkey": "ctrl+double-click the pane"
+    },
+    {
+      "name": "Go to date",
+      "hotkey": "alt+g"
+    },
+    {
+      "name": "Take snapshot, saving URL to clipboard",
+      "hotkey": "alt+s"
+    },
+    {
+      "name": "Reset chart",
+      "hotkey": "alt+r"
+    },
+    {
+      "name": "Invert series scale",
+      "hotkey": "alt+i"
+    },
+    {
+      "name": "Enable/disable logarithmic series scale",
+      "hotkey": "alt+l"
+    },
+    {
+      "name": "Enable/disable percent series scale",
+      "hotkey": "alt+p"
+    },
+    {
+      "name": "Start keyboard navigation",
+      "hotkey": "alt+z"
+    },
+    {
+      "name": "Partially erase drawing",
+      "hotkey": "eraser+ctrl"
+    },
+    {
+      "name": "Hide all drawings",
+      "hotkey": "ctrl+alt+h"
+    },
+    {
+      "name": "Copy selected object",
+      "hotkey": "ctrl+c"
+    },
+    {
+      "name": "Paste object",
+      "hotkey": "ctrl+v"
+    },
+    {
+      "name": "Clone a drawing",
+      "hotkey": "ctrl+drag"
+    },
+    {
+      "name": "Select multiple drawings",
+      "hotkey": "ctrl+click"
+    },
+    {
+      "name": "Draw Trend line",
+      "hotkey": "alt+t"
+    },
+    {
+      "name": "Draw Horizontal line",
+      "hotkey": "alt+h"
+    },
+    {
+      "name": "Draw Vertical line",
+      "hotkey": "alt+v"
+    },
+    {
+      "name": "Draw Cross line",
+      "hotkey": "alt+c"
+    },
+    {
+      "name": "Draw Fib retracement",
+      "hotkey": "alt+f"
+    },
+    {
+      "name": "Draw Rectangle",
+      "hotkey": "alt+shift+r"
+    },
+    {
+      "name": "Switch between charts",
+      "hotkey": "tab shift+→"
+    },
+    {
+      "name": "Switch between charts in reverse order",
+      "hotkey": "shift+tab shift+←"
+    },
+    {
+      "name": "Toggle maximize chart",
+      "hotkey": "alt+enter"
+    },
+    {
+      "name": "Add symbol to watchlist",
+      "hotkey": "alt+w"
+    },
+    {
+      "name": "Select all symbols",
+      "hotkey": "ctrl+a"
+    },
+    {
+      "name": "Select next symbol",
+      "hotkey": "shift+↓"
+    },
+    {
+      "name": "Select previous symbol",
+      "hotkey": "shift+↑"
+    },
+    {
+      "name": "Place market order to buy",
+      "hotkey": "shift+b"
+    },
+    {
+      "name": "Place market order to sell",
+      "hotkey": "shift+s"
+    },
+    {
+      "name": "Place limit order to buy",
+      "hotkey": "shift+alt+b"
+    },
+    {
+      "name": "Place limit order to sell",
+      "hotkey": "shift+alt+s"
+    },
+    {
+      "name": "Center DOM data",
+      "hotkey": "shift+alt+c"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "url": "https://onsilent.com/productivity-tools/google-calendar-keyboard-shortcuts/",
+    "timestamp": "2025-12-18T10:13:54.801439",
+    "prefix": "cal",
+    "window_title": "Kalender"
+  },
+  "hotkeys": [
+    {
+      "name": "Create event",
+      "hotkey": "ctrl+s"
+    }
+  ]
+}
