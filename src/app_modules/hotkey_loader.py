@@ -20,9 +20,17 @@ class HotkeyLoader:
             
             # Check if directory exists
             if not os.path.exists(app_dir):
-                print(f"[DEBUG] No hotkey directory found for {app_name}")
-                self.hotkey_cache[app_name] = []  # Cache empty result
-                return []
+                # Try case-insensitive match
+                app_dir = None
+                if os.path.exists(self.data_dir):
+                    for entry in os.listdir(self.data_dir):
+                        if entry.lower() == app_name.lower() and os.path.isdir(os.path.join(self.data_dir, entry)):
+                            app_dir = os.path.join(self.data_dir, entry)
+                            break
+                if not app_dir:
+                    print(f"[DEBUG] No hotkey directory found for {app_name}")
+                    self.hotkey_cache[app_name] = []  # Cache empty result
+                    return []
             
             # Load and combine all JSON files in the app directory, ignoring duplicates
             all_hotkeys = []
