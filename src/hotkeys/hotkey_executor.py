@@ -1,5 +1,6 @@
 import keyboard
 import mouse
+import os
 import time
 import win32gui
 import win32con
@@ -35,10 +36,20 @@ class HotkeyExecutor:
         return True
 
     def execute_hotkey(self, hotkey_data):
-        """Execute a hotkey by simulating key presses."""
+        """Execute a hotkey by simulating key presses, or run an external file."""
         try:
             if not isinstance(hotkey_data, dict):
                 raise ValueError("Invalid hotkey data format")
+
+            # Handle run file action
+            if 'run' in hotkey_data:
+                run_path = hotkey_data['run']
+                print(f"[DEBUG] Running file: {run_path}")
+                if not os.path.exists(run_path):
+                    print(f"[DEBUG] Error: file not found: {run_path}")
+                    return
+                os.startfile(run_path)
+                return
 
             # Handle new format with array of actions
             if 'hotkeys' in hotkey_data and isinstance(hotkey_data['hotkeys'], list):

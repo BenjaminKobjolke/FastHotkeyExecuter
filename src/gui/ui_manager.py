@@ -63,6 +63,10 @@ class UIManager:
                 # Check if it's a hotkey sequence, single hotkey, or command
                 if 'hotkeys' in result:
                     self.results_listbox.insert(tk.END, f"{result['name']} (sequence)")
+                elif 'run' in result:
+                    import os
+                    filename = os.path.basename(result['run'])
+                    self.results_listbox.insert(tk.END, f"{result['name']} (run: {filename})")
                 elif 'hotkey' in result:
                     self.results_listbox.insert(tk.END, f"{result['name']} ({result['hotkey']})")
                 else:

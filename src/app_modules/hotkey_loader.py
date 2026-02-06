@@ -57,6 +57,13 @@ class HotkeyLoader:
                                     if prefix:
                                         hotkey['name'] = f"{prefix} {hotkey['name']}"
                                     all_hotkeys.append(hotkey)
+                                # Handle run file entries
+                                elif 'run' in hotkey:
+                                    if prefix:
+                                        hotkey['name'] = f"{prefix} {hotkey['name']}"
+                                    # Resolve absolute path relative to the app's hotkey directory
+                                    hotkey['run'] = os.path.abspath(os.path.join(app_dir, hotkey['run']))
+                                    all_hotkeys.append(hotkey)
                                 # Handle old format with single hotkey
                                 elif 'hotkey' in hotkey and hotkey['hotkey'] not in seen_hotkeys:
                                     seen_hotkeys.add(hotkey['hotkey'])
