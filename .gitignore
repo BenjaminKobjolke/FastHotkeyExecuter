@@ -174,3 +174,5 @@ cython_debug/
 build
 dist
 .claude
+nul
+claude-plans/
