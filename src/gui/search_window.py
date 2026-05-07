@@ -45,7 +45,7 @@ class SearchWindow:
         )
         
         # Bind focus loss to window manager
-        root.bind('<FocusOut>', lambda e: self.window_manager.handle_focus_loss())
+        root.bind('<FocusOut>', self.window_manager.handle_focus_loss)
 
     def show(self):
         """Show the search window (thread-safe)."""

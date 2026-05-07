@@ -83,12 +83,34 @@ class WindowManager:
         """Clear the showing flag after window is fully shown."""
         self._showing = False
 
-    def handle_focus_loss(self):
+    def handle_focus_loss(self, event=None):
         """Handle window focus loss by hiding the window."""
         if self._showing:
             return 'break'
-        self.hide()
+
+        # Ignore inner-widget focus shuffles inside our toplevel
+        if event is not None and getattr(event, 'detail', None) in (
+            'NotifyInferior', 'NotifyAncestor', 'NotifyVirtual', 'NotifyPointer'
+        ):
+            return 'break'
+
+        # Defer real-focus check; focus_get() may not reflect new focus yet
+        self.window.after_idle(self._maybe_hide_on_focus_loss)
         return 'break'
+
+    def _maybe_hide_on_focus_loss(self):
+        """Hide only if focus actually left our toplevel."""
+        try:
+            focused = self.window.focus_displayof()
+        except Exception:
+            focused = None
+        if focused is not None:
+            try:
+                if focused.winfo_toplevel() is self.window:
+                    return
+            except Exception:
+                pass
+        self.hide()
 
     def get_current_app(self):
         """Get the current application name."""
