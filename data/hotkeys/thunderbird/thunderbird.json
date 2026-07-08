@@ -1,5 +1,13 @@
 [
   {
+    "name": "Add CC",
+    "run": "add_cc.ahk"
+  },  
+  {
+    "name": "Add BCC",
+    "run": "add_bcc.ahk"
+  },
+  {
     "name": "New message",
     "hotkey": "ctrl+n"
   },
@@ -210,5 +218,21 @@
   {
     "name": "Tasks tab",
     "hotkey": "ctrl+shift+d"
+  },
+  {
+    "name": "Go to Inbox",
+    "run": "tb_goto_inbox.ahk"
+  },
+  {
+    "name": "Go to Sent",
+    "run": "tb_goto_sent.ahk"
+  },
+  {
+    "name": "Go to Junk",
+    "run": "tb_goto_junk.ahk"
+  },
+  {
+    "name": "Go to Drafts",
+    "run": "tb_goto_drafts.ahk"
   }
 ]
