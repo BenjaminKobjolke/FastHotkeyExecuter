@@ -1,5 +1,6 @@
 import tkinter as tk
 import sys
+import os
 from .window_manager import WindowManager
 from .theme_manager import ThemeManager
 from .event_manager import EventManager
@@ -47,6 +48,13 @@ class SearchWindow:
         # Bind focus loss to window manager
         root.bind('<FocusOut>', self.window_manager.handle_focus_loss)
 
+        # Sentinel file for graceful shutdown, watched next to the exe
+        if getattr(sys, 'frozen', False):
+            base = os.path.dirname(sys.executable)
+        else:
+            base = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        self._shutdown_file = os.path.join(base, '.shutdown')
+
     def show(self):
         """Show the search window (thread-safe)."""
         # Schedule the actual show operation on the main thread
@@ -78,6 +86,18 @@ class SearchWindow:
         self.window_manager.window.quit()
         sys.exit(0)
 
+    def _check_shutdown(self):
+        """Poll for the .shutdown sentinel file and exit gracefully if present."""
+        if os.path.exists(self._shutdown_file):
+            try:
+                os.remove(self._shutdown_file)
+            except OSError:
+                pass
+            self.exit_application()
+            return
+        self.window_manager.window.after(500, self._check_shutdown)
+
     def run(self):
         """Start the window's main loop."""
+        self.window_manager.window.after(500, self._check_shutdown)
         self.window_manager.window.mainloop()
